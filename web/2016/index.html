@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Bootcamp</title>
-    <link rel='shortcut icon' href='/static/favicon.ico' type='image/x-icon'/>
-    <link href="/static/lib/semantic.min.css" rel="stylesheet" crossorigin="anonymous"/>
-    <link href="/static/bootcamp.css" rel="stylesheet" crossorigin="anonymous"/>
-</head>
-<body>
+{%  extends "base.html" %}
 
-
+{%  block body %}
 <h1 class="title ui center aligned header">
     <i class="settings icon"></i>
 
@@ -23,7 +14,7 @@
 
         <div class="ui segment">
             <h3 class="ui header">Day 1: Introductions</h3>
-            {% include_markdown "day1_schedule" %}
+            {% include_markdown "day1_schedule.md" %}
         </div>
 
         <div class="ui segment">
@@ -49,5 +40,6 @@
     </div>
 </div>
 
-</body>
-</html>
+
+
+{%  endblock %}
