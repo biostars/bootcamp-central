@@ -6,74 +6,43 @@
     <link rel='shortcut icon' href='/static/favicon.ico' type='image/x-icon'/>
     <link href="/static/lib/semantic.min.css" rel="stylesheet" crossorigin="anonymous"/>
     <link href="/static/bootcamp.css" rel="stylesheet" crossorigin="anonymous"/>
+
 </head>
 <body>
 
-<div class="ui container  menu">
-    {% for name, url in context.navbar %}
-        <a class="item" href="{{ url }}">{{ name }}</a>
-    {% endfor %}
-    <div class="right menu">
-        <a class="item" href="/about.html">About</a>
+<div class="ui attached stackable menu ">
+    <div class="ui container ">
+        <a class="item" href="/index.html">
+            <i class="home icon"></i> Home
+        </a>
+
+        {% for name, url in context.navbar %}
+            <a class="mobile only item" href="{{ url }}">
+                <i class="calendar outline icon"></i> {{ name }}
+            </a>
+        {% endfor %}
+
+        <div class="right menu">
+            <a class="item" href="/about.html">
+                <i class="info circle icon"></i> About
+            </a>
+        </div>
+
     </div>
 </div>
 
-{% block body %}
 
-    <h1 class="title ui center aligned header">
-        <i class="settings icon"></i>
-        PSU Bootcamp on Reproducible Research
-    </h1>
+<div class="ui container">
+    {% block body %}
+        BODY
+    {% endblock %}
+</div>
 
-    <h3 class="ui center aligned header">June 6-10, 2016</h3>
-
-    <div class="ui container">
-        <div class="ui segments">
-
-            <div class="ui segment">
-                <h3 class="ui header">Day 1: Introductions</h3>
-                {% include_markdown "day1_schedule" %}
-            </div>
-
-            <div class="ui segment">
-                <h3 class="ui header">Day 2; Software Carpentry</h3>
-                Content
-            </div>
-
-            <div class="ui segment">
-                <h3 class="ui header">Day 3: Statistical Analysis</h3>
-                Content
-            </div>
-
-            <div class="ui segment">
-                <h3 class="ui header">Day 4: Galaxy</h3>
-                Content
-            </div>
-
-            <div class="ui segment" Q>
-                <h3 class="ui header">Day 5</h3>
-                Content
-            </div>
-
-        </div>
-    </div>
-
-
-{% endblock %}
-
-{% block footer %}
-
-    <div class="ui container">
-      <p>
-
-      </p>
-  </div>
-
-    <div>
-
-    </div>
-
-{% endblock %}
+<div class="ui container">
+    {% block footer %}
+        footer
+    {% endblock %}
+</div>
 
 </body>
 </html>

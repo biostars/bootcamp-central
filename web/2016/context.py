@@ -1,6 +1,5 @@
 # Name, URL, navbar index triplets
 navbar = [
-    ("Home", "/index.html"),
     ("Day 1", "/day1/day1_schedule.html"),
     ("Day 2", "/day2/day2_schedule.html"),
     ("Day 3", "/day3/day3_schedule.html"),
