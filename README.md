@@ -1,38 +1,42 @@
-# Bootcamp Central
+## Bootcamp Central
 
-Materials and data for the Penn State Data Analysis bootcamp.
+Materials and data for the [Penn State Data Analysis Bootcamp](https://bootcamp.biostars.io)
 
-Web: https://bootcamp.biostars.io
+First of all note that you don't actually need to fully generate this site yourself during
+the bootcamp. These instructions are here just to explain the process.  
 
-## How to generate the site
+But at the same time remember that you can **contribute** via the GitHub web interface or after cloning
+locally.
 
-First of all note that you don't actually need to generate this site yourself during
-the bootcamp. These instructions are here to explain the process.
+The website 
+is generated from the files in the  web directory of the [bootcamp-central](https://github.com/biostars/bootcamp-central) repository 
+via the [pyblue][pyblue] python package. 
+For it work you would need to have both `Python` and the [pip package manager][pip] installed.
 
-The website itself is generated from the files in the 
-web directory via the [pyblue][pyblue] python package. 
-For it work you would need to have both `Python` 
-and the `pip` package manager installed.
+Clone the repository:
+
+    git clone https://github.com/biostars/bootcamp-central
+    
+Install pyblue:
 
     pip install pyblue
-    
+
+
 You can now view the site as HTML with:
 
+    cd bootcamp-central
     pyblue -r web/2016 
     
-This will start a webserver on your computer and you can use the browser
+This will start a web server on your computer and you can use the browser
 to view the contents of the site. This is used while developing the site.
 
     http://localhost:8080
 
-To generate a publisshed version of the site add the `-o` parameter 
+To generate a published version of the site add the `-o` parameter 
 with a directory name that is meant to store the output destination
 
     pyblue -r web/2016 -o /final/directory
 
-Other readings:
-
-- [How to install `pip`][pip] 
 
 [pyblue]: https://github.com/ialbert/pyblue
 [pip]: http://pip.readthedocs.org/en/latest/installing.html#install-pip
