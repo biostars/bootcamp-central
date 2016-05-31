@@ -12,4 +12,4 @@
 * 4:15 - 5:00 - prep for Tuesday
 * 5:00 - mixer
 * 6:00 - 7:30 - dinner
-* 7:30 - ?? R tutorial (if needed): Senior Grad Students??
+* 7:30 - R tutorial, install R, RStudio (Naomi Altman)

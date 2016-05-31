@@ -1,12 +1,9 @@
-## Bootcamp Central
-
 Materials and data for the [Penn State Data Analysis Bootcamp](https://bootcamp.biostars.io)
 
 First of all note that you don't actually need to fully generate this site yourself during
 the bootcamp. These instructions are here just to explain the process.  
-
-But at the same time remember that you can **contribute** via the GitHub web interface or after cloning
-locally.
+But even if you don't generate the site itself you may still **contribute** to it 
+via the GitHub web interface or after cloning locally.
 
 The website 
 is generated from the files in the  web directory of the [bootcamp-central](https://github.com/biostars/bootcamp-central) repository 
