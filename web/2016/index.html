@@ -1,46 +1,48 @@
-{%  extends "base.html" %}
+{% extends "base.html" %}
 
-{%  block body %}
-<h1 class="title ui center aligned header">
-    <i class="settings icon"></i>
+{% block body %}
 
-    PSU Bootcamp on Reproducible Research
-</h1>
+    <h1 class="ui center aligned icon header">
+        <i class="settings icon"></i>
+        PSU Bootcamp on Reproducible Research
+    </h1>
 
-<h3 class="ui center aligned header">June 6-10, 2016</h3>
-
-
+    <h3 class="ui center aligned header">June 6-10, 2016</h3>
 
     <div class="ui segments">
 
         <div class="ui segment">
-            <h3 class="ui header">Day 1: Introductions</h3>
-            {% include_markdown "day1_schedule.md" %}
+            <h3 class="ui header">{% link 'day1_schedule.html' %}</h3>
+            <p>Introductions.</p>
+            <p>Presentations by faculty: Ross Hardison, Qunhua Li, George Perry, James Broach</p>
         </div>
 
         <div class="ui segment">
-            <h3 class="ui header">Day 2; Software Carpentry</h3>
-            Content
+            <h3 class="ui header">{% link 'day2_schedule.html' %} </h3>
+            <p></p>
         </div>
 
         <div class="ui segment">
-            <h3 class="ui header">Day 3: Statistical Analysis</h3>
-            Content
+            <h3 class="ui header">{% link 'day3_schedule.html' %}</h3>
+             <p></p>
         </div>
 
         <div class="ui segment">
-            <h3 class="ui header">Day 4: Galaxy</h3>
-            Content
+            <h3 class="ui header">{% link 'day4_schedule.html' %}</h3>
+             <p></p>
         </div>
 
-        <div class="ui segment" Q>
-            <h3 class="ui header">Day 5</h3>
-            Content
+        <div class="ui segment">
+            <h3 class="ui header">{% link 'day5_schedule.html' %}</h3>
+             <p></p>
+        </div>
+
+        <div class="ui segment">
+            <h3 class="ui header">{% link 'information.html' %}</h3>
+             <p></p>
         </div>
 
     </div>
-</div>
 
 
-
-{%  endblock %}
+{% endblock %}

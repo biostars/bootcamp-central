@@ -18,13 +18,13 @@
 
         {% for name, url in context.navbar %}
             <a class="mobile only item" href="{{ url }}">
-                <i class="calendar outline icon"></i> {{ name }}
+                <i class="calendar icon"></i> {{ name }}
             </a>
         {% endfor %}
 
         <div class="right menu">
-            <a class="item" href="/about.html">
-                <i class="info circle icon"></i> About
+            <a class="item" href="/information.html">
+                <i class="info circle icon"></i> Info
             </a>
         </div>
 
@@ -45,11 +45,19 @@
     {% endblock %}
 </div>
 
-<div class="ui container">
+<p class="ui container">
     {% block footer %}
-        footer
+
+        <h4 class="ui horizontal divider header">
+            <i class="github icon"></i>
+        </h4>
+
+        <div class="ui center aligned container">
+            Penn State: 2016 &bull; Github: <a href="https://github.com/biostars/bootcamp-central">bootcamp-central</a>
+        </div>
+
     {% endblock %}
-</div>
+</p>
 
 </body>
 </html>

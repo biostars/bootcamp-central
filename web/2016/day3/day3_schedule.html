@@ -1,13 +1,15 @@
-{%  extends "base.html" %}
+{# name = Day 3: Statistical Analysis #}
+{% extends "base.html" %}
 
-{%  block body %}
+{% block body %}
 
-<div class="ui container">
 
-      <p>
-           Schedule
-      </p>
+    <h2 class="ui center aligned icon header">
+        <i class="calendar icon"></i>
+        Day 3: Schedule
+    </h2>
 
-  </div>
+    {% include_markdown "day3_schedule.md" %}
 
-{%  endblock %}
+
+{% endblock %}

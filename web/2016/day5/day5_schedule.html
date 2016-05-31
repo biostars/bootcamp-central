@@ -1,13 +1,15 @@
-{%  extends "base.html" %}
+{# name = Day 5: ??? #}
+{% extends "base.html" %}
 
-{%  block body %}
+{% block body %}
 
-<div class="ui container">
 
-      <p>
-           Schedule
-      </p>
+    <h2 class="ui center aligned icon header">
+        <i class="calendar icon"></i>
+        Day 5: Schedule
+    </h2>
 
-  </div>
+    {% include_markdown "day5_schedule.md" %}
 
-{%  endblock %}
+
+{% endblock %}
