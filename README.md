@@ -14,7 +14,7 @@ Clone the repository:
 
     git clone https://github.com/biostars/bootcamp-central
     
-Install pyblue:
+Install [pyblue][pyblue]:
 
     pip install pyblue
 

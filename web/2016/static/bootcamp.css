@@ -35,3 +35,7 @@ pre code {
     font-size: inherit;
     color: #333;
 }
+
+li {
+    margin-bottom: 0.5ex;
+}

@@ -11,7 +11,7 @@
 <body>
 
 <div class="ui tablet only computer only menu grid">
-    <div class="ui container ">
+    <div class="ui text container ">
         <a class="item" href="/index.html">
             <i class="home icon"></i> Home
         </a>
@@ -22,42 +22,40 @@
             </a>
         {% endfor %}
 
-        <div class="right menu">
-            <a class="item" href="/information.html">
-                <i class="info circle icon"></i> Info
-            </a>
-        </div>
+        <a class="item" href="/information.html">
+            <i class="info circle icon"></i> Info
+        </a>
 
     </div>
 </div>
 
 <div class="ui mobile only menu grid">
-    <div class="ui container ">
+    <div class="ui text container ">
         <a class="item" href="/index.html">
             <i class="home icon"></i> Home
         </a>
     </div>
 </div>
 
-<div class="ui container">
+<div class="ui text container">
     {% block body %}
         BODY
     {% endblock %}
 </div>
 
-<div class="ui container">
+<div class="ui text container">
     <p>
-    {% block footer %}
+        {% block footer %}
 
-        <h4 class="ui horizontal divider header">
-            <i class="github icon"></i>
-        </h4>
+            <h4 class="ui horizontal divider header">
+                <i class="github icon"></i>
+            </h4>
 
-        <div class="ui center aligned container">
-            Penn State &bull; 2016 &bull; Github: <a href="https://github.com/biostars/bootcamp-central">bootcamp-central</a>
-        </div>
+            <div class="ui center aligned container">
+                Penn State &bull; 2016 &bull; Github: <a href="https://github.com/biostars/bootcamp-central">bootcamp-central</a>
+            </div>
 
-    {% endblock %}
+        {% endblock %}
     </p>
 </div>
 
