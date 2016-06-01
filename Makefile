@@ -16,5 +16,5 @@ all:
 # Publish to the public site
 site:
 	mkdir -p ${TEMP_DIR}
-	pyblue -r ${HTML_DIR} -o ${TEMP_DIR}
+	pyblue -r ${HTML_DIR} -o ${TEMP_DIR} -n
 	rsync -avz ${TEMP_DIR}/* ${WEB_DIR}

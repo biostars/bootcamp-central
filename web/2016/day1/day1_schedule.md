@@ -1,15 +1,16 @@
-* 9:00 - 9:15 Opening remarks Shashikant
-* 9:15 - 9:45 Introduce faculty and students (30 people * 1 minute/person)
-* 9:45 - 10:30 - speaker Ross Hardison
-* 10:30-11:00 - break
-* 11:00-11:45 - speaker Qunhua Li
-* 11:45 - 12:15 - software review (so that students who need it can get help over lunch break)
-* 12:15 - 1:30 - lunch
-* 1:30 - 2:15 - speaker George Perry
-* 2:15 - 3:00 - speaker: James Broach
-* 3:00 - 3:30 - grab food
-* 3:30 - 4:15 - Baggerly video
-* 4:15 - 5:00 - prep for Tuesday
-* 5:00 - mixer
-* 6:00 - 7:30 - dinner
-* 7:30 - R tutorial, install R, RStudio (Naomi Altman)
+* 9:00 - 9:15 Opening remarks Dr. Cooduvali Shashikant
+* 9:15 - 9:45 Introduce faculty and students
+* 9:45 - 10:30 - Speaker Dr. Ross Hardison
+* 10:30 - 11:00 - Break
+* 11:00 - 11:45 - Speaker Dr. Qunhua Li
+* 12:00 - 1:30 - Lunch
+* 1:30 - 2:15 - Speaker George Perry
+* 2:15 - 3:00 - Speaker: James Broach
+* 3:00 - 3:30 - Panel discussion with the speakers
+* 3:30 - 4:15 - Watch the Baggerly video
+* 4:15 - 5:00 - Review, discussions, computer setup, install R
+* 5:00 - Mixer
+* 6:00 - 7:30 - Dinner
+* 7:30 - R tutorial, RStudio (Naomi Altman)
+
+
