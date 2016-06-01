@@ -6,10 +6,19 @@
 
     <h2 class="ui center aligned icon header">
         <i class="calendar icon"></i>
-        Day 4: Schedule
+        {{ page.name }}
     </h2>
+
+    <h4 class="ui horizontal divider header">
+        SCHEDULE
+    </h4>
 
     {% include_markdown "day4_schedule.md" %}
 
+    <h4 class="ui horizontal divider header">
+        MATERIALS
+    </h4>
+
+    {% include_markdown "day4_materials.md" %}
 
 {% endblock %}
