@@ -2,11 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>{% block html_title %}Bootcamp{% endblock %}</title>
     <link rel='shortcut icon' href='/static/favicon.ico' type='image/x-icon'/>
     <link href="/static/lib/semantic.min.css" rel="stylesheet" crossorigin="anonymous"/>
     <link href="/static/bootcamp.css" rel="stylesheet" crossorigin="anonymous"/>
-
+    <script src="/static/lib/jquery.min.js"></script>
+    <script src="/static/lib/semantic.min.js"></script>
+    <script src="/static/lib/dropdown.min.js"></script>
+    <script src="/static/bootcamp.js"></script>
 </head>
 <body>
 
@@ -17,7 +21,7 @@
         </a>
 
         {% for name, url in context.navbar %}
-            <a class="mobile only item" href="{{ url }}">
+            <a class="item" href="{{ url }}">
                 <i class="calendar icon"></i> {{ name }}
             </a>
         {% endfor %}
@@ -31,11 +35,35 @@
 
 <div class="ui mobile only menu grid">
     <div class="ui text container ">
+
         <a class="item" href="/index.html">
             <i class="home icon"></i> Home
         </a>
+        <a class="item" href="/information.html">
+            <i class="info circle icon"></i> Info
+        </a>
+
+
+        <div class="ui dropdown item">
+            <div class="text">
+                <i class="calendar icon"></i>
+                Days
+                <i class="dropdown icon"></i>
+            </div>
+            <div class="menu">
+                {% for name, url in context.navbar %}
+                    <a class="item" href="{{ url }}">
+                        <i class="calendar icon"></i> {{ name }}
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+
+
     </div>
+
 </div>
+
 
 <div class="ui text container">
     {% block body %}
@@ -52,7 +80,8 @@
             </h4>
 
             <div class="ui center aligned container">
-                Penn State &bull; 2016 &bull; Github: <a href="https://github.com/biostars/bootcamp-central">bootcamp-central</a>
+                Penn State &bull; 2016 &bull;
+                GitHub: <a href="https://github.com/biostars/bootcamp-central">bootcamp-central</a>
             </div>
 
         {% endblock %}
