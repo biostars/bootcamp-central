@@ -1,3 +1,7 @@
-<h4 class="ui horizontal divider header">
-        {{ text }}
+<h4 class="ui horizontal divider">
+    {% if icon %}
+        <i class="{{ icon }} icon"></i>
+    {% endif %}
+
+    {{ text }}
 </h4>

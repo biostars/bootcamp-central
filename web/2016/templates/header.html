@@ -1,4 +1,6 @@
 <h2 class="ui center aligned icon header">
-    <i class="{{ icon }} icon"></i>
+    {% if icon %}
+        <i class="{{ icon }} icon"></i>
+    {% endif %}
     {{ text }}
 </h2>

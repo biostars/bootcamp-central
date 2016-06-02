@@ -3,6 +3,7 @@
  */
 
 $( document ).ready(function() {
+  $('code').addClass("language-bash");
   $('.dropdown').dropdown();
 });
 

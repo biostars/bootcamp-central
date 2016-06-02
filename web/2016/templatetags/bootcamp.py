@@ -7,12 +7,12 @@ from pyblue.templatetags.pytags import find
 register = template.Library()
 
 @register.inclusion_tag('divider.html')
-def divider(text):
-    params = dict(text=text)
+def divider(text, icon=None):
+    params = dict(text=text, icon=icon)
     return params
 
 
 @register.inclusion_tag('header.html')
-def header(text, icon=''):
+def header(text, icon=None):
     params = dict(text=text, icon=icon)
     return params
