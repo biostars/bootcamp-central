@@ -11,6 +11,6 @@
 * 3:30 - 4:15 - Watch the Baggerly video
 * 4:15 - 5:00 - Software review and installation
 * 6:00 - 7:30 - Dinner (Not provided)
-* 7:30 - R tutorials by Dr. Naomi Altman
+* 7:30 - 9:00 - R tutorials by Dr. Naomi Altman
 
 
