@@ -1,23 +1,16 @@
 {# name = Day 5: Summaries and Reviews #}
 {% extends "base.html" %}
+{% load bootcamp %}
 
 {% block body %}
 
+    {% header text=page.name icon="calendar" %}
 
-    <h2 class="ui center aligned icon header">
-        <i class="calendar icon"></i>
-        {{ page.name }}
-    </h2>
-
-    <h4 class="ui horizontal divider header">
-        SCHEDULE
-    </h4>
+    {% divider "SCHEDULE" %}
 
     {% include_markdown "day5_schedule.md" %}
 
-    <h4 class="ui horizontal divider header">
-        MATERIALS
-    </h4>
+    {% divider "MATERIALS" %}
 
     {% include_markdown "day5_materials.md" %}
 

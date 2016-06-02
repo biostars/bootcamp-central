@@ -1,25 +1,17 @@
 {# name = Day 1: Perspectives on Data Reproducibility #}
 {% extends "base.html" %}
+{% load bootcamp %}
 
 {% block body %}
 
+    {% header text=page.name icon="calendar" %}
 
-    <h2 class="ui center aligned icon header">
-        <i class="calendar icon"></i>
-        {{ page.name }}
-    </h2>
-
-    <h4 class="ui horizontal divider header">
-        SCHEDULE
-    </h4>
+    {% divider "SCHEDULE" %}
 
     {% include_markdown "day1_schedule.md" %}
 
+    {% divider "MATERIALS" %}
 
-    <h4 class="ui horizontal divider header">
-        MATERIALS
-    </h4>
-    
     {% include_markdown "day1_materials.md" %}
 
 {% endblock %}

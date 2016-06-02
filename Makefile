@@ -10,7 +10,7 @@ TEMP_DIR=~/temp/bootcamp
 WEB_DIR=www@biostars.io:/home/www/sites/bootcamp2016/
 
 all:
-	pyblue -r ${HTML_DIR}
+	pyblue -r ${HTML_DIR} 
 
 
 # Publish to the public site
