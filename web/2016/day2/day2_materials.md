@@ -1,6 +1,3 @@
-## Local Resources
-
-*
 
 ## Lessons on Software Carpentry
 
