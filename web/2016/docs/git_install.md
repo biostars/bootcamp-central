@@ -1,5 +1,7 @@
 ## How to install git
 
+---
+
 ### Install git on Windows
 
 1. [Video Tutorial][wingit-video]
@@ -17,6 +19,8 @@ This will provide you with both Git and Bash in the Git Bash program.
 [wingit-video]: https://www.youtube.com/watch?v=339AEqk9c-8
 [wingit]: https://git-for-windows.github.io/
 
+---
+
 ### Install git on Mac OSX
 
 1. [Video Tutorial][macgit-video]
@@ -31,11 +35,15 @@ labelled `snow-leopard` available here.
 
 [macgit-video]: https://www.youtube.com/watch?v=9LQhwETCdwY
 
+---
+
 ### Install git on Linux
 
 If Git is not already available on your machine you can try to install it via 
 your distro's package manager. For Debian/Ubuntu run `sudo apt-get install git` 
 and for Fedora run `sudo yum install git`.
+
+---
 
 ### Create a GitHub account
 
