@@ -17,10 +17,16 @@ Install [pyblue][pyblue]:
 
     pip install pyblue
 
-
 You can now view the site as HTML with:
 
     cd bootcamp-central
+
+the default `Makefile` action is to run the server:
+
+    make
+
+or
+
     pyblue -r web/2016
 
 This will start a web server on your computer and you can use the browser

@@ -1,10 +1,12 @@
+## Local Resources
+
+*
 
 ## Lessons on Software Carpentry
 
 * [Software Carpentry website][socweb]
 * [Version control with git][socgit]
 * [Automation with make][socmake]
-* [Learn Markdown in 10 minutes][learn]
 * [Original Markdown][markdown] and [CommonMark][commonmark]
 
 [socweb]: http://software-carpentry.org/
@@ -12,7 +14,7 @@
 [socmake]: http://swcarpentry.github.io/make-novice/
 [markdown]: https://daringfireball.net/projects/markdown/
 [commonmark]: http://commonmark.org/
-[learn]: http://commonmark.org/help/
+
 
 ## Off the beaten path
 
