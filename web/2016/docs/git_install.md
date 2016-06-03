@@ -37,7 +37,7 @@ If Git is not already available on your machine you can try to install it via
 your distro's package manager. For Debian/Ubuntu run `sudo apt-get install git` 
 and for Fedora run `sudo yum install git`.
 
-### Create a GiHub account
+### Create a GitHub account
 
 Git is a version control system that lets you track who made changes 
 to what when and has options for easily updating a shared or public version of your 
