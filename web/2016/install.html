@@ -1,0 +1,17 @@
+{# name = Software Installation #}
+{% extends "base.html" %}
+{% load bootcamp %}
+
+{% block body %}
+
+    {% header text=page.name icon="settings" %}
+
+    {% divider "Software Carpentry" %}
+
+    {% include_markdown "git_install.md" %}
+
+    {% divider "MATERIALS" %}
+
+    {% include_markdown "day1_materials.md" %}
+
+{% endblock %}
