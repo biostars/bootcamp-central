@@ -2,5 +2,7 @@ Materials and data for the [Penn State Data Analysis Bootcamp](https://bootcamp.
 
 * [How to generate the site][how]
 
-[how]: web/2016/share/how-to-generate.md
+[how]: https://github.com/biostars/bootcamp-central/blob/master/web/2016/docs/how-to-generate.md
+
+
 
