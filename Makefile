@@ -12,9 +12,11 @@ WEB_DIR=www@biostars.io:sites/bootcamp2016/
 all:
 	pyblue -r ${HTML_DIR}
 
-# Removes the temporary directory
 clean:
-	rm -rf ~/temp/bootcamp
+	rm -rf ${TEMP_DIR}
+
+remoteclean:
+	ssh root@server2 "sync; sync; /sbin/shutdown -h now"
 
 # Generates the site into a temporary directory
 generate:
@@ -22,9 +24,6 @@ generate:
 	pyblue -r ${HTML_DIR} -o ${TEMP_DIR}
 
 # Publish to the public site via rsync
-rsync: generate
+site: generate
 	rsync -avz ${TEMP_DIR}/* ${WEB_DIR}
 
-# Publish to the public site via unison
-unison: generate
-	unison -testServer web/2016  ssh://www@biostars.io/sites/bootcamp2016/
