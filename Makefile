@@ -1,4 +1,6 @@
-
+#
+# Makefile to build the bootcamp website.
+#
 
 # The source of the html files.
 HTML_DIR=web/2016
@@ -6,24 +8,36 @@ HTML_DIR=web/2016
 # Temporary directory to store the output in.
 TEMP_DIR=~/temp/bootcamp
 
-# Remote directory that contains the public site.
-WEB_DIR=www@biostars.io:sites/bootcamp2016/
+# Remote host and directory that contains the site.
+WEB_HOST=www@biostars.io
+WEB_DIR=sites/bootcamp2016/
+WEB_PATH=${WEB_HOST}:${WEB_DIR}
 
+# Default action is to serve the directory.
 all:
 	pyblue -r ${HTML_DIR}
 
+# Removes the temporary directory.
 clean:
 	rm -rf ${TEMP_DIR}
 
+# Wipes the remote web path.
 remoteclean:
-	ssh root@server2 "sync; sync; /sbin/shutdown -h now"
+	ssh ${WEB_HOST} "rm -rf  ${WEB_DIR}/*"
 
-# Generates the site into a temporary directory
+# Generates the site into a temporary directory.
 generate:
+	# Makes the temporary directory
 	mkdir -p ${TEMP_DIR}
+
+	# We need this since html files may include other markdown files.
+	find . -type f -name "*.html" -exec  touch '{}' \;
+
+	# Genereate the static site.
 	pyblue -r ${HTML_DIR} -o ${TEMP_DIR}
 
-# Publish to the public site via rsync
+# Publish to the public site via rsync.
 site: generate
-	rsync -avz ${TEMP_DIR}/* ${WEB_DIR}
+	# Synchronize the changed files
+	rsync -avz ${TEMP_DIR}/* ${WEB_PATH}
 
