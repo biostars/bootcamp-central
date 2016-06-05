@@ -5,14 +5,14 @@
 1. [Video Tutorial][wingit-video]
 1. Download the [Git for Windows][wingit] installer.
 1. Run the installer and follow the steps bellow:
-    1. Click on `Next` five times
-    1. Select `Use Git from the Windows Command Prompt` and click on `Next`. If you forgot to do this programs that you need for the workshop will not work properly. If this happens rerun the installer and select the appropriate option.
+    1. Click on `Next` until you get to the step below.
+    1. Select `Use Git from the Windows Command Prompt` and click on `Next`.
     1. Click on `Next`. Keep `Checkout Windows-style, commit Unix-style line endings` selected.
     1. Select `Use Windows' default console window` and click on `Next`.
-    1. Click on `Next`.
-    1. Click on `Finish`.
+    1. Click on `Next` then `Finish`.
 
 This will provide you with both Git and Bash in the Git Bash program.
+If you make a mistake you may rerun the installer and select the appropriate options.
 
 [wingit-video]: https://www.youtube.com/watch?v=339AEqk9c-8
 [wingit]: https://git-for-windows.github.io/
