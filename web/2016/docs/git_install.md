@@ -2,7 +2,6 @@
 
 ### Install git on Windows
 
-1. [Video Tutorial][wingit-video]
 1. Download the [Git for Windows][wingit] installer.
 1. Run the installer and follow the steps bellow:
     1. Click on `Next` until you get to the step below.
@@ -10,6 +9,7 @@
     1. Click on `Next`. Keep `Checkout Windows-style, commit Unix-style line endings` selected.
     1. Select `Use Windows' default console window` and click on `Next`.
     1. Click on `Next` then `Finish`.
+1. [Video Tutorial][wingit-video]
 
 This will provide you with both Git and Bash in the Git Bash program.
 If you make a mistake you may rerun the installer and select the appropriate options.
@@ -21,7 +21,16 @@ If you make a mistake you may rerun the installer and select the appropriate opt
 
 ### Install git on Mac OSX
 
+To fully set up your Mac for bioinformatics
+we recommend the [Biostar Handbook][handbook] website.
+
+Alternatively to set up just git alone see:
+
+1. [Git downloads][gitdownload]
 1. [Video Tutorial][macgit-video]
+
+[gitdownload]: https://git-scm.com/downloads
+[handbook]: https://www.biostarhandbook.com/book/computer/get-ready.html
 
 For OS X 10.9 and higher, install Git for Mac by downloading and running the most
 recent `mavericks` installer from this list.
