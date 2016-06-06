@@ -17,6 +17,11 @@
 1. [Is there a reproducibility crisis?][crisis] in Nature, 2016
 1. [Why Most Published Research Findings Are False](http://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124) in PLOS Medicine, 2005
 1. [Improving Validation Practices in ''Omics'' Research](http://science.sciencemag.org/content/334/6060/1230) in Science, 2011
+1. [Six red flags for suspect work][flags] in Nature, 2013
+1. [Raise the standard for preclinical cancer research][raise] in Nature, 2012
+
+[flags]: http://www.nature.com/nature/journal/v497/n7450/full/497433a.html
+[raise]: http://www.nature.com/nature/journal/v483/n7391/full/483531a.html
 
 ## Videos
 
