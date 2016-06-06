@@ -1,9 +1,18 @@
+## Presentation
+
+* [Version Control, Documentation, Automation][maintalk] by Istvan Albert
+
+[maintalk]: #
 
 ## Lessons on Software Carpentry
 
 * [Software Carpentry website][socweb]
 * [Version control with git][socgit]
 * [Automation with make][socmake]
+* [Best Practices in Scientific Research][best]
+
+## Other links
+
 * [Original Markdown][markdown] and [CommonMark][commonmark]
 
 [socweb]: http://software-carpentry.org/
@@ -11,7 +20,7 @@
 [socmake]: http://swcarpentry.github.io/make-novice/
 [markdown]: https://daringfireball.net/projects/markdown/
 [commonmark]: http://commonmark.org/
-
+[best]: http://swcarpentry.github.io/slideshows/best-practices/index.html
 
 ## Off the beaten path
 
