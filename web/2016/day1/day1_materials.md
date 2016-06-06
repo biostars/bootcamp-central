@@ -28,6 +28,8 @@
 1. [The Importance of Reproducible Research
   in High-Throughput Biology: Case Studies in Forensic Bioinformatics](http://videolectures.net/cancerbioinformatics2010_baggerly_irrh) by Keith Baggerly, UT M.D. Anderson Cancer Center, 2010
 
+2. [Intro R Videos](https://psu.app.box.com/s/qudhqftt9dr2nveolfs4coo3122cpnfd) by Naomi Altman, Penn State, 2016
+
 [irrep]: http://www.nature.com/news/reproducibility-1.17552
 [crisis]: http://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970
 [reproducibility]: http://www.nature.com/news/reproducibility-1.17552
