@@ -1,12 +1,13 @@
 ## Presentations
 
-* [It can happen to you.
-  Sources and proximity of lack of
+* [Introduction to the PSU BootCamp](docs/shashikant-introduction.pdf)
+  by Dr. Cooduvalli Shashikant
+* [It can happen to you. Sources and proximity of lack of
   reproducibility](docs/ross-hardison-it-can-happen-to-you.pdf)
   by Dr. Ross Hardison
-
-
-* [Data management/ archiving across the biological
+* [Statistical issues in reproducible research ](docs/qunhua-li-statistical-issues.pdf)
+  by Dr. Qunhua Li
+* [Data management / archiving across the biological
   sciences](docs/george-perry-data-management.pdf)
   by Dr. George Perry
 
