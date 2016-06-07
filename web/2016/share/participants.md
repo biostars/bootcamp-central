@@ -11,6 +11,7 @@ This file is located in [share/participants.md][url]. Use the following format:
 * Nabeel Ahmed, BG, Penn State
 * Aswathy Sebastian, BMB, PennState
 * Huiting Zhang, Biology, Penn State
+* Shefali Setia Verma, Bioinformatics and Genomics, Penn State
 * Michael Campbell, Biology, Howard University
 * Naomi Altman, Dept. of Statistics, Penn State
 * Shefali Setia Verma, Bioinformatics and Genomics, Penn State
