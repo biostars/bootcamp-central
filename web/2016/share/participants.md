@@ -7,8 +7,7 @@ This file is located in [share/participants.md][url]. Use the following format:
 
 
 * Your Name Here, Department, University 
-* Di (Bruce) Chen, Genetics, Penn State
-* Your Name Here, Department, University
+* Di (Bruce) Chen, Genetics, Penn State University
 * Boris Rebolledo, BMB, Penn State
 * Michael Campbell, Biology, Howard University
 * Naomi Altman, Dept. of Statistics, Penn State
