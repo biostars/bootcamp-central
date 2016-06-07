@@ -8,5 +8,7 @@ This file is located in [share/participants.md][url]. Use the following format:
 
 * Your Name Here, Department, University
 * Boris Rebolledo, BMB, Penn State
+* Michael Campbell, Biology, Howard University
+* Naomi Altman, Dept. of Statistics, Penn State
 
 [url]: https://github.com/biostars/bootcamp-central/blob/master/web/2016/share/participants.md
