@@ -1,3 +1,13 @@
+## Install software
+
+Has git installation and git survival guide:
+
+1. [Install Git][git]
+1. [Lessons on Software Carpentry][lesson]
+
+[lesson]: [lessons]:http://software-carpentry.org/lessons/
+
+[git]: /install.html#git-and-github
 
 ## Learn Markdown
 
