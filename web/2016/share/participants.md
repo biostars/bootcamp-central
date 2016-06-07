@@ -1,7 +1,5 @@
 **Exercise:** add your name to this list!
 
-**Exercise:** add your name to this list! 
-
 Use the information in the lectures on version control and documentation to expand this list.
 Fork the repository, make the changes then create a *pull request*.
 
