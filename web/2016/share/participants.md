@@ -8,6 +8,8 @@ This file is located in [share/participants.md][url]. Use the following format:
 
 * Your Name Here, Department, University 
 * Di (Bruce) Chen, Genetics, Penn State
+* Your Name Here, Department, University
+* Boris Rebolledo, BMB, Penn State
 * Michael Campbell, Biology, Howard University
 * Naomi Altman, Dept. of Statistics, Penn State
 * Shefali Setia Verma, Bioinformatics and Genomics, Penn State
@@ -19,5 +21,5 @@ This file is located in [share/participants.md][url]. Use the following format:
 * Bo Zhang, Biochemistry&Molecular Biology, Penn State University
 * Di Wu, BG program, Penn State
 * njlaa, Biology, Howard
-
+* Yong Jung, Bioinformatics and Genomics, Penn State University
 [url]: https://github.com/biostars/bootcamp-central/blob/master/web/2016/share/participants.md
