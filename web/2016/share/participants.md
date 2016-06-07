@@ -15,7 +15,7 @@ This file is located in [share/participants.md][url]. Use the following format:
 * Lila Rieber, Biochemistry and Molecular Biology, Penn State
 * Wanyan Wang, Plant Biology, Penn State
 * Lihua Wu Plant Biology Program, Penn State University
-* Bo Zhang, Biochemistry&Molecular Biology, Penn State University
+* Bo Zhang, Biochemistry&Molecular Biology, Penn State University, [email] (bzhang2@psu.edu.edu)  
 * Di Wu, BG program, Penn State
 * njlaa, Biology, Howard
 * Yong Jung, Bioinformatics and Genomics, Penn State University
