@@ -5,7 +5,7 @@ Fork the repository, make the changes then create a *pull request*.
 
 This file is located in [share/participants.md][url]. Use the following format:
 
-* Your Name Here, Department, University
+* Your Name Here, Department, University 
 * Boris Rebolledo, BMB, Penn State
 * Michael Campbell, Biology, Howard University
 * Naomi Altman, Dept. of Statistics, Penn State
@@ -18,6 +18,7 @@ This file is located in [share/participants.md][url]. Use the following format:
 * Bo Zhang, Biochemistry&Molecular Biology, Penn State University
 * Di Wu, BG program, Penn State
 * njlaa, Biology, Howard
+* Binglan Li, Bioinformatics & Genomics, Pennsylvania State University
 * Yong Jung, Bioinformatics and Genomics, Penn State University
 * Anna Basile, Biochemistry, Penn State University 
 * Christopher Cross, Anatomy, Howard University
