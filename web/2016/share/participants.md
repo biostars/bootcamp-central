@@ -7,6 +7,7 @@ This file is located in [share/participants.md][url]. Use the following format:
 
 * Boris Rebolledo, BMB, Penn State, [website](http://www.bx.psu.edu/~boris/)
 * K Clinton, Biology, Howard University
+* Anurag Verma, Bioinformatics and Genomics, Pennsylvania State University
 * Michael Campbell, Biology, Howard University
 * Naomi Altman, Dept. of Statistics, Penn State
 * Shefali Setia Verma, Bioinformatics and Genomics, Penn State
