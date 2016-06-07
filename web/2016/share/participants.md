@@ -5,12 +5,9 @@ Fork the repository, make the changes then create a *pull request*.
 
 This file is located in [share/participants.md][url]. Use the following format:
 
-<<<<<<< HEAD
-* Your Name Here, Department, University 
+* Your Name Here, Department, University
 * Huiting Zhang, Biology, Penn State
 * Prakash, Biology, Penn State
-=======
-* Your Name Here, Department, University
 * Boris Rebolledo, BMB, Penn State
 * Michael Campbell, Biology, Howard University
 * Naomi Altman, Dept. of Statistics, Penn State
@@ -26,6 +23,5 @@ This file is located in [share/participants.md][url]. Use the following format:
 * Yong Jung, Bioinformatics and Genomics, Penn State University
 * Anna Basile, Biochemistry, Penn State University 
 * Christopher Cross, Anatomy, Howard University
->>>>>>> 5a8acbd3a6cfcb3bb52843134a022e69bdd5d326
 
 [url]: https://github.com/biostars/bootcamp-central/blob/master/web/2016/share/participants.md
