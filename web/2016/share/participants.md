@@ -31,5 +31,6 @@ This file is located in [share/participants.md][url]. Use the following format:
 * Michael C. Campbell, Biology, Howard University
 * Julie White, Anthropology, Penn State 
 * Yong Jung, Bioinformatics and Genomics, Penn State University
+* Viridiana Avila, Biology Department, Pennsylvania State University 
 
 [url]: https://github.com/biostars/bootcamp-central/blob/master/web/2016/share/participants.md
