@@ -8,4 +8,5 @@ This file is located in [share/participants.md][url]. Use the following format:
 
 * Your Name Here, Department, University 
 
+Cody Molnar, Biochemistry and Molecular Genetics, Penn State Hershey
 [url]: https://github.com/biostars/bootcamp-central/blob/master/web/2016/share/participants.md
