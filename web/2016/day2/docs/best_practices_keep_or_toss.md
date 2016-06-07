@@ -14,6 +14,11 @@ Simplicity is the most powerful virtue that any process
 can have. There is only one problem: it is kind of
 difficult to keep it simple
 
+### KEEP Rule 3.1: Small steps with frequent feedback
+
+There is great value in keep the entire pipeline working at most times.
+Save often, commit often. Rerun often.
+
 ### KEEP Rule 3.3: Version control EVERYTHING
 
 While git was designed for software you should keep everything (other
@@ -31,7 +36,6 @@ statements your program may be already too complicated.
 This is a concept borrowed from software engineering where
 it is assumed that all people on a team work on a the exact same
 and relatively simple problem. This rarely happens in sciences.
-
 This rule is one of these "feel good" rules that are just unrealistic in
 scientific practice.
 
@@ -40,12 +44,8 @@ scientific practice.
 Pair programming is again a concept borrowed from
 software engineering. But it disregards the fact that most
 software engineers need to solve
-far simpler and far better defined problems than scientists do.
-
-Is there evidence that it works when thinking
-about scientific problems? Is there evidence that it actually helps
-rather than hinders people? And that both of them
-will benefit when solving just one person's problems?
+far simpler and far better defined problems than
+scientists do. It is sort of a pipe dream that we can do this.
 
 ---
 
