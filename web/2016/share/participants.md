@@ -5,7 +5,6 @@ Fork the repository, make the changes then create a *pull request*.
 
 This file is located in [share/participants.md][url]. Use the following format:
 
-<<<<<<< HEAD
 * Your Name Here, Department, University 
 =======
 * Your Name Here, Department, University
