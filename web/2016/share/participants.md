@@ -28,5 +28,7 @@ This file is located in [share/participants.md][url]. Use the following format:
 * Cody Molnar, Biochemistry and Molecular Biology, Penn State Hershey
 * Matthew Jensen, Bioinformatics and Genomics, Penn State University
 * Michael C. Campbell, Biology, Howard University
+* Julie White, Anthropology, Penn State 
+* Yong Jung, Bioinformatics and Genomics, Penn State University
 
 [url]: https://github.com/biostars/bootcamp-central/blob/master/web/2016/share/participants.md
