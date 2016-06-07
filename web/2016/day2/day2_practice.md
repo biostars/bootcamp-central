@@ -36,12 +36,13 @@ in [Best Practices for Scientific Computing" , PLOS Biology, Jan. 2014][bestpub]
 Frankly there just seem to be too many of them...
 Imagine that you need to simplify this list:
 
-1. Suppose that must reduce to just a few.
-   Which one will these be and why? Basically: *What are the
+1. Suppose that must reduce to just three.
+   Which one will these be and why?\
+   Basically: *What are the
    most important best practices?*
-1. Suppose that want to remove a few.
-   Which one will these be an why? Basically:
-   *What are the least useful best practices?*
+1. Suppose that want to remove three.
+   Which one will these be an why?\
+   Basically: *What are the least useful best practices?*
 
 Add your own and see the results at [Best Practices: Keep or Toss][keep]
 

@@ -21,11 +21,27 @@ Best if you start using a proper text editor. Essential features:
 Personal preference :
 
 * [PyCharm][pycharm] is a Python programming specific
-  editor with very powerful features. 
+  editor with very powerful features.
 
 [sublime]: https://www.sublimetext.com/
 [notepadplus]: https://notepad-plus-plus.org/
 [pycharm]: https://www.jetbrains.com/pycharm/
+
+---
+
+### Install pandoc
+
+[Pandoc][pandoc] can convert documents across formats: `markdown` to `html` or `pdf` etc.
+
+On Mac OSX:
+
+    brew install pandoc
+
+On windows visit the [Pandoc][pandoc] website.
+
+[pandoc]: http://pandoc.org/
+
+---
 
 ### Online markdown editors
 

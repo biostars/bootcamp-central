@@ -1,6 +1,3 @@
-# Best Practices in Scientific Computing
-
-January 2015
 
 Adapted from Software Carpentry [Best Practices in Scientific Computing][best]
 
