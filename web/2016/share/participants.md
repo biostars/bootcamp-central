@@ -9,6 +9,7 @@ This file is located in [share/participants.md][url]. Use the following format:
 * K Clinton, Biology, Howard University
 * Anurag Verma, Bioinformatics and Genomics, Pennsylvania State University
 * Nabeel Ahmed, BG, Penn State
+* Aswathy Sebastian, BMB, PennState
 * Michael Campbell, Biology, Howard University
 * Naomi Altman, Dept. of Statistics, Penn State
 * Shefali Setia Verma, Bioinformatics and Genomics, Penn State
@@ -29,5 +30,3 @@ This file is located in [share/participants.md][url]. Use the following format:
 * Michael C. Campbell, Biology, Howard University
 
 [url]: https://github.com/biostars/bootcamp-central/blob/master/web/2016/share/participants.md
-=======
->>>>>>> ff7ac0f86d498967649ab7ee3702f5b074defe49
