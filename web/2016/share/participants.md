@@ -11,5 +11,6 @@ This file is located in [share/participants.md][url]. Use the following format:
 * Shefali Setia Verma, Bioinformatics and Genomics, Penn State
 * Istvan Albert, Biochemistry and Molecular Biology, Penn State
 * Zhenzhen Yang, Biology, Penn State
+* Lila Rieber, Biochemistry and Molecular Biology, Penn State
 
 [url]: https://github.com/biostars/bootcamp-central/blob/master/web/2016/share/participants.md
