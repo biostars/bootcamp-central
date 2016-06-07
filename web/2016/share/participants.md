@@ -18,6 +18,7 @@ This file is located in [share/participants.md][url]. Use the following format:
 * Bo Zhang, Biochemistry&Molecular Biology, Penn State University
 * Di Wu, BG program, Penn State
 * njlaa, Biology, Howard
+* Binglan Li, Bioinformatics & Genomics, Pennsylvania State University
 * Yong Jung, Bioinformatics and Genomics, Penn State University
 * Anna Basile, Biochemistry, Penn State University 
 * Christopher Cross, Anatomy, Howard University
