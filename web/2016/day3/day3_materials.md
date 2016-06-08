@@ -2,6 +2,7 @@
 
 
 * [Introduction: Reproducible Statistical Inference][intro] as slides and as [R markdown][intrormd]
+* [Simulations: Reproducible Statistical Inference][intro] as slides and as [R markdown][intrormd]
 
 PSU BOX with all content:
 
