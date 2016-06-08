@@ -6,12 +6,19 @@ Markdown files can be rendered as html:
 * [R Lab 1][rlab1] as HTML slides, the source in [R Lab 1 markdown][rlab1rmd]
 * [R Lab 2][rlab2] as HTML slides, the source in [R Lab 2 markdown][rlab2rmd]
 
+RNA-Seq data analysis:
+
+* [Boostrap RNA Seq][boot] as HTML slides, the source in [R markdown][bootrmd]
+
+
 [intro]: docs/Intro.html
 [intrormd]: docs/Intro.Rmd
 [rlab1]: docs/R_lab_1.html
 [rlab1rmd]: docs/R_lab_1.Rmd
 [rlab2]: docs/R_lab_2.html
 [rlab2rmd]: docs/R_lab_2.Rmd
+[boot]: docs/BootstrapRNAseq.html
+[bootrmd]: docs/BootstrapRNAseq.Rmd
 
 
 PSU BOX with all content:
