@@ -9,25 +9,82 @@ This is an R Markdown document. Markdown is a simple formatting syntax for autho
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r}
+```{r, cache=TRUE}
 summary(cars)
 ```
 
 You can also embed plots, for example:
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, cache=TRUE}
 plot(cars)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
-```{r sessionInformation}
+```{r sessionInformation, cache=TRUE}
 sessionInfo()
 ```
 
 
 
-<!-- blah -->
-
+<!-- watch for the symbols -->
 The sine of $\pi/2$ is `r round(sin(pi/2),)`
+
+
+> Let's write code to generate *random normals* and draw **histograms**
+
+*cache* would store the code output and not run it again when rendering the html
+
+```{r Normal, cache=TRUE}
+x=rnorm(1000)
+hist(x)
+```
+
+
+
+#Task
+1. Generate the phenotypic scores using normals for 20 individuals
+2. Generate the transcription levels for 1000 genes
+
+```{r phenotypes and gene levels, cache=TRUE}
+set.seed(7081991)
+y=rnorm(20)
+trt=as.integer(y>0)
+x=matrix(rnorm(20000,6,1.5),nrow=20)
+```
+
+```{r correlation, cache=TRUE}
+cors=cor(x,y)
+hist(cors,nclass=50,main="Correlation with Phenotype",xlab="Correlation")
+```
+
+
+```{r function for simulations, cache=TRUE}
+sim=function(nsamp=20,ngene=1000,nsel=10){
+  if (nsel >= nsamp-1) stop("The number of genes selected must be less than the sample size")
+  pheno=rnorm(nsamp)
+  genes=matrix(rnorm(nsamp*ngene),ncol=nsamp)
+  cors=cor(t(genes),pheno)
+  selgenes=order(cors,decreasing=FALSE)[1:nsel]
+  sigGenes=genes[selgenes,]
+  R2=var(fitted(lm(pheno~t(sigGenes))))/var(pheno)
+  c(maxAbsR=max(abs(cors)),minR=min(cors),maxR=max(cors),Rsq=R2)
+  }
+```
+
+```{r print sim results}
+simulation=matrix(nrow=1000,ncol=4)
+for (i in 1:1000) simulation[i,]=sim(nsamp=20,ngene=1000,nsel=10)
+
+par(mfrow=c(2,2))
+hist(simulation[,1],nclass=50, main="Distribution of largest absolute correlation")
+hist(simulation[,2],nclass=50, main="Distribution of smallest correlation")
+hist(simulation[,3],nclass=50, main="Distribution of largest correlation")
+hist(simulation[,4],nclass=50, main="Distribution of R-square of selected genes")
+
+
+
+```
+
+
 
