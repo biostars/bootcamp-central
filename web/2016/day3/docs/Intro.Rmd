@@ -1,0 +1,301 @@
+---
+title: "Reproducible Statistical Inference"
+author: "Altman"
+date: "May 26, 2016"
+output: ioslides_presentation
+css: styles.css
+---
+
+## Reproducibility
+
+
+There are 3 basic concepts of reproducibility in research:
+
+
+
+1. <span style="color:blue">Reproducible experiments
+
+    <br>
+    <br>
+    
+2. <span style="color:blue">Reproducible analysis  
+  
+
+    <br>
+    <br>
+
+3. <span style="color:blue">Reproducible inference 
+  
+    
+
+## Reproducibility
+
+There are 3 basic concepts of reproducibility in research:
+
+1. <span style="color:blue">Reproducible experiments
+   
+    Another lab can do the same experiment and obtain similar results.
+
+2. <span style="color:blue">Reproducible analysis
+    
+    Another analyst can redo the analysis with the same data and obtain identical results.
+
+3. <span style="color:blue">Reproducible inference
+
+    After reproducing the experiment in another lab, similar scientific inferences will be made.
+
+## Reproducibility
+
+Today:
+
+- How selection bias leads to irreproducibility
+- How simulation can help us assess statistical validitiy
+- How to set up synthetic data that mimics actual data
+- Using synthetic data to assess statistical significance
+
+
+## Example S1
+
+We have done an experiment in which we measured a phenotypic score on each sample (e.g. biopsy result) and also measured the gene expression for 1000 genes in the samples.
+
+Our objective is to determine which genes are associated with the phenotypic score, and to develop a prediction equation for the phenotype
+
+```{r libraries, echo=FALSE, warning=FALSE,results="hide", message=FALSE}
+library(limma)
+```
+
+```{r generateData,echo=FALSE, warning=FALSE,results="hide", message=FALSE}
+set.seed(7081991)
+y=rnorm(20)
+trt=as.integer(y>0)
+x=matrix(rnorm(20000,6,1.5),nrow=20)
+```
+
+## Example S2
+
+We pursue 2 analyses: 
+
+1. Correlation between gene expression and phenotypic score.
+
+2. Division of the samples into "low" and "high"  scores, followed by a t-test to determine if there is a difference in gene expression in the low and high score groups.
+
+## Example S3
+
+
+There are some genes with correlation as low as -0.6 or as high as 0.6 with the phenotype.  
+
+These are good candidates for genes that are important to determining or predicting genotype.
+
+
+```{r correlation, echo=FALSE}
+cors=cor(x,y)
+hist(cors,nclass=50,main="Correlation with Phenotype",xlab="Correlation")
+```
+
+
+## Example S4
+
+
+Lets select the 10 genes with the highest absolute correlation and see how well they predict phenotypic score.
+
+```{r select10,echo=FALSE, warning=FALSE,results="hide", message=FALSE}
+ocor=order(abs(cors),decreasing=TRUE)
+```
+```{r regression,echo=FALSE, warning=FALSE,results="hide", message=FALSE}
+pheno=y
+sigGenes=x[,ocor[1:10]]
+regfit=lm(pheno~sigGenes)
+```
+
+```{r anovaTable}
+anov=anova(regfit)
+anov
+```
+
+Note that $R^2=$ `r round(anov$"Sum Sq"[1]/sum(anov$"Sum Sq"),2)` and the p-value is `r round(anov$Pr[1],6)` which are highly significant.
+
+## Example S5
+
+
+Now lets do an alternative analysis classifying the phenotype and "low" and "high" and using an eBayes t-test to distinguish between them.  
+
+Note that this is a 2-sample t-test with 18 d.f. so the values greater than 2.1 (or less than -2.1) are significant at p<.05.  There are several of these.
+
+
+```{r ttests,echo=FALSE, warning=FALSE,results="hide", message=FALSE}
+design=model.matrix(~trt)
+fit.out=lmFit(t(x),design=design)
+efit.out=eBayes(fit.out)
+```
+
+```{r tstat,echo=FALSE,fig.height=3.5}
+hist(efit.out$t[,2],nclass=20,xlab="t-values")
+```
+
+## Example S6
+
+We might also wonder if the most statistically significant genes in this analysis match the ones from the correlation analysis.
+
+```{r both}
+plot(cors,efit.out$t[,2],xlab="Correlation",ylab="t-statistic")
+```
+
+We see that there is very high correlation between the correlation statistic and the t-statistic, so that almost the same gene set will be selected.
+
+## Example S7
+
+Naturally, we feel that we have done a great job of this experiment, but our collaborator wants to redo it to verify.
+
+We compare results:
+
+## Example S8
+
+```{r regenerateData,echo=FALSE, warning=FALSE,results="hide", message=FALSE}
+
+y1=rnorm(20)
+trt1=as.integer(y1>0)
+x1=matrix(rnorm(20000,6,1.5),nrow=20)
+cors1=cor(x1,y1)
+```
+
+```{r Recorrelation, echo=FALSE,fig.height=3,results="hide"}
+min(c(cors,cors1))
+max(c(cors,cors1))
+hist(cors,main="Our Correlations",xlab="Correlation",breaks=seq(-0.725,0.8,0.025))
+hist(cors1,main="Collaborator's Correlations",xlab="Correlation",breaks=seq(-0.725,0.8,0.025))
+```
+
+
+## Example S9
+
+Of course we don't expect to obtain the exact same correlations, but the pattern is fairly similar.
+
+What about the regression on the top 10 genes?
+
+
+## Example S10
+
+
+
+```{r Reregression,echo=FALSE, warning=FALSE,results="hide", message=FALSE}
+ocor1=order(abs(cors1),decreasing=TRUE)
+phenoC=y1
+sigGenesC=x1[,ocor1[1:10]]
+regfit1=lm(phenoC~sigGenesC)
+```
+
+**Our ANOVA table:**
+
+```{r anovaTable0, echo=FALSE}
+anov=round(anov,5)
+anov[is.na(anov)]=""
+as.data.frame(anov)
+```
+
+**Collaborator's ANOVA table:**
+
+
+```{r ReanovaTable,,echo=FALSE, warning=FALSE,results="hide", message=FALSE}
+anov1=round(anova(regfit1),5)
+anov1[is.na(anov1)]=""
+```
+
+
+```{r anovaTable1, echo=FALSE}
+as.data.frame(anov1)  
+```
+
+These are quite similar.
+
+## Example S11
+
+Similarly if we compute the 2-sample t-tests:
+
+```{r Rettests,echo=FALSE, warning=FALSE,results="hide", message=FALSE}
+design1=model.matrix(~trt1)
+fit1.out=lmFit(t(x1),design=design1)
+efit1.out=eBayes(fit1.out)
+```
+
+
+```{r Retstat, fig.height=2.9,echo=F}
+#min(efit.out$t[,2],efit1.out$t[,2])
+#max(efit.out$t[,2],efit1.out$t[,2])
+hist(efit.out$t[,2], breaks=seq(-4.5,3.6,.15),main="Our t-tests",xlab="t-values")
+hist(efit1.out$t[,2],breaks=seq(-4.5,3.6,.15),main="Collaborator's t-tests",xlab="t-values")
+```
+
+## Example S12
+
+The correspondance looks equally good if we consider a heatmap of gene expression and other typical measures.
+
+But there is a problem -
+
+Lets look e.g. at the genes with |cor|>.5 or p<0.05 for our study and our collaborator's study.
+
+## Example S13
+
+Here are the genes with correlation less than -0.5 or greater than 0.5.
+
+
+```{r intersectionr, echo=FALSE}
+
+vennDiagram(vennCounts(cbind(abs(cors)>0.5,abs(cors1)>0.5)),names=c("Ours","Collab"),main="High Correlation Genes")
+
+```
+
+## Example S14
+
+Here are the genes with t less than -2.1 or greater than 2.1.
+
+
+```{r intersectiont, echo=FALSE}
+
+vennDiagram(vennCounts(cbind(abs(efit.out$t[,2])>2.1,abs(efit1.out$t[,2])>2.1)),names=c("Ours","Collab"),main="Diff Expressed Genes")
+
+```
+
+## Example S15
+
+Even though overall our collaborator's results seem similar to ours, the resulting gene lists are very different.
+
+What went wrong?
+
+## Example S16
+
+The two "studies" cited here are "in silico" studies.  
+
+For each, I generated 20 "phenotypic scores" and then independently generated 1000 Normally distributed gene expression values for each "sample".   
+
+All the gene expression values are independent of the phenotypic scores and of each other.
+
+So why do we get such similar results for the 2 "studies"?
+
+## Example S17
+
+Firstly lets look at the correspondance between the actual results - e.g. the correlation of the 2 sets of correlations is `r round(cor(cors,cors1),2)`.
+
+```{r corCor, echo=FALSE, fig.height=5}
+par(omi=c(.1,.1,0,.1))
+plot(cors,cors1,xlab="Our Correlations",ylab="Collaborator's Correlations")
+```
+
+## Example S18
+
+Similarly, we can look at the correspondance between the t-values which have correlation `r round(cor(efit.out$t[,2],efit1.out$t[,2]),2)`.
+
+```{r corT, echo=FALSE, fig.height=5}
+par(omi=c(.1,.1,0,.1))
+plot(efit.out$t[,2],efit1.out$t[,2],xlab="Our t-values",ylab="Collaborator's t-values")
+```
+
+## What is going on?
+
+Even though the data were generated at random, we appeared to obtain significant (even highly significant) results.
+
+As well, the magnitude of the correlations, t-tests, regression R^2^ etc. were very concordant between the 2 totally independent experiments.
+
+To understand whether outcomes of our **biological** experiments have a **biological** interpretation, we need to understand the behavior of our statistical methods when the data are random.
+
+
+
