@@ -10,6 +10,7 @@ Please contact the organizers for registration or other bootcamp related issues:
 * **Dr. Naomi Altman**, Professor, Dept. of Statistics
 * **Dr. Anton Nekrutenko**, Professor, Dept. of Biochemistry and Molecular Biology
 * **Dr. Istvan Albert**, Professor of Bioinformatics
+* **Di (Bruce) Chen**, TA, Graduate Student
 
 ### Invited Speakers
 

@@ -66,4 +66,38 @@ if you don't have one already. Please consider what personal information
 you'd like to reveal. For example, you may want to review these instructions
 for keeping your email address private provided at GitHub.
 
+## Git/Github survival guide
+
+The most commonly used command with git.
+
+### Set up SSH passwords
+
+	ssh-keygen
+
+This will generate a password in `~/.ssh/id_rsa.pub`
+
+	cat ~/.ssh/id_rsa.pub
+
+Copy and paste the key into the `Github -> Account -> Settings -> Add SSH key`
+
+### Common git commands
+
+Command we typically do once:
+
+* `git clone <uri>` - clones a remote repository
+* `git add <filepath>` - adds a file to git tracking
+
+Commands we use all the time:
+
+* `git status` - what is the current status of the repository
+* `git diff` - what has changed since the last commit
+* `git push <uri>` - push the changes to remote
+* `git pull <uri>` - pull and merge remote
+
+Further information:
+
+* [Git related lessons on Software Carpentry][lessons]
+
+[lessons]:http://software-carpentry.org/lessons/
+
 [github]: https://www.github.com
