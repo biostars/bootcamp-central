@@ -5,6 +5,7 @@ Markdown files can be rendered as html:
 * [Introduction: Reproducible Statistical Inference][intro] as slides and as [Intro as markdown][intrormd]
 * [R Lab 1][rlab1] as HTML slides, the source in [R Lab 1 markdown][rlab1rmd]
 * [R Lab 2][rlab2] as HTML slides, the source in [R Lab 2 markdown][rlab2rmd]
+* [Simulation][sim] as HTML and the source [simulation R markdown][simrmd]
 
 RNA-Seq data analysis:
 
@@ -19,7 +20,8 @@ RNA-Seq data analysis:
 [rlab2rmd]: docs/R_lab_2.Rmd
 [boot]: docs/BootstrapRNAseq.html
 [bootrmd]: docs/BootstrapRNAseq.Rmd
-
+[sim]: docs/Simulation1.html
+[simrmd]: docs/Simulation1.Rmd
 
 PSU BOX with all content:
 
