@@ -17,6 +17,10 @@ WEB_PATH=${WEB_HOST}:${WEB_DIR}
 all:
 	pyblue -r ${HTML_DIR}
 
+pull:
+	# Bring this repository in sync with master.
+	git pull https://github.com/biostars/bootcamp-central.git
+
 # Removes the temporary directory.
 clean:
 	rm -rf ${TEMP_DIR}
