@@ -1,0 +1,13 @@
+---
+title: "MyNewProject"
+author: "Di Chen"
+date: "June 8, 2016"
+output: html_document
+---
+
+The sine of $\pi/2$ is `r round(sin(pi/2),)`
+
+
+```{r sessionInformation}
+sessionInfo()
+```
