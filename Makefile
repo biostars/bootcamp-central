@@ -41,3 +41,5 @@ site: generate
 	# Synchronize the changed files
 	rsync -avz ${TEMP_DIR}/* ${WEB_PATH}
 
+pull: 
+	git pull git@github.com:biostars/bootcamp-central.git
