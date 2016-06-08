@@ -1,0 +1,296 @@
+---
+title: "R Lab 1"
+author: "Naomi Altman <br>   
+nsa1@psu.edu"
+date: "June 7, 2016"
+output: ioslides_presentation
+css: styles.css
+---
+
+## Getting Started
+
+Since many of you are new to R and R Studio, we are going to start by doing some set-up.  We will then discuss some of the basics of simulation.
+
+1. Basic set-up of R and R Studio
+2. R Markdown and knitr
+3. Thinking about simulation
+4. Setting up the computation
+5. Doing the simulation
+6. Interpreting the simulation results
+7. Improving the simulation
+8. Reproducibility
+
+
+## R and R Studio
+
+If you installed R and R Studio, then clicking on R Studio should open the R Studio window system.
+
+There are 5 pieces to the window system:
+
+1. The pulldown menus on the top.
+2. The editor window.
+3. The console or R execution window.
+4. The Environment/History window
+5. The display window.
+
+All of the windows also support multiple tabs.
+
+## R and R Studio S2
+
+It is recommended to start a new R Studio Project (using the File menu) for each of your projects.  This keeps a separate history and working directory for the project.
+
+At times I have had problems with projects.  This appears to be some incompatibility between the versions of R, R Studio and Mac OS.  If reinstalling R and R Studio does not work, I create a folder using the Finder, and use the Session menu to move to that directory. 
+
+I then save my work in this directory using the File menu.
+
+## R and R Studio S3
+
+To promote both readability and reproducibility of our analyses, we will always write our code using R Markdown.  
+
+Lets start by creating a new R Markdown file using the File menu.
+
+If *knitr* and *markdown* are not yet installed on your computer, you will be prompted to install them.  
+
+Save your new file with the name "Simulation1.rmd" and use the default "html" format.  
+
+## R with Markdown
+
+There are 3 parts to an R Markdown file:
+
+1. The header information
+2. Text 
+3. R code chunks
+
+## R with Markdown: header
+
+The header is used to create a title for your document and to set some basic parameters, such as the type of output.
+
+I composed the lecture using the "Presentation" option for setting up the document.  However, usually I use "html_document".
+
+If you know *css* you can attach a *css* file to enhance the formatting.
+
+There are a lot of other options.
+
+## R with Markdown: text
+
+Text is just text, but it can be enhanced with html commands, mathematical expressions, etc.
+
+For example, \$ \\pi \$ would be rendered as $\pi$.
+
+## R with Markdown: text with embedded R code
+
+R code can be embedded in the text using  \` r command \`   e.g. 
+
+The sine of $\pi$ is \' r round(sin(pi),2) \'
+
+is rendered as
+
+The sine of $\pi$ is `r round(sin(pi),2)`
+
+## R with Markdown: Code Chunks
+
+Code chunks are the actual programs that you are running in R.
+
+ Each code chunk starts with
+ 
+ \` \` \` \{ r label, options \}
+ 
+and ends with
+
+\` \` \`.  
+
+e.g.
+
+\` \` \` \{ r ChunkOne, eval=TRUE \}  <br>
+    x=2 <br>
+    rnorm(3,mean=x) <br>
+    \` \` \` 
+    
+  The code and output are imbedded in the document.
+  
+```{r ChunkOne, eval=TRUE}
+    x=2 
+    rnorm(3,mean=x)
+```
+
+## R with Markdown: Exercise
+
+Lets do the first part of the simulation study using the R Markdown file you just created.
+
+Here is what you need to do.  Use a separate code chunk for each step, making sure there is explanatory text before each chunk.
+
+1. Generate the phenotypic scores as 20 random normals.  Call this vector *pheno*.
+2. Generate the gene expression scores as a matrix with 1000 rows (genes) and 20 columns (samples). Call this matrix *genes*.
+3. Compute the 1000 correlations between the phenotypic scores and the gene expression scores. Note that you will need to transpose the gene expression matrix to do this.  Call the correlations *cors*.
+
+## R with Markdown: Exercise S2
+
+We can readily imbed plots in our output just by plotting in a code chunk.
+
+So:
+ 4. Plot a histogram of the correlations.
+
+## What matters, what doesn't?
+
+What are the mean and variance of the Normal distribution we used to generate the data?
+
+Do real genes all have the same mean expression and variance?
+
+Which differences between real gene expression values and our simulated values matter and which ones do not in using the synthetic data to understand how the statistical method will perform with real data?
+
+## Generating Random Numbers
+
+Each of us should obtain slightly different results.
+
+How can we all get the same results?
+
+## Generating Random Numbers: setting a seed
+
+Setting a seed for the random number generator should give us all the same result.
+
+This is useful for e.g. checking code or situations in which you may need to rerun the code.
+
+## Generating Random Numbers: setting a seed S2
+
+```{r setSeed}
+
+rnorm(5)
+set.seed(2016)
+rnorm(5)
+set.seed(2016)
+rnorm(5)
+```
+
+
+## Selecting the most correlated genes
+
+The next step in my analysis was to pick the 10 genes with the largest correlation (in absolute value).
+
+I used the *order* command.
+
+*x[order(x)]* sorts the vector *x* in ascending order.
+
+*x[order(x,descending=TRUE)]* sorts the vector *x* in ascending order.
+
+*order(x,descending=TRUE)* gives the indices of *x* corresponding to the largest value, next largest, etc.
+
+We will use this with *abs(cors)* to find the 10 genes with the largest absolute correlations.
+
+Lets call these genes *sigGenes*.
+
+## Fitting the regression
+
+The final set in the analysis was the linear regression.  This can be 
+done using the command
+
+*regout=lm(pheno~t(sigGenes))*
+
+Lets also compute the R^2^ for this regression which is the ratio variance of the fitted values (*fitted(regout)*) to the variance of the phenotypes.
+
+## Doing a simulation study
+
+Since the phenotypic scores and gene expression values have no association, we have just generated one sample from the NULL distribution for any test of association between gene expression and phenotypic score for this setting (20 samples, 1000 genes, everything Normally distributed)
+
+Lets obtain the null distribution for:
+
+1. The largest absolute correlation
+2. The largest correlation 
+3. The smallest correlation
+4. The R^2^ of the regression after selecting the 10 genes with highest absolute correlation
+
+## Doing a simulation study S2
+
+To generate the null distribution by simulation, we need to repeat the computations many times.  
+
+We could do this using a *for* loop or the *apply* command.
+
+We could make our code cleaner by writing an R function.
+
+## Doing a simulation study S3
+
+My function has arguments sample size, number of genes and number of selected genes.  It outputs the maximum absolute correlation and the minimum and maximum correlations and the R^2^ of the regression.
+
+For example, here is my code chunk:
+
+```{r simFunction}
+simR2=function(nsamp=20,ngene=1000,nsel=10){
+  if (nsel >= nsamp-1) stop("The number of genes selected must 
+                            be less than the sample size")
+  pheno=rnorm(nsamp)
+  genes=matrix(rnorm(nsamp*ngene),ncol=nsamp)
+  cors=cor(t(genes),pheno)
+  selgenes=order(cors,decreasing=FALSE)[1:nsel]
+  sigGenes=genes[selgenes,]
+  R2=var(fitted(lm(pheno~t(sigGenes))))/var(pheno)
+  c(maxAbsR=max(abs(cors)),minR=min(cors),maxR=max(cors),Rsq=R2)
+}
+```
+  
+
+## Doing the simulation study S4
+
+Now all we have to do is to repeat the simulation multiple times and save the results.  I usually do this by setting up a matrix to save the results and using a *for* loop.
+
+e.g.
+
+```{r runSim}
+simN20G1000S10=matrix(nrow=1000,ncol=4)
+for (i in 1:1000) simN20G1000S10[i,]=simR2(nsamp=20,ngene=1000,nsel=10)
+```
+
+## Doing the simulation study S5
+
+Now that we have an estimate of the sampling distribution of some of the relevant quantities when the null distribution is true, how can we use them?
+
+```{r histNULL,echo=FALSE}
+par(mfrow=c(2,2))
+hist(simN20G1000S10[,1], nclass=50,main="Distribution of Largest Absolute Correlation",xlab="Maximum Absolute Correlation")
+hist(simN20G1000S10[,2], nclass=50,main="Distribution of Smallest Correlation",xlab="Minimum Correlation")
+hist(simN20G1000S10[,3], nclass=50,main="Distribution of Largest Correlation",xlab="Maximum Correlation")
+hist(simN20G1000S10[,4], nclass=50,main="Distribution of R-square of Selected Genes",xlab="R-square")
+```
+
+## Doing the simulation study S6
+
+The simplest thing we can do is to compute a p-value based on the sampling distribution.
+
+For example, if the largest absolute correlation between phenotypic score and gene expression is 0.68, the p-value for this is the proportion of our simulations that produced a value at least as large.
+
+The p-value is `r round(mean(simN20G1000S10[,1]>=.68),4)`.
+
+Although the 0.68 would be a large correlation if there were only one gene being tested, it is a fairly typical value for the maximum when there are 1000.
+
+## Improving reproducibility
+
+1. Use R Markdown or similar software and include lots of explanatory text between the code chunks.
+
+2. Publish your R Markdown script along with your data as supplemental materials.
+
+3. In simulations, set a seed so that another user can generate identical results.
+
+4. Your last code chunk should end with *sessionInfo()*.
+
+## Session Information
+
+```{r sessioninfo}
+sessionInfo()
+```
+
+
+## Improving the simulation study
+
+Our sample was generated assuming that both the phenotypic scores and gene expression values are Normally distributed.  
+
+As well, all of our genes are independent of each other.
+
+The simulation study is supposed to be a model of our biological system.  So we need to capture the important aspects of the system.
+
+We also need to capture the data generation and analysis pipeline.
+
+This will be the topic of the next lab.
+
+## Session Information
+
+```{r sessionInfo}
+sessionInfo()
+```

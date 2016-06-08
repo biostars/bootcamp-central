@@ -1,0 +1,11 @@
+slides > slide {
+  color: black;
+}
+
+h1, h2 {
+  color: red;
+}
+
+.title-slide hgroup h1 {
+  color: blue;
+}
