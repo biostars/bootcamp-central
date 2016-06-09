@@ -1,0 +1,21 @@
+{# name = Software Installation #}
+{% extends "base.html" %}
+{% load bootcamp %}
+
+{% block body %}
+
+    {% header text=page.name icon="settings" %}
+
+    {% divider "GIT AND GITHUB" %}
+
+    {% include_markdown "git_install.md" %}
+
+    {% divider "R AND RSTUDIO" %}
+
+    {% include_markdown "docs/r_install.md" %}
+
+    {% divider "EDITOR" %}
+
+    {% include_markdown "editor_install.md" %}
+
+{% endblock %}

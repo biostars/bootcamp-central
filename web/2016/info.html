@@ -1,0 +1,25 @@
+{# name = General Information #}
+{% extends "base.html" %}
+{% load bootcamp %}
+
+{% block body %}
+
+    {% header text="General Information" icon="info circle" %}
+
+    {% divider "BOOTCAMP INFORMATION" %}
+
+    {% include_markdown "general_info.md" %}
+
+    {% divider "PARTICIPANTS" %}
+
+    {% include_markdown "participants.md"  %}
+
+    {% divider "SUGGESTIONS" %}
+
+    {% include_markdown "suggestions-for-day5.md"  %}
+
+    {% divider "HOW TO GENERATE THE SITE" %}
+
+    {% include_markdown "how-to-generate.md" %}
+
+{% endblock %}

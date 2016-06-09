@@ -1,0 +1,17 @@
+{# name = Day 4: Reproducible research with Galaxy #}
+{% extends "base.html" %}
+{% load bootcamp %}
+
+{% block body %}
+
+    {% header text=page.name icon="calendar" %}
+
+    {% divider "SCHEDULE" %}
+
+    {% include_markdown "day4_schedule.md" %}
+
+    {% divider "MATERIALS" %}
+
+    {% include_markdown "day4_materials.md" %}
+
+{% endblock %}

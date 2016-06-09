@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>{% block html_title %}Bootcamp{% endblock %}</title>
+    <link rel='shortcut icon' href='/static/favicon.ico' type='image/x-icon'/>
+    <link href="/static/lib/semantic.min.css" rel="stylesheet" crossorigin="anonymous"/>
+    <link href="/static/bootcamp.css" rel="stylesheet" crossorigin="anonymous"/>
+    <link href="/static/lib/prism.css" rel="stylesheet" crossorigin="anonymous"/>
+    <script src="/static/lib/jquery.min.js"></script>
+    <script src="/static/lib/prism.js"></script>
+    <script src="/static/lib/semantic.min.js"></script>
+    <script src="/static/lib/dropdown.min.js"></script>
+    <script src="/static/bootcamp.js"></script>
+</head>
+<body>
+
+<div class="ui tablet only computer only menu grid">
+    <div class="ui text container ">
+
+        <a class="item" href="/">
+            <i class="home icon"></i> Home
+        </a>
+
+        {% for name, url in context.navbar %}
+            <a class="item" href="{{ url }}">
+                <i class="calendar icon"></i> {{ name }}
+            </a>
+        {% endfor %}
+
+        <a class="item" href="/info.html">
+            <i class="info circle icon"></i> Info
+        </a>
+
+    </div>
+</div>
+
+<div class="ui mobile only menu grid">
+    <div class="ui text container ">
+
+        <a class="item" href="/index.html">
+            <i class="home icon"></i> Home
+        </a>
+
+        <a class="item" href="/info.html">
+            <i class="info circle icon"></i> Info
+        </a>
+
+        <div class="ui dropdown item">
+            <div class="text">
+                <i class="calendar icon"></i>
+                Days
+                <i class="dropdown icon"></i>
+            </div>
+            <div class="menu">
+                {% for name, url in context.navbar %}
+                    <a class="item" href="{{ url }}">
+                        <i class="calendar icon"></i> {{ name }}
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<div class="ui text container">
+    {% block body %}
+        BODY
+    {% endblock %}
+</div>
+
+<div class="ui text container">
+    <p>
+        {% block footer %}
+
+            <h4 class="ui horizontal divider header">
+                <i class="github icon"></i>
+            </h4>
+
+            <div class="ui center aligned container">
+                Penn State &bull; 2016 &bull;
+                <a href="https://github.com/biostars/bootcamp-central">bootcamp-central</a>
+                via <a href="https://github.com/ialbert/pyblue">pyblue</a>
+
+            </div>
+
+        {% endblock %}
+    </p>
+</div>
+
+</body>
+</html>
