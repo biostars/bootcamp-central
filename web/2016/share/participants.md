@@ -5,6 +5,7 @@ Fork the repository, make the changes then create a *pull request*.
 
 This file is located in [share/participants.md][url]. Use the following format:
 
+* Patricia Silveyra, Pediatrics, Penn State College of Medicine
 * Boris Rebolledo, BMB, Penn State, [website](http://www.bx.psu.edu/~boris/)
 * K Clinton, Biology, Howard University
 * Anurag Verma, Bioinformatics and Genomics, Pennsylvania State University
@@ -21,7 +22,7 @@ This file is located in [share/participants.md][url]. Use the following format:
 * Lila Rieber, Biochemistry and Molecular Biology, Penn State
 * Wanyan Wang, Plant Biology, Penn State
 * Lihua Wu Plant Biology Program, Penn State University
-* Bo Zhang, Biochemistry&Molecular Biology, Penn State University, [email] (bzhang2@psu.edu.edu)  
+* Bo Zhang, Biochemistry&Molecular Biology, Penn State University, bzhang2@psu.edu.edu
 * Di Wu, BG program, Penn State
 * njlaa, Biology, Howard
 * Binglan Li, Bioinformatics & Genomics, Pennsylvania State University
@@ -38,5 +39,6 @@ This file is located in [share/participants.md][url]. Use the following format:
 * Latifa Jackson, National Human Genome Center and Pediatrics, Howard University
 * Naomi Yamada, Bioinformatics and Genomics, Penn State University
 * Di (Bruce) Chen, Genetics, Penn State University (dxc385@psu.edu)
+* Lina Castano-Duque, Plant Biology, Penn State
 
 [url]: https://github.com/biostars/bootcamp-central/blob/master/web/2016/share/participants.md

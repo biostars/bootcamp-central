@@ -1,0 +1,36 @@
+# R magic
+%load_ext rpy2.ipython
+
+# Manipulate plot window 
+%%R -w 4 -h 4 -u in -r 144
+
+# pandas
+import pandas as pd
+
+# read into dataframe
+data = pd.read_table('/import/1')
+
+# fix header
+data = pd.read_table('/import/1', header=None)
+
+# add column names
+data.columns = ["sample","pos","major","minor","mc","mb","cc","cb","type"]
+
+# import numpy and matplotlib
+import numpy as np
+import matplotlib.pyplot as plt
+
+# plot inline
+% matplotlib inline
+
+data.boxplot(column=["mc","mb","cc","cb"], grid=False,return_type='dict')
+plt.ylim([-0.1,0.5])
+
+# resize plot window
+plt.rcParams['figure.figsize'] = (15.0, 7.5)
+
+
+# markdown documentation
+# saving the jupyter notebook
+
+
