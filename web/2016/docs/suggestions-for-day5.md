@@ -9,3 +9,6 @@ What should be cover during day 5:
 * Using Plotly and Jupyter to generate interactive plots.
 * How to choose simple statistical tests.
 * Create a step-by-step guide to generate a repository in github that can be shared in a paper or grant application
+*show us how to improve figures using plot and related functions in gplot or gplot2 of R, for example, changing label, or legend of many kinds of plots - boxplot, clustering plots, scatterplot, and so on
+
+
