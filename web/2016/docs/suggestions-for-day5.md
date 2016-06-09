@@ -10,3 +10,7 @@ and add your suggestions to it.
 Suggestions go here
 
 * Making Galaxy tools
+
+Show example of a realtime project in Git/Best (python) code management practices
+Run a local environment of Galaxy/ Build Galaxy tools
+Comparison of R markdown / Jupyter
