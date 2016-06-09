@@ -3,6 +3,9 @@ h1.ui.center.header {
     margin-top: 1em;
 }
 
+.photo {
+    min-height: 300px;
+}
 hr {
     border: 0;
     height: 0;
