@@ -1,0 +1,217 @@
+---
+title: "Bootstrapping RNA-seq Data"
+author: "Naomi S. Altman"
+date: "June 7, 2016"
+output: html_document
+---
+# Introduction
+We will do an example of a bootstrapping for RNA-seq data collected for a differential expression analysis.
+
+# The Data
+Blekhman, et al, (2010) used RNA-seq to interrogate liver samples in male and female human, chimpanzee and Rhesus macaque.  
+Samples were mapped to the human genome for read identification.  This is described in the supplement to the paper.  
+As in any cross-species comparison, differences in 
+sample characteristics and the underlying genome are confounded with expression differences.  The similarity in coding region is about 98% for humans and chimpanzees, but it is undoubtedly less for Rhesus macaques.
+
+
+There were 3 biological replicates of each combination of gender and species, each divided in 2 sequencing lanes.  20689 features were tabulated in each of the 36 lanes,
+with a total of 71 million mappable 35 bp reads. (This is an "old" dataset - typically now each sample will have about 25 million reads with minimum length 50 bp.) The raw reads are downloadable from GEO dataset GSE17274.  The processed counts per feature
+can be downloaded from http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE17274.
+
+In this example, I preprocessed the data by adding the reads across the 2 lanes per sample.  (In more recent studies, we would preprocess by splitting bar-coded data from individual lanes into individual samples.) As well, I removed genes that have 10 or fewer than 10 reads across all the samples, and reduce the data to just human and chimpanzee.
+
+
+To start, we need to load the data into R from the csv text file
+
+```{r readData}
+ReadCounts=read.csv("liverReads.csv",header=T,row.names=1)
+ReadCounts[1:5,1:5]
+dim(ReadCounts)
+```
+
+We have N=12 samples, with n=6 samples for each condition=species.  We have `r nrow(ReadCounts)` genes.
+
+## Generating a Resampling Bootstrap Sample
+
+The resampling bootstrap is the simplest method for creating synthetic data.
+
+To generate a sample from the null distribution, we simply select 12 samples with replacement from the 12 original samples.  We would retain the species label.
+
+```{r nullResample}
+samp=sample(1:12,12,replace=TRUE)
+bReadCounts=ReadCounts[,samp]
+colnames(bReadCounts)=colnames(ReadCounts)
+```
+
+This produces a single sample from the multivariate null distribution.  It preserves the distribution of gene expression in each gene and also the correlation structure.
+
+We repeat this several thousand times to obtain an estimate of the multivariate distribution of any statistical test under the null hypothesis.  
+
+Notice that the library sizes are also maintained.
+
+We could use these bootstrap samples in various ways.
+
+e.g. We could do a differential expression analysis using our favorite RNA-seq software such as *cuffdiff*, *edgeR* or *DESeq*.  However, we could adjust our p-values or FDR estimates using these samples from the null.
+
+
+To generate a sample from the non-Null distribution, we sample with replacement from the original species labels.  Humans are in columns 1:6 and chimpanzees are in columns 7:12.
+
+```{r nonNullResample}
+samp=c(sample(1:6,6,replace=TRUE),sample(7:12,6,replace=TRUE))
+bReadCounts=ReadCounts[,samp]
+colnames(bReadCounts)=colnames(ReadCounts)
+```
+
+We could use these samples to obtain confidence intervals for the effect sizes for each gene.
+
+## Generating a Noisy Resampling Bootstrap Sample
+
+We want to generate Poisson random counts using the observed counts as the mean.
+
+We need to change the zeroes in the count data to 0.25 and also store the data as a matrix instead of a dataframe.  We also need to compute the number of entries in the matrix which we call *nn*.
+
+```{r adjustReads}
+ReadCountsAdj=as.matrix(ReadCounts)
+ReadCountsAdj=ReadCountsAdj-.3
+ReadCountsAdj[ReadCountsAdj<0]=0.25
+nn=nrow(ReadCountsAdj)*ncol(ReadCountsAdj)
+```
+
+We now have a matrix with our Poisson means.  The Poisson random number generator can simultaneously generate *nn* random Poisson counts with *nn* different means.  However, we need to reorganize these into the data matrix.
+
+```{r NoisyBootstrap}
+bNoisyReads=matrix(rpois(nn,ReadCountsAdj),ncol=ncol(ReadCountsAdj))
+```
+
+Lets have a look at how these compare to the actual read counts and the adjusted read counts.
+
+```{r compareCounts}
+ReadCounts[1:5,1:5]    # actual data
+ReadCountsAdj[1:5,1:5] # estimated Poisson means
+bNoisyReads[1:5,1:5]   # synthetic data
+```
+
+Finally, lets have a look at what happened to the library sizes:
+
+```{r compareLibSizes}
+colSums(ReadCounts)
+colSums(bNoisyReads)
+```
+
+We see that we have done a fairly good job of reproducing at least one feature of the data (library size) even though we added noise.
+
+By generating many bootstrap samples, we could e.g. create confidence intervals for quantities estimated from the data.
+
+## Generating a Parametric Bootstrap
+
+We start by generating data from the Null distribution. We will estimate a mean and variance of the percentages for each gene.
+
+We start by replacing the zeroes by 0.25.
+
+```{r replace0}
+ReadCounts0=as.matrix(ReadCounts)
+ReadCounts0[ReadCounts0==0]=.25
+```
+
+We also need the library sizes, which are the total reads for each sample (column).
+
+```{r LibSize}
+libSizes=colSums(ReadCounts0)
+```
+
+Next we convert all the counts to proportions within each column:
+
+```{r proportion}
+ReadProp=ReadCounts0
+for (i in 1:ncol(ReadCounts0)) ReadProp[,i]=ReadCounts0[,i]/libSizes[i]
+```
+
+To generate a parametric bootstrap sample under the Null distribution, we assume that all the proportions for a single gene (row) come from the same distribution
+
+
+```{r meanVar}
+means=rowMeans(ReadProp)
+SDs=apply(ReadProp,1,sd)
+```
+
+These data have an unusual feature, a few genes make up a large percentage of the data.  These genes also have very large SD.
+
+```{r bigGenes}
+oGenes=order(means,decreasing=TRUE)
+median(means)
+head(means[oGenes[1:10]])
+median(SDs)
+head(SDs[oGenes[1:10]])
+```
+
+While it might make sense to transform the means and SDs of the proportions into the parameters of a distribution like the Beta, which generates data between 0 and 1, this method did not work well for these data, as it created distributions for some genes that essentially had only 1 proportion.  Instead, we add Normal noise, scaled by the SD, to the mean.  After scaling up by the library size to obtain a mean count, we replaced all the means that are less than 0.25 by 0.25.
+
+```{r genProportions}
+bProp=ReadProp
+bMeans=bProp
+for (i in 1:nrow(ReadProp)) bProp[i,]=rnorm(ncol(ReadProp),means[i],SDs[i])
+for (i in 1:ncol(bProp))  bMeans[,i]=bProp[,i]*libSizes[i]
+bMeans[bMeans<=0.25]=0.25
+```
+
+Finally, we generate our samples as Poisson with our generated mean count.  (Note that it is important tat bMeans is a matrix and not a dataframe.)
+
+```{r PoissonSamps}
+bReads=matrix(rpois(nn,bMeans),ncol=ncol(bMeans))
+colnames(bReads)=colnames(ReadCounts)
+```
+
+We can check to see if the synthetic data resemble the observed data.
+
+```{r printCounts}
+head(ReadCounts)
+head(bReads)
+```
+
+To generate the null distribution for any statistic, we then generate many (say 1000) or these samples.
+
+If we want to generate data under the non-Null distribution, we proceed in exactly the same way except the we compute the mean and SD of each gene for each condition.
+
+```{r meanVarNonNull}
+meansHS=rowMeans(ReadProp[,1:6])
+meansPT=rowMeans(ReadProp[,7:12])
+SDsHS=apply(ReadProp[,1:6],1,sd)
+SDsPT=apply(ReadProp[,7:12],1,sd)
+```
+
+We then generate the read proportions and read count means and the means in the same way, but using both sets of means and SDs.
+
+
+```{r genProportionsNon}
+bPropNon=ReadProp
+bMeansNon=bProp
+for (i in 1:nrow(ReadProp)) bPropNon[i,]=c(rnorm(6,meansHS[i],SDsHS[i]),rnorm(6,meansPT[i],SDsPT[i]))
+for (i in 1:ncol(bPropNon))  bMeansNon[,i]=bPropNon[,i]*libSizes[i]
+bMeansNon[bMeansNon<=0.25]=0.25
+```
+
+Finally, we generate our samples as Poisson with our generated mean count.  (Note that it is important tat bMeans is a matrix and not a dataframe.)
+
+```{r PoissonSampsNon}
+bReadsNon=matrix(rpois(nn,bMeansNon),ncol=ncol(bMeansNon))
+colnames(bReadsNon)=colnames(ReadCounts)
+```
+
+We can check to see if the synthetic data resemble the observed data.
+
+```{r printCountsNon}
+head(ReadCounts)
+head(bReadsNon)
+```
+As always, we end with session information.
+
+## Session Information
+
+```{r sessionInfo}
+sessionInfo()
+```
+
+
+
+
+

@@ -2,7 +2,7 @@
 
 * [Version Control, Documentation, Automation][main]  by Istvan Albert
 
-[main]: https://docs.google.com/presentation/d/1l0LmRo_nKTmCIsjmhU7wsyDLqp__hkbab_mpf36yt48/edit?usp=sharing
+[main]: docs/ialbert-presentation.pdf
 
 ## Lessons on Software Carpentry
 
