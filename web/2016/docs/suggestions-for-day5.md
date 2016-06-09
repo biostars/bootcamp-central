@@ -10,3 +10,4 @@ and add your suggestions to it.
 Suggestions go here
 
 * Making Galaxy tools
+* Plotly to interactive plots using Jupyter
