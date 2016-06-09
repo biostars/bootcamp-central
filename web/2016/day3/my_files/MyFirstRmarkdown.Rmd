@@ -1,0 +1,124 @@
+---
+title: "MyNewProject"
+author: "Nabeel Ahmed
+nxa176@psu.edu"
+date: "June 8, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+Let us write some code to generate random normals and draw a histogram 
+
+```{r Normal, echo=TRUE}
+x = rnorm(1000, mean=2, sd=3)
+hist(x, main="N(2,9)", xlab="Random numbers", nclass=50)
+```
+
+
+## Simulation Study example
+
+
+We first generate phenotypic scores randomly for 20 samples. We will have these phenotypic scores in *pheno*
+
+```{r Phenotype, echo=TRUE}
+nsamp = 20
+pheno = rnorm(nsamp)
+```
+
+Next we create a matrix for 1000 genes and gene expression data created randomly for the 20 samples.  
+
+```{r gene_exp, echo=TRUE}
+ngenes = 1000
+genes = matrix(rnorm(ngenes*nsamp), ncol = nsamp)
+```
+
+We would like to compute the correlation between the phenotype score and the gene expression data
+```{r correlation, echo=TRUE}
+trans = t(genes)
+corr = cor(trans, pheno)
+dim(corr)
+hist(corr, main="Correlation for 1000 genes")
+```
+
+We select top 10 genes as these have the highest predictive power of phenotypic score from gene expression 
+```{r topgenes, echo=TRUE}
+nsel = 10
+selgenes = order(corr, decreasing = TRUE)[1:nsel]
+sigGenes = genes[selgenes,]
+```  
+  
+We do linear regression analysis to get the $R^2$
+```{r reg, echo=TRUE}
+regout=lm(pheno~t(sigGenes))
+R2=var(fitted(regout))/var(pheno)
+anova(regout)
+R2
+```
+
+
+To generate a null distribution by running the simulation repeatedly 
+```{r simFunction}
+simR2=function(nsamp=20,ngene=1000,nsel=10){
+  if (nsel >= nsamp-1) stop("The number of genes selected must 
+                            be less than the sample size")
+  pheno=rnorm(nsamp)
+  genes=matrix(rnorm(nsamp*ngene),ncol=nsamp)
+  cors=cor(t(genes),pheno)
+  selgenes=order(cors,decreasing=TRUE)[1:nsel]
+  sigGenes=genes[selgenes,]
+  R2=var(fitted(lm(pheno~t(sigGenes))))/var(pheno)
+  c(maxAbsR=max(abs(cors)),minR=min(cors),maxR=max(cors),Rsq=R2)
+}
+```
+
+Now we run it for 1000 iterations
+```{r runSim}
+# Create a 1000 row matrix whose 4 columns will contain the returned values from simR2 function
+simN20G1000S10=matrix(nrow=1000,ncol=4)
+for (i in 1:1000) simN20G1000S10[i,]=simR2(nsamp=20,ngene=1000,nsel=10)
+```
+
+We can view the plot of the sampling distribution for the absolute largest correlation, largest corrrelation, smallest correlation and $R^2$
+
+```{r histNULL,echo=FALSE}
+par(mfrow=c(2,2))
+hist(simN20G1000S10[,1], nclass=50,main="Distribution of Largest Absolute Correlation",xlab="Maximum Absolute Correlation")
+hist(simN20G1000S10[,2], nclass=50,main="Distribution of Smallest Correlation",xlab="Minimum Correlation")
+hist(simN20G1000S10[,3], nclass=50,main="Distribution of Largest Correlation",xlab="Maximum Correlation")
+hist(simN20G1000S10[,4], nclass=50,main="Distribution of R-square of Selected Genes",xlab="R-square")
+```
+
+
+For example, if the largest absolute correlation between phenotypic score and gene expression is 0.68, the p-value for this is the proportion of our simulations that produced a value at least as large.
+
+The p-value is `r round(mean(simN20G1000S10[,1]>=.68),4)`.
+
+Although the 0.68 would be a large correlation if there were only one gene being tested, it is a fairly typical value for the maximum when there are 1000.
+
+
+```{r sessionInformation}
+sessionInfo()
+``` 
