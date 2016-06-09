@@ -219,7 +219,7 @@ simR2=function(nsamp=20,ngene=1000,nsel=10){
   pheno=rnorm(nsamp)
   genes=matrix(rnorm(nsamp*ngene),ncol=nsamp)
   cors=cor(t(genes),pheno)
-  selgenes=order(cors,decreasing=FALSE)[1:nsel]
+  selgenes=order(cors,decreasing=TRUE)[1:nsel]
   sigGenes=genes[selgenes,]
   R2=var(fitted(lm(pheno~t(sigGenes))))/var(pheno)
   c(maxAbsR=max(abs(cors)),minR=min(cors),maxR=max(cors),Rsq=R2)
