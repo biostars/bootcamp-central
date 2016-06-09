@@ -1,4 +1,4 @@
-## Files And Datasets 
+## Lecture and Practice
 
 Markdown files can be rendered as html:
 
