@@ -9,7 +9,7 @@ We start by generating 20 random normals to represent the phenotypic scores of 2
 
 ```{r phenotype}
 nsamp=20
-  pheno=rnorm(nsamp)
+pheno=rnorm(nsamp)
 ```
 
 Then we generate 1000 gene expressions.  Each has a value for each of the 20 samples.  Typically gene expression values are stored in a matrix with genes in the rows and samples in the columns.  This matrix is therefore 1000 by 20.
@@ -37,8 +37,8 @@ Next we select the 10 genes with the largest absolute correlation.  These are th
 
 ```{r select}
 nsel=10
-  selgenes=order(cors,decreasing=FALSE)[1:nsel]
-  sigGenes=genes[selgenes,]
+selgenes=order(cors,decreasing=FALSE)[1:nsel]
+sigGenes=genes[selgenes,]
 ```
 
 Finally, we do the linear regression on the fitted genes and compute the $R^2$.
