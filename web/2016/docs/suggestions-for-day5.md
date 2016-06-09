@@ -8,7 +8,6 @@ and add your suggestions to it.
 ---
 
 Suggestions go here
-Generate a basic step-by-step guide to work with repositories. 
 
-Generate a basic step-by-step guide to work with repositories. PS
-
+* Making Galaxy tools
+* Generate a basic step-by-step guide to work with repositories.
