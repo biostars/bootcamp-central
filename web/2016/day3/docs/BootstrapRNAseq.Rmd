@@ -5,7 +5,8 @@ date: "June 7, 2016"
 output: html_document
 ---
 # Introduction
-We will do an example of a bootstrapping for RNA-seq data collected for a differential expression analysis.
+
+We will do an example of a bootstrapping for RNA-seq data collected for a differential expression analysis.2
 
 # The Data
 Blekhman, et al, (2010) used RNA-seq to interrogate liver samples in male and female human, chimpanzee and Rhesus macaque.  
@@ -39,8 +40,10 @@ To generate a sample from the null distribution, we simply select 12 samples wit
 
 ```{r nullResample}
 samp=sample(1:12,12,replace=TRUE)
+samp
 bReadCounts=ReadCounts[,samp]
 colnames(bReadCounts)=colnames(ReadCounts)
+bReadCounts[1:5,]
 ```
 
 This produces a single sample from the multivariate null distribution.  It preserves the distribution of gene expression in each gene and also the correlation structure.
@@ -58,9 +61,15 @@ To generate a sample from the non-Null distribution, we sample with replacement 
 
 ```{r nonNullResample}
 samp=c(sample(1:6,6,replace=TRUE),sample(7:12,6,replace=TRUE))
-bReadCounts=ReadCounts[,samp]
-colnames(bReadCounts)=colnames(ReadCounts)
+samp
+bReadCounts1=ReadCounts[,samp]
+colnames(bReadCounts1)=colnames(ReadCounts)
+bReadCounts1[1:5,]
 ```
+
+
+Aca hizo la simulacion mezclando los controles con los tratados primero y despues agrupandolos correctamente. Asi logra que se noten las diferencias y demstras el poder del test de mostrar lo que realmente es diferente vs lo que se deduce solamente del ruido intrinseco de los datos.
+
 
 We could use these samples to obtain confidence intervals for the effect sizes for each gene.
 
@@ -70,11 +79,16 @@ We want to generate Poisson random counts using the observed counts as the mean.
 
 We need to change the zeroes in the count data to 0.25 and also store the data as a matrix instead of a dataframe.  We also need to compute the number of entries in the matrix which we call *nn*.
 
+Cuando hace el .3 es porque hace 1/3 que es como si fuese la media de la distribucion de poisson - Todo esto es arbitrario, y dependiendo del numero que se use el resultado va a ser diferente, por eso es importante poner que es lo que se hace e incluir el markdown en el paper.
+
+el primer comando cambia a matriz porque sino algunos de los softwares no lo reconocen, y ademas saco la primera fila porque tiene los nombres de los genes
+
 ```{r adjustReads}
 ReadCountsAdj=as.matrix(ReadCounts)
 ReadCountsAdj=ReadCountsAdj-.3
 ReadCountsAdj[ReadCountsAdj<0]=0.25
 nn=nrow(ReadCountsAdj)*ncol(ReadCountsAdj)
+ReadCountsAdj[1:5,]
 ```
 
 We now have a matrix with our Poisson means.  The Poisson random number generator can simultaneously generate *nn* random Poisson counts with *nn* different means.  However, we need to reorganize these into the data matrix.
@@ -102,11 +116,16 @@ We see that we have done a fairly good job of reproducing at least one feature o
 
 By generating many bootstrap samples, we could e.g. create confidence intervals for quantities estimated from the data.
 
+
+
 ## Generating a Parametric Bootstrap
 
 We start by generating data from the Null distribution. We will estimate a mean and variance of the percentages for each gene.
 
-We start by replacing the zeroes by 0.25.
+We start by replacing the zeroes by 0.25. Despues va a calcular pij=count/library size for each gene in each samples
+despues calcula la media de pi para cada uno de los genes
+genera la version "noisy" de pi con el promedio de pi y despues con los counts y al final genera poisson para las noisy counts (Esta todo aca abajo en los comandos)
+
 
 ```{r replace0}
 ReadCounts0=as.matrix(ReadCounts)
@@ -124,6 +143,7 @@ Next we convert all the counts to proportions within each column:
 ```{r proportion}
 ReadProp=ReadCounts0
 for (i in 1:ncol(ReadCounts0)) ReadProp[,i]=ReadCounts0[,i]/libSizes[i]
+ReadProp[1:5,]
 ```
 
 To generate a parametric bootstrap sample under the Null distribution, we assume that all the proportions for a single gene (row) come from the same distribution
@@ -132,6 +152,7 @@ To generate a parametric bootstrap sample under the Null distribution, we assume
 ```{r meanVar}
 means=rowMeans(ReadProp)
 SDs=apply(ReadProp,1,sd)
+head(SDs)
 ```
 
 These data have an unusual feature, a few genes make up a large percentage of the data.  These genes also have very large SD.
@@ -144,7 +165,9 @@ median(SDs)
 head(SDs[oGenes[1:10]])
 ```
 
-While it might make sense to transform the means and SDs of the proportions into the parameters of a distribution like the Beta, which generates data between 0 and 1, this method did not work well for these data, as it created distributions for some genes that essentially had only 1 proportion.  Instead, we add Normal noise, scaled by the SD, to the mean.  After scaling up by the library size to obtain a mean count, we replaced all the means that are less than 0.25 by 0.25.
+While it might make sense to transform the means and SDs of the proportions into the parameters of a distribution like the Beta, which generates data between 0 and 1, this method did not work well for these data, as it created distributions for some genes that essentially had only 1 proportion. 
+
+Instead, we add Normal noise (pero muy poquito!), scaled by the SD, to the mean.  After scaling up by the library size to obtain a mean count, we replaced all the means that are less than 0.25 by 0.25.
 
 ```{r genProportions}
 bProp=ReadProp
@@ -168,9 +191,11 @@ head(ReadCounts)
 head(bReads)
 ```
 
+
+
 To generate the null distribution for any statistic, we then generate many (say 1000) or these samples.
 
-If we want to generate data under the non-Null distribution, we proceed in exactly the same way except the we compute the mean and SD of each gene for each condition.
+If we want to generate data under the non-Null distribution, we proceed in exactly the same way except the we compute the mean and SD of each gene for each condition. Solo cambiamos esa parte del proceso -
 
 ```{r meanVarNonNull}
 meansHS=rowMeans(ReadProp[,1:6])
@@ -180,7 +205,6 @@ SDsPT=apply(ReadProp[,7:12],1,sd)
 ```
 
 We then generate the read proportions and read count means and the means in the same way, but using both sets of means and SDs.
-
 
 ```{r genProportionsNon}
 bPropNon=ReadProp
@@ -203,6 +227,10 @@ We can check to see if the synthetic data resemble the observed data.
 head(ReadCounts)
 head(bReadsNon)
 ```
+ahora si se ve la diferencia 
+
+
+
 As always, we end with session information.
 
 ## Session Information
