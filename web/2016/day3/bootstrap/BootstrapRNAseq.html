@@ -9,7 +9,7 @@
 <meta name="generator" content="pandoc" />
 
 
-<meta name="author" content="Naomi S. Altman" />
+<meta name="author" content="Naomi S. Altman | modified by Boris Rebolledo-Jaramillo" />
 
 
 <title>Bootstrapping RNA-seq Data</title>
@@ -116,7 +116,7 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">Bootstrapping RNA-seq Data</h1>
-<h4 class="author"><em>Naomi S. Altman</em></h4>
+<h4 class="author"><em>Naomi S. Altman | modified by Boris Rebolledo-Jaramillo</em></h4>
 <h4 class="date"><em>June 7, 2016</em></h4>
 
 </div>
@@ -134,7 +134,7 @@ As in any cross-species comparison, differences in sample characteristics and th
 <p>There were 3 biological replicates of each combination of gender and species, each divided in 2 sequencing lanes. 20689 features were tabulated in each of the 36 lanes, with a total of 71 million mappable 35 bp reads. (This is an “old” dataset - typically now each sample will have about 25 million reads with minimum length 50 bp.) The raw reads are downloadable from GEO dataset GSE17274. The processed counts per feature can be downloaded from <a href="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE17274" class="uri">http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE17274</a>.</p>
 <p>In this example, I preprocessed the data by adding the reads across the 2 lanes per sample. (In more recent studies, we would preprocess by splitting bar-coded data from individual lanes into individual samples.) As well, I removed genes that have 10 or fewer than 10 reads across all the samples, and reduce the data to just human and chimpanzee.</p>
 <p>To start, we need to load the data into R from the csv text file</p>
-<pre class="r"><code>ReadCounts=read.csv(&quot;liverReads.csv&quot;,header=T,row.names=1)
+<pre class="r"><code>ReadCounts=read.csv(&quot;../docs/liverReads.csv&quot;,header=T,row.names=1)
 ReadCounts[1:5,1:5]</code></pre>
 <pre><code>##                 HS1 HS2 HS3 HS4 HS5
 ## ENSG00000000003 121 329 421 300 359
@@ -190,11 +190,11 @@ nn=nrow(ReadCountsAdj)*ncol(ReadCountsAdj)</code></pre>
 ## ENSG00000000460  14.70   5.70   6.7  16.70  16.70</code></pre>
 <pre class="r"><code>bNoisyReads[1:5,1:5]   # synthetic data</code></pre>
 <pre><code>##      [,1] [,2] [,3] [,4] [,5]
-## [1,]  120  352  406  304  335
-## [2,]    1    1    1    0    0
-## [3,]   43   70   85   62   56
-## [4,]  109  104   85   64   92
-## [5,]   16    4    4   16   25</code></pre>
+## [1,]  130  318  429  302  355
+## [2,]    0    1    0    0    0
+## [3,]   39   69   89   54   45
+## [4,]  124   87   79   58   86
+## [5,]    9    7    5   20   17</code></pre>
 <p>Finally, lets have a look at what happened to the library sizes:</p>
 <pre class="r"><code>colSums(ReadCounts)</code></pre>
 <pre><code>##     HS1     HS2     HS3     HS4     HS5     HS6     PT1     PT2     PT3 
@@ -202,8 +202,8 @@ nn=nrow(ReadCountsAdj)*ncol(ReadCountsAdj)</code></pre>
 ##     PT4     PT5     PT6 
 ## 3553779 3651618 3548120</code></pre>
 <pre class="r"><code>colSums(bNoisyReads)</code></pre>
-<pre><code>##  [1] 2838053 3381862 4378766 3417494 3793868 2839684 5343101 3171490
-##  [9] 3788481 3551082 3650190 3544657</code></pre>
+<pre><code>##  [1] 2843365 3379467 4381143 3413591 3795551 2841596 5336644 3168578
+##  [9] 3787336 3548949 3644875 3544820</code></pre>
 <p>We see that we have done a fairly good job of reproducing at least one feature of the data (library size) even though we added noise.</p>
 <p>By generating many bootstrap samples, we could e.g. create confidence intervals for quantities estimated from the data.</p>
 </div>
@@ -257,12 +257,12 @@ colnames(bReads)=colnames(ReadCounts)</code></pre>
 ## ENSG00000000938  73  44  43  65  65 210  84 198 104  31  76  58</code></pre>
 <pre class="r"><code>head(bReads)</code></pre>
 <pre><code>##      HS1 HS2 HS3 HS4 HS5 HS6 PT1 PT2 PT3 PT4 PT5 PT6
-## [1,] 352 232 375 399 389 368 450  51 457 457 645 529
-## [2,]   3   0   1   1   1   0   0   0   1   0   1   1
-## [3,]  40  51 107  51  88  39 146  61  49  66  48  62
-## [4,] 126  74 175 103  41 115 262 176 104  98  12  92
-## [5,]  16   5   3  16   3   0  32   4   2   7   2  11
-## [6,]  91 174 158  98 115 175 277  71 280 162  97  35</code></pre>
+## [1,] 545 574 763 161 300 410 834 129 339 214 674 503
+## [2,]   0   2   0   1   2   6   0   0   0   0   0   0
+## [3,]  49  45  69  60  57  48  90  59  85  49  87  59
+## [4,] 152 131 138  91 135  36 298  37   0   0 136  81
+## [5,]  10  16  17   7  17   4  12  13  11   9  11  13
+## [6,] 153 111 180 126 213 137 371   0 132  37 176 107</code></pre>
 <p>To generate the null distribution for any statistic, we then generate many (say 1000) or these samples.</p>
 <p>If we want to generate data under the non-Null distribution, we proceed in exactly the same way except the we compute the mean and SD of each gene for each condition.</p>
 <pre class="r"><code>meansHS=rowMeans(ReadProp[,1:6])
@@ -289,12 +289,12 @@ colnames(bReadsNon)=colnames(ReadCounts)</code></pre>
 ## ENSG00000000938  73  44  43  65  65 210  84 198 104  31  76  58</code></pre>
 <pre class="r"><code>head(bReadsNon)</code></pre>
 <pre><code>##      HS1 HS2 HS3 HS4 HS5 HS6 PT1 PT2 PT3 PT4 PT5 PT6
-## [1,] 179 337 107 389 322 186 608 330 679 530 231 405
-## [2,]   0   1   0   1   0   0   1   0   0   2   0   2
-## [3,]  50  72  81  74  82  49  85  62  92  56  69  94
-## [4,]  41  92  47  29  74  61 328 135   2 235 158 175
-## [5,]   5  19   2  20  10   8  16  18   4  11   6  12
-## [6,] 116   0  62 225  56 112  90 108   0 201   1  36</code></pre>
+## [1,]  52 328 349 119 359 264 823 387 647 426 325 503
+## [2,]   1   1   1   0   0   0   0   2   2   0   2   1
+## [3,]  51  55  77  58  67  44 114  39  65  81  94  66
+## [4,]  69 100  53  62 121  70 205  90 194 156  88 159
+## [5,]   6   3   9   5  15   5   0   6  12   7   6   9
+## [6,]   1 145   1 118 221  47 171 128 185  97 118  81</code></pre>
 <p>As always, we end with session information.</p>
 </div>
 <div id="session-information" class="section level2">
