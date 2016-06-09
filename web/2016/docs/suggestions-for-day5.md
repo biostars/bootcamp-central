@@ -8,4 +8,5 @@ and add your suggestions to it.
 ---
 
 Suggestions go here
+Generate a basic step-by-step guide to work with repositories. 
 
