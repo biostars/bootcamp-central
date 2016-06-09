@@ -5,7 +5,7 @@ Fork the repository, make the changes then create a *pull request*.
 
 This file is located in [share/participants.md][url]. Use the following format:
 
-* Patricia Silveyra, Pediatrics, Penn State College of Medicine
+* Patricia Silveyra, Pediatrics, Penn State College of Medicine, [website](https://profiles.psu.edu/profiles/display/112384)
 * Boris Rebolledo, BMB, Penn State, [website](http://www.bx.psu.edu/~boris/)
 * K Clinton, Biology, Howard University
 * Anurag Verma, Bioinformatics and Genomics, Pennsylvania State University

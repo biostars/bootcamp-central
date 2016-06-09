@@ -8,3 +8,4 @@ What should be cover during day 5:
 * Comparison of creating reports with R markdown vs Jupyter.
 * Using Plotly and Jupyter to generate interactive plots.
 * How to choose simple statistical tests.
+* Create a step-by-step guide to generate a repository in github that can be shared in a paper or grant application
