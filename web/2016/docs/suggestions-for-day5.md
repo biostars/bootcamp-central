@@ -12,3 +12,8 @@ What should be cover during day 5:
 * Show us how to improve figures using plot and related functions in gplot or gplot2 of R, for example, changing label, or legend of many kinds of plots - boxplot, clustering plots, scatterplot, and so on
 
 
+
+Suggestions go here
+
+* Making Galaxy tools
+* Plotly to interactive plots using Jupyter
