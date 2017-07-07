@@ -1,0 +1,13 @@
+{# name = Day 5: Summaries and Reviews #}
+{% extends "base.html" %}
+{% load bootcamp %}
+
+{% block body %}
+
+    {% header text=page.name icon="calendar" %}
+
+    {% divider "MATERIALS" %}
+
+    {% include_markdown "day5_materials.md" %}
+
+{% endblock %}

@@ -3,7 +3,7 @@
 #
 
 # The source of the html files.
-HTML_DIR=web/2016
+HTML_DIR=web
 
 # Temporary directory to store the output in.
 TEMP_DIR=~/temp/bootcamp
@@ -44,4 +44,4 @@ generate:
 site: generate
 	# Synchronize the changed files
 	rsync -avz ${TEMP_DIR}/* ${WEB_PATH}
-
+	rsync -avz archive ${WEB_PATH}

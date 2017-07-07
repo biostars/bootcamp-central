@@ -1,0 +1,18 @@
+{# name = General Information #}
+{% extends "base.html" %}
+{% load bootcamp %}
+
+{% block body %}
+
+    {% header text="General Information" icon="info circle" %}
+
+    {% divider "BOOTCAMP INFORMATION" %}
+
+    {% include_markdown "general_info.md" %}
+
+
+    {% divider "SOFTWARE INSTALLATION" %}
+
+    {% link "install.html" %}
+
+{% endblock %}
