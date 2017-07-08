@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Bootcamp</title>
+    <link rel='shortcut icon' href='/static/favicon.ico' type='image/x-icon'/>
+    <link href="/static/lib/semantic.min.css" rel="stylesheet" crossorigin="anonymous"/>
+    <link href="/static/bootcamp.css" rel="stylesheet" crossorigin="anonymous"/>
+    <link href="/static/lib/prism.css" rel="stylesheet" crossorigin="anonymous"/>
+    <script src="/static/lib/jquery.min.js"></script>
+    <script src="/static/lib/prism.js"></script>
+    <script src="/static/lib/semantic.min.js"></script>
+    <script src="/static/lib/dropdown.min.js"></script>
+    <script src="/static/bootcamp.js"></script>
+</head>
+<body>
+
+<div class="ui tablet only computer only menu grid">
+    <div class="ui text container ">
+
+        <a class="item" href="/">
+            <i class="home icon"></i> Home
+        </a>
+
+        
+            <a class="item" href="/day1/day1_index.html">
+                <i class="calendar icon"></i> Day 1
+            </a>
+        
+            <a class="item" href="/day2/day2_index.html">
+                <i class="calendar icon"></i> Day 2
+            </a>
+        
+            <a class="item" href="/day3/day3_index.html">
+                <i class="calendar icon"></i> Day 3
+            </a>
+        
+            <a class="item" href="/day4/day4_index.html">
+                <i class="calendar icon"></i> Day 4
+            </a>
+        
+            <a class="item" href="/day5/day5_index.html">
+                <i class="calendar icon"></i> Day 5
+            </a>
+        
+
+        <a class="item" href="/info.html">
+            <i class="info circle icon"></i> Info
+        </a>
+
+    </div>
+</div>
+
+<div class="ui mobile only menu grid">
+    <div class="ui text container ">
+
+        <a class="item" href="/index.html">
+            <i class="home icon"></i> Home
+        </a>
+
+        <a class="item" href="/info.html">
+            <i class="info circle icon"></i> Info
+        </a>
+
+        <div class="ui dropdown item">
+            <div class="text">
+                <i class="calendar icon"></i>
+                Days
+                <i class="dropdown icon"></i>
+            </div>
+            <div class="menu">
+                
+                    <a class="item" href="/day1/day1_index.html">
+                        <i class="calendar icon"></i> Day 1
+                    </a>
+                
+                    <a class="item" href="/day2/day2_index.html">
+                        <i class="calendar icon"></i> Day 2
+                    </a>
+                
+                    <a class="item" href="/day3/day3_index.html">
+                        <i class="calendar icon"></i> Day 3
+                    </a>
+                
+                    <a class="item" href="/day4/day4_index.html">
+                        <i class="calendar icon"></i> Day 4
+                    </a>
+                
+                    <a class="item" href="/day5/day5_index.html">
+                        <i class="calendar icon"></i> Day 5
+                    </a>
+                
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<div class="ui text container">
+    
+
+    <h2 class="ui center aligned icon header">
+    
+        <i class="settings icon"></i>
+    
+    Software Installation 
+</h2>
+
+
+    <h4 class="ui horizontal teal divider">
+    
+     <a class="ui teal label" name="git-and-github" href="#git-and-github">GIT AND GITHUB</a>
+</h4>
+
+
+    <h2>How to install git</h2>
+<h3>Install git on Windows</h3>
+<ol>
+<li>Download the <a href="https://git-for-windows.github.io/">Git for Windows</a> installer.</li>
+<li>Run the installer and follow the steps bellow:
+<ol>
+<li>Click on <code>Next</code> until you get to the step below.</li>
+<li>Select <code>Use Git from the Windows Command Prompt</code> and click on <code>Next</code>.</li>
+<li>Click on <code>Next</code>. Keep <code>Checkout Windows-style, commit Unix-style line endings</code> selected.</li>
+<li>Select <code>Use Windows' default console window</code> and click on <code>Next</code>.</li>
+<li>Click on <code>Next</code> then <code>Finish</code>.</li>
+</ol>
+</li>
+<li><a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a></li>
+</ol>
+<p>This will provide you with both Git and Bash in the Git Bash program.
+If you make a mistake you may rerun the installer and select the appropriate options.</p>
+<hr />
+<h3>Install git on Mac OSX</h3>
+<p>To fully set up your Mac for bioinformatics
+we recommend the <a href="https://www.biostarhandbook.com/book/computer/get-ready.html">Biostar Handbook</a> website.</p>
+<p>Alternatively to set up just git alone see:</p>
+<ol>
+<li><a href="https://git-scm.com/downloads">Git downloads</a></li>
+<li><a href="https://www.youtube.com/watch?v=9LQhwETCdwY">Video Tutorial</a></li>
+</ol>
+<p>For OS X 10.9 and higher, install Git for Mac by downloading and running the most
+recent <code>mavericks</code> installer from this list.</p>
+<p>After installing Git,
+there will not be anything in your /Applications folder, as Git is a command line program.
+For older versions of OS X (10.5-10.8) use the most recent available installer
+labelled <code>snow-leopard</code> available here.</p>
+<hr />
+<h3>Install git on Linux</h3>
+<p>If Git is not already available on your machine you can try to install it via
+your distro's package manager. For Debian/Ubuntu run <code>sudo apt-get install git</code>
+and for Fedora run <code>sudo yum install git</code>.</p>
+<hr />
+<h3>Create a GitHub account</h3>
+<p>Git is a version control system that lets you track who made changes
+to what when and has options for easily updating a shared or public version of your
+code on <a href="https://www.github.com">github.com</a>.
+You will need a supported web browser (current versions of Chrome, Firefox or Safari,
+or Internet Explorer version 9 or above).</p>
+<p>You will need an account at <a href="https://www.github.com">github.com</a> for parts of the Git lesson.
+Basic GitHub accounts are free. We encourage you to create a GitHub account
+if you don't have one already. Please consider what personal information
+you'd like to reveal. For example, you may want to review these instructions
+for keeping your email address private provided at GitHub.</p>
+<h2>Git/Github survival guide</h2>
+<p>The most commonly used command with git.</p>
+<h3>Set up SSH passwords</h3>
+<pre><code>ssh-keygen
+</code></pre>
+<p>This will generate a password in <code>~/.ssh/id_rsa.pub</code></p>
+<pre><code>cat ~/.ssh/id_rsa.pub
+</code></pre>
+<p>Copy and paste the key into the <code>Github -&gt; Account -&gt; Settings -&gt; Add SSH key</code></p>
+<h3>Common git commands</h3>
+<p>Command we typically do once:</p>
+<ul>
+<li><code>git clone &lt;uri&gt;</code> - clones a remote repository</li>
+<li><code>git add &lt;filepath&gt;</code> - adds a file to git tracking</li>
+</ul>
+<p>Commands we use all the time:</p>
+<ul>
+<li><code>git status</code> - what is the current status of the repository</li>
+<li><code>git diff</code> - what has changed since the last commit</li>
+<li><code>git push &lt;uri&gt;</code> - push the changes to remote</li>
+<li><code>git pull &lt;uri&gt;</code> - pull and merge remote</li>
+</ul>
+<p>Further information:</p>
+<ul>
+<li><a href="http://software-carpentry.org/lessons/">Git related lessons on Software Carpentry</a></li>
+</ul>
+
+
+    <h4 class="ui horizontal teal divider">
+    
+     <a class="ui teal label" name="r-and-rstudio" href="#r-and-rstudio">R AND RSTUDIO</a>
+</h4>
+
+
+    <h2>How to install R</h2>
+<p>For simulation we are going to use R, a statistical programming
+language. The software is open-source, interacts well with <em>git</em>, has
+many packages written by and for the bioinformatics community and is
+also useful for developing graphics and web app.</p>
+<p>We are going to access R via a package called RStudio, which provides
+additional resources including a window system which facilitates
+installing packages , accessing the help files, and documenting your
+work. RStudio is also free.</p>
+<p>All of this software is available on Macs, Windows, and Linux. Mostly it
+works identically on all types of computers, although I have noticed
+that sometimes the versions are out of sync.</p>
+<p>To get started, please install R and RStudio as directed below.</p>
+<h3>Installing R</h3>
+<ol>
+<li>
+<p>Go to <a href="https://www.r-project.org/">https://www.r-project.org/</a></p>
+</li>
+<li>
+<p>Select a CRAN mirror. (This is the computer that you are downloading
+from. It is advisable to select a mirror that is geographically
+close.)</p>
+</li>
+<li>
+<p>Select the appropriate version for the type of computer you are
+using.</p>
+</li>
+<li>
+<p>Install the downloaded software just like any other software on your
+computer.</p>
+</li>
+</ol>
+<h3>Installing RStudio</h3>
+<ol>
+<li>
+<p>Go to <a href="https://www.rstudio.com/">https://www.rstudio.com/</a></p>
+</li>
+<li>
+<p>Click on the Download button.</p>
+</li>
+<li>
+<p>Scroll down to &quot;Download R Studio Desktop&quot;.</p>
+</li>
+<li>
+<p>Select the appropriate installer.</p>
+</li>
+<li>
+<p>Install the downloaded software.</p>
+</li>
+</ol>
+<h3>Check the download</h3>
+<p>Click on the R Studio icon. This should open R Studio.</p>
+
+
+    <h4 class="ui horizontal teal divider">
+    
+     <a class="ui teal label" name="editor" href="#editor">EDITOR</a>
+</h4>
+
+
+    <h3>Install a text editor</h3>
+<p>Microsoft Word is <strong>NOT</strong> a text editor. Using Word to edit text will will eventually cause (devious) errors.
+Best if you start using a proper text editor. Essential features:</p>
+<ul>
+<li>Ability to show <code>TAB</code> characters versus multiple <code>SPACE</code> characters.
+Mixing up <code>TABS</code> and <code>SPACES</code> is a very common error. Copy-pasting from a web
+page often turns a <code>TAB</code> into <code>SPACE</code> characters (yes, it very annoying!)
+You need the ability to see the difference between these otherwise invisible
+characters if necessary.</li>
+<li>Show line numbering. Allows you to identify the line where an error is reported.</li>
+<li>Switch line endings. Line endings have variants: <code>Unix</code>, <code>Windows</code> or <code>Mac OS 9</code> endings
+(the new <code>Mac OSX</code> uses <code>Unix</code> line endings). Typically all files should have a  <code>Unix</code> line ending mode.
+Your editor needs to have the ability to convert line endings to <code>Unix</code> format.</li>
+</ul>
+<h3>Recommendations</h3>
+<ul>
+<li><a href="https://notepad-plus-plus.org/">Notepad++</a> on Windows</li>
+<li><a href="https://www.sublimetext.com/">Sublime Text</a> on most other platforms</li>
+</ul>
+<p>Personal preference :</p>
+<ul>
+<li><a href="https://www.jetbrains.com/pycharm/">PyCharm</a> is a Python programming specific
+editor with very powerful features.</li>
+</ul>
+<hr />
+<h3>Install pandoc</h3>
+<p><a href="http://pandoc.org/">Pandoc</a> can convert documents across formats: <code>markdown</code> to <code>html</code> or <code>pdf</code> etc.</p>
+<p>On Mac OSX:</p>
+<pre><code>brew install pandoc
+</code></pre>
+<p>On windows visit the <a href="http://pandoc.org/">Pandoc</a> website.</p>
+<hr />
+<h3>Online markdown editors</h3>
+<ul>
+<li><a href="http://dillinger.io/">Dillinger</a></li>
+<li><a href="https://stackedit.io/">StackEdit</a></li>
+</ul>
+
+
+
+</div>
+
+<div class="ui text container">
+    <p>
+        
+
+            <h4 class="ui horizontal divider header">
+                <i class="github icon"></i>
+            </h4>
+
+            <div class="ui center aligned container">
+                Penn State &bull; 2016 &bull;
+                <a href="https://github.com/biostars/bootcamp-central">bootcamp-central</a>
+                via <a href="https://github.com/ialbert/pyblue">pyblue</a>
+
+            </div>
+
+        
+    </p>
+</div>
+
+</body>
+</html>

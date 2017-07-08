@@ -1,0 +1,464 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Bootcamp</title>
+    <link rel='shortcut icon' href='/static/favicon.ico' type='image/x-icon'/>
+    <link href="/static/lib/semantic.min.css" rel="stylesheet" crossorigin="anonymous"/>
+    <link href="/static/bootcamp.css" rel="stylesheet" crossorigin="anonymous"/>
+    <link href="/static/lib/prism.css" rel="stylesheet" crossorigin="anonymous"/>
+    <script src="/static/lib/jquery.min.js"></script>
+    <script src="/static/lib/prism.js"></script>
+    <script src="/static/lib/semantic.min.js"></script>
+    <script src="/static/lib/dropdown.min.js"></script>
+    <script src="/static/bootcamp.js"></script>
+</head>
+<body>
+
+<div class="ui tablet only computer only menu grid">
+    <div class="ui text container ">
+
+        <a class="item" href="/">
+            <i class="home icon"></i> Home
+        </a>
+
+        
+            <a class="item" href="/day1/day1_index.html">
+                <i class="calendar icon"></i> Day 1
+            </a>
+        
+            <a class="item" href="/day2/day2_index.html">
+                <i class="calendar icon"></i> Day 2
+            </a>
+        
+            <a class="item" href="/day3/day3_index.html">
+                <i class="calendar icon"></i> Day 3
+            </a>
+        
+            <a class="item" href="/day4/day4_index.html">
+                <i class="calendar icon"></i> Day 4
+            </a>
+        
+            <a class="item" href="/day5/day5_index.html">
+                <i class="calendar icon"></i> Day 5
+            </a>
+        
+
+        <a class="item" href="/info.html">
+            <i class="info circle icon"></i> Info
+        </a>
+
+    </div>
+</div>
+
+<div class="ui mobile only menu grid">
+    <div class="ui text container ">
+
+        <a class="item" href="/index.html">
+            <i class="home icon"></i> Home
+        </a>
+
+        <a class="item" href="/info.html">
+            <i class="info circle icon"></i> Info
+        </a>
+
+        <div class="ui dropdown item">
+            <div class="text">
+                <i class="calendar icon"></i>
+                Days
+                <i class="dropdown icon"></i>
+            </div>
+            <div class="menu">
+                
+                    <a class="item" href="/day1/day1_index.html">
+                        <i class="calendar icon"></i> Day 1
+                    </a>
+                
+                    <a class="item" href="/day2/day2_index.html">
+                        <i class="calendar icon"></i> Day 2
+                    </a>
+                
+                    <a class="item" href="/day3/day3_index.html">
+                        <i class="calendar icon"></i> Day 3
+                    </a>
+                
+                    <a class="item" href="/day4/day4_index.html">
+                        <i class="calendar icon"></i> Day 4
+                    </a>
+                
+                    <a class="item" href="/day5/day5_index.html">
+                        <i class="calendar icon"></i> Day 5
+                    </a>
+                
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<div class="ui text container">
+    
+
+    <h2 class="ui center aligned icon header">
+    
+        <i class="calendar icon"></i>
+    
+    Software Carpentry - How good are the Best Practices? 
+</h2>
+
+
+    <h4 class="ui horizontal teal divider">
+    
+     <a class="ui teal label" name="best-practices" href="#best-practices">BEST PRACTICES</a>
+</h4>
+
+
+    <p>Adapted from Software Carpentry <a href="http://swcarpentry.github.io/slideshows/best-practices/index.html">Best Practices in Scientific Computing</a></p>
+<hr />
+<h2>Background</h2>
+<ul>
+<li>Software is lab equipment for the 21st Century</li>
+<li>Scientists spend a lot of time writing it</li>
+<li>But over 90% are self-taught</li>
+<li>They don't know what &quot;good&quot; looks like</li>
+<li>So we describe 24 practices in 8 groups</li>
+</ul>
+<p><strong>Good programmers are 10X more productive than average</strong></p>
+<p><strong>Good practices are 10X more productive than average</strong></p>
+<hr />
+<h2>Rule 1: Write Programs for People not Computers</h2>
+<ul>
+<li>Hard to tell if code that's difficult to understand is doing what it's supposed to</li>
+<li>Hard for other scientists to re-use it...</li>
+<li>...including your future self</li>
+</ul>
+<h3>Rule 1.1: Keep it simple</h3>
+<ul>
+<li>Short-term memory can hold 7±2 items</li>
+<li>So break programs into short, readable functions, each taking only a few parameters</li>
+</ul>
+<h3>Rule 1.2: Make names consistent, distinctive, and meaningful.</h3>
+<ul>
+<li><code>p</code> doesn't help the reader's short term memory as much as <code>pressure</code></li>
+<li>Don't use <code>temp</code> for both &quot;temporary&quot; and &quot;temperature&quot;</li>
+<li><code>i</code>, <code>j</code> are OK for indices in small scopes</li>
+</ul>
+<h3>Rule 1.3: Make code style and formatting consistent.</h3>
+<ul>
+<li><em>Which</em> rules don't matter -- <em>having</em> rules does</li>
+<li>Brain assumes all differences are significant</li>
+<li>Every inconsistency slows comprehension</li>
+</ul>
+<hr />
+<h2>Rule 2: Let the Computer Do the Work</h2>
+<ul>
+<li>Computers exist to repeat things quickly</li>
+<li>99% accuracy ⇒ 63% of at least one error per hundred repetitions</li>
+</ul>
+<h3>Rule 2.1: Make the computer repeat tasks.</h3>
+<ul>
+<li>Write little programs for everything</li>
+<li>Even if they're called scripts, macros, or aliases</li>
+<li>Easier to do this with text-based programming systems than with GUIs</li>
+</ul>
+<h3>Rule 2.2: Save recent commands in a file for re-use.</h3>
+<ul>
+<li>Most text-based interfaces do this automatically
+<ul>
+<li>Repeat recent operations using <code>history</code></li>
+<li>&quot;Reproducibility in the small&quot;</li>
+</ul>
+</li>
+<li>Saving history supports &quot;reproducibility in the large&quot;
+<ul>
+<li>An accurate record of how a result was produced</li>
+<li><em>If</em> everything can be captured</li>
+</ul>
+</li>
+</ul>
+<h3>Rule 2.3: Use a build tool to automate workflows.</h3>
+<ul>
+<li>Originally developed for compiling programs</li>
+<li>Can be used whenever some files depend on others</li>
+<li>Makes workflow explicit</li>
+</ul>
+<hr />
+<h2>Rule 3: Make Incremental Changes</h2>
+<ul>
+<li>Most scientists don't have &quot;requirements&quot;
+<ul>
+<li>They are their own users</li>
+<li>Code evolves in tandem with research</li>
+</ul>
+</li>
+<li>Closest fit from industry is <em>agile development</em></li>
+</ul>
+<h3>Rule 3.1: Small steps with frequent feedback</h3>
+<ul>
+<li>People can concentrate for 45-90 minutes without a break</li>
+<li>So size each burst of work to fit that</li>
+<li>Longer cycle should be a week or two</li>
+</ul>
+<h3>Rule 3.2: Use a version control system.</h3>
+<ul>
+<li>Tracks changes</li>
+<li>Allows them to be undone</li>
+<li>Supports independent parallel development</li>
+<li>Essential for collaboration collaboration</li>
+</ul>
+<h3>Rule 3.3: Version control EVERYTHING</h3>
+<ul>
+<li>Not just software: papers, raw images, ...
+<ul>
+<li>Not gigabytes...</li>
+<li>...but metadata <em>about</em> those gigabytes</li>
+</ul>
+</li>
+<li>Leave out things generated by the computer
+<ul>
+<li>Use build tools to reproduce those instead</li>
+<li>Unless they take a very long time to create</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>Rule 4: Don't Repeat Yourself (or Others)</h2>
+<ul>
+<li>Anything repeated in two or more places will eventually be wrong in at least one</li>
+<li>If it's faster to re-create than to discover or understand, <em>fix it</em></li>
+</ul>
+<h3>Rule 4.1: There can be only one</h3>
+<ul>
+<li>Every piece of data must have
+a single authoritative representation in the system.</li>
+<li>Define constants exactly once</li>
+<li>Ditto file formats, geographical locations, ...</li>
+</ul>
+<h3>Rule 4.2: Modularize code rather than copying and pasting.</h3>
+<ul>
+<li>Reducing code cloning reduces error rates</li>
+<li>Cuts the amount of testing needed</li>
+<li>And increases comprehension</li>
+</ul>
+<h3>Rule 4.3: Re-use code instead of rewriting it.</h3>
+<ul>
+<li>It takes experts years to build high-quality numerical or statistical software</li>
+<li>Your time is better spent doing science on top of that</li>
+</ul>
+<hr />
+<h2>Rule 5: Plan for Mistakes</h2>
+<ul>
+<li>No single practice catches everything</li>
+<li>So practice <em>defense in depth</em></li>
+</ul>
+<p><em>Note: improving quality increases productivity</em></p>
+<h3>Rule 5.1: Don't trust. Verify</h3>
+<ul>
+<li>Add assertions to programs to check their operation.</li>
+<li>&quot;This must be true here or there is an error&quot;</li>
+<li>Like diagnostic circuits in hardware</li>
+<li>No point proceeding if the program is broken...</li>
+<li>...and they serve as <em>executable documentation</em></li>
+</ul>
+<h3>Rule 5.2: Use an off-the-shelf unit testing library.</h3>
+<ul>
+<li>Manages setup, execution, and reporting</li>
+<li>Re-run unit tests after every change to the code to check for <em>regression</em></li>
+</ul>
+<p>Testing is Hard</p>
+<ul>
+<li>&quot;If I knew what the right answer was, I'd have published by now.&quot;</li>
+<li>Compare to experimental data</li>
+<li>Or to analytic solutions of simple problems</li>
+<li>Or to old (trusted) programs</li>
+<li>If nothing else, forces scientists to document what &quot;errors&quot; are acceptable</li>
+</ul>
+<h3>Rule 5.3: Turn bugs into test cases.</h3>
+<ul>
+<li>Write a test that fails when the bug is present</li>
+<li>Then work on the code until that test passes...</li>
+<li>...and no others are failing</li>
+</ul>
+<p>Test-Driven Development</p>
+<ul>
+<li>Why wait? Always write the tests, then the code</li>
+<li>Improves focus</li>
+<li>Encourages writing testable code</li>
+<li>And ensures tests actually get written...</li>
+<li>&quot;Red, green, refactor&quot;</li>
+</ul>
+<h3>Rule 5.4: Use a symbolic debugger.</h3>
+<ul>
+<li>Explore the program as it runs</li>
+<li>Better than print statements
+<ul>
+<li>You don't have to re-run...</li>
+<li>...or guess in advance what you'll need to know</li>
+</ul>
+</li>
+<li>Use <em>breakpoints</em> to stop program at particular points or when particular things are true</li>
+</ul>
+<hr />
+<h2>Rule 6: Optimize Software Only After It Works Correctly</h2>
+<ul>
+<li>Even experts find it hard to predict performance bottlenecks</li>
+<li>Small changes to code often have dramatic impact on performance</li>
+<li>So get it right, <em>then</em> make it fast</li>
+</ul>
+<h3>Rule 6.1: Use a profiler to identify bottlenecks.</h3>
+<ul>
+<li>Reports how much time is spent on each line of code</li>
+<li>Re-check on new computers or when switching libraries</li>
+<li>Summarize across unit tests</li>
+</ul>
+<h3>Rule 6.2: Write code in the highest-level language possible.</h3>
+<ul>
+<li>People write the same number of lines of code per hour regardless of language</li>
+<li>So use the most expressive language available to get the &quot;right&quot; version...</li>
+<li>...then rewrite core pieces (possibly in a lower-level language) to get the &quot;fast&quot; version</li>
+</ul>
+<hr />
+<h2>Rule 7: Document Design and Purpose not Mechanics</h2>
+<ul>
+<li>Goal is to make the next person's life easier</li>
+<li>Focus on things the code <em>doesn't</em> say
+<ul>
+<li>Or doesn't say clearly</li>
+<li>E.g., file formats</li>
+</ul>
+</li>
+<li>An example is worth a thousand words...</li>
+</ul>
+<h3>Rule 7.1: Document interfaces and reasons not implementations.</h3>
+<ul>
+<li>Interfaces and reasons change more slowly than implementation details, so documenting them is better economics</li>
+<li>And most people care about using code more than understanding it</li>
+</ul>
+<h3>Rule 7.2: Refactor code in preference to explaining how it works.</h3>
+<ul>
+<li>Good code can be understood when read aloud</li>
+<li>Good programmers build libraries so that solving their problem is straightforward</li>
+<li>Again, &quot;red, green, refactor&quot;</li>
+</ul>
+<h3>Rule 7.3: Embed the documentation for a piece of software in that software.</h3>
+<ul>
+<li>Specially-formatted comments or strings</li>
+<li>More likely to be kept up to date</li>
+<li>More accessible to interactive help</li>
+<li>Many modern tools embed code in documentation rather than vice versa</li>
+</ul>
+<hr />
+<h2>Rule 8: Collaborate</h2>
+<ul>
+<li>Computers were invented to calculate</li>
+<li>The web was invented to collaborate</li>
+<li>Science is more fun when it's shared</li>
+</ul>
+<h3>Rule 8.1: Use pre-merge code reviews.</h3>
+<ul>
+<li>Have someone else review changes <em>before</em> merging in version control</li>
+<li>Significantly reduces errors</li>
+<li>Good way to share knowledge</li>
+<li>It's what makes open source possible</li>
+</ul>
+<h3>Rule 8.2 Use pair programming</h3>
+<ul>
+<li>Code in pairs when bringing someone new up to speed
+and when tackling particularly tricky problems.</li>
+<li>Two people, one keyboard, one screen</li>
+<li>An extreme form of code review</li>
+<li>Can get a bit tired if done all the time...</li>
+</ul>
+<h3>Rule 8.3: Use an issue tracking tool.</h3>
+<ul>
+<li>A shared to-do list
+<ul>
+<li>Items can be assigned to people</li>
+<li>Supports comments, links to code and papers, etc.</li>
+</ul>
+</li>
+<li>&quot;Version control is where we've been, the issue tracker is where we're going&quot;</li>
+</ul>
+<hr />
+<h2>Gosh, That's a Lot</h2>
+<p>One step at a time.</p>
+<ol>
+<li>Use text-based interfaces</li>
+<li>Turn history into scripts</li>
+<li>Put everything in version control</li>
+<li>Use test-driven development</li>
+</ol>
+<p>Citation: <a href="http://dx.doi.org/10.1371/journal.pbio.1001745">Best Practices for Scientific Computing&quot; ,
+PLOS Biology, Jan. 2014</a>.</p>
+
+
+    <h4 class="ui horizontal teal divider">
+    
+     <a class="ui teal label" name="keep-or-toss" href="#keep-or-toss">KEEP OR TOSS</a>
+</h4>
+
+
+    <h2>Annotated Best Practices</h2>
+<p>Edit the markdown document: <code>web/2016/day2/docs/best_practices_keep_or_toss.md</code></p>
+<p>Add your choices below. Write them in the following format.</p>
+<hr />
+<p>by <code>ialbert</code></p>
+<h3>KEEP Rule 1.1 Keep it simple</h3>
+<p>Simplicity is the most powerful virtue that any process
+can have. There is only one problem: it is kind of
+difficult to keep it simple</p>
+<h3>KEEP Rule 3.1: Small steps with frequent feedback</h3>
+<p>There is great value in keep the entire pipeline working at most times.
+Save often, commit often. Rerun often.</p>
+<h3>KEEP Rule 3.3: Version control EVERYTHING</h3>
+<p>While git was designed for software you should keep everything (other
+than large datasets) in it. You get free backup and replication with it!</p>
+<h3>TOSS Rule 5.4 Use a symbolic debugger.</h3>
+<p>There is nothing wrong with print statements.
+Symbolic debuggers promote writing complex programs.
+If you can't debug a program with simple print
+statements your program may be already too complicated.</p>
+<h3>TOSS Rule 8.1 Use pre-merge code reviews</h3>
+<p>This is a concept borrowed from software engineering where
+it is assumed that all people on a team work on a the exact same
+and relatively simple problem. This rarely happens in sciences.
+This rule is one of these &quot;feel good&quot; rules that are just unrealistic in
+scientific practice.</p>
+<h3>TOSS Rule 8.2 Use pair programming</h3>
+<p>Pair programming is again a concept borrowed from
+software engineering. But it disregards the fact that most
+software engineers need to solve
+far simpler and far better defined problems than
+scientists do. It is sort of a pipe dream that we can do this.</p>
+<hr />
+
+
+
+</div>
+
+<div class="ui text container">
+    <p>
+        
+
+            <h4 class="ui horizontal divider header">
+                <i class="github icon"></i>
+            </h4>
+
+            <div class="ui center aligned container">
+                Penn State &bull; 2016 &bull;
+                <a href="https://github.com/biostars/bootcamp-central">bootcamp-central</a>
+                via <a href="https://github.com/ialbert/pyblue">pyblue</a>
+
+            </div>
+
+        
+    </p>
+</div>
+
+</body>
+</html>

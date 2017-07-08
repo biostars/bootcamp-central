@@ -1,0 +1,13 @@
+{# name = Day 2: Software Carpentry #}
+{% extends "base.html" %}
+{% load bootcamp %}
+
+{% block body %}
+
+    {% header text=page.name icon="calendar" %}
+
+    {% divider "MATERIALS" %}
+
+    {% include_markdown "day2_materials.md" %}
+
+{% endblock %}
