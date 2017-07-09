@@ -6,6 +6,5 @@
 
 * [Version Control, Documentation, Automation][main]  by Shaun Mahony
 
-
 [install]: /install.html
 [main]: docs/smahony-presentation.pdf

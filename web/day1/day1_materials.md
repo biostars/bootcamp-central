@@ -1,7 +1,5 @@
 
-## Perspectives on Data Reproducibility
-
-### Schedule
+## Schedule
 
 * 8:30 – 8:45 - Coffee and light breakfast
 * 8:45 - 9:15 - * [Dr. Cooduvalli Shashikant](http://animalscience.psu.edu/directory/css13): Introductions and opening remarks
@@ -16,7 +14,7 @@
 * 3:20 - 4:05	- [Dr. Cheryl Keller](http://bmb.psu.edu/directory/cak142): Metadata madness: Lessons from Encode
 * 4:05 – 5:00 – Software review and installation: TA’s and Instructors
 
-### Videos
+## Videos
 
 1. [The Importance of Reproducible Research
   in High-Throughput Biology: Case Studies in Forensic Bioinformatics][bag] by Keith Baggerly, UT M.D. Anderson Cancer Center, 201  
@@ -28,6 +26,6 @@
 [crisis]: http://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970
 [reproducibility]: http://www.nature.com/news/reproducibility-1.17552
 
-### Software installation 
+## Software installation 
 
 * [Install the required software](/install.html)
