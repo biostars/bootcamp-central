@@ -6,8 +6,20 @@
 
     {% header text=page.name icon="calendar" %}
 
+    {% divider "SCHEDULE" %}
+
+    {% include_markdown "day2_schedule.md" %}
+
     {% divider "MATERIALS" %}
 
     {% include_markdown "day2_materials.md" %}
+
+    {% divider "LESSONS" %}
+
+    {% include_markdown "day2_lessons.md" %}
+
+    {% divider "GOING FURTHER" %}
+
+    {% include_markdown "day2_more.md" %}
 
 {% endblock %}

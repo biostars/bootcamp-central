@@ -1,5 +1,11 @@
-## Software Carpentry
+## Install software
 
-The basics of computational reproducibility: version control, documentation, automation
+* [Install the required software][install] 
 
-Instructor: Dr. Shaun Mahony
+## Presentation
+
+* [Version Control, Documentation, Automation][main]  by Shaun Mahony
+
+
+[install]: /install.html
+[main]: docs/smahony-presentation.pdf
