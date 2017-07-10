@@ -4,8 +4,8 @@
 
 ## Presentation
 
-* [Version Control, Documentation, Automation][main]  by Shaun Mahony
+* [Software carpentry and reproducible data analysis][main]  by Shaun Mahony
 
 
 [install]: /install.html
-[main]: docs/smahony-presentation.pdf
+[main]: docs/Mahony_SoftwareCarpentry_20170711.pdf

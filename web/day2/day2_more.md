@@ -1,3 +1,9 @@
+## Advanced Bash scripting
+
+* [Advanced Bash-Scripting Guide][bash]
+
+[bash]: http://tldp.org/LDP/abs/html
+
 ## Make
 
 * [Automation with make][socmake]
