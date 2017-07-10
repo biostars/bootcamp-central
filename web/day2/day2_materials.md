@@ -8,4 +8,4 @@
 
 
 [install]: /install.html
-[main]: docs/Mahony_SoftwareCarpentry_20170711.pdf
+[main]: https://bootcamp.biostars.io/day2/docs/Mahony_SoftwareCarpentry_20170711.pdf
