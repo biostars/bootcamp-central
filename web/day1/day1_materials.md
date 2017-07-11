@@ -8,7 +8,7 @@
 * 9:15 – 10:00 - [Dr. Kenneth Weiss](http://anth.la.psu.edu/people/kmw40): How we make scientific inference and its relation to reproducibility from an evolutionary perspective
 * 10:45 - 10:45 - [Dr. Ross Hardison](http://bmb.psu.edu/directory/rch8): It can happen to you. Sources and proximity of lack of reproducibility
 * 10:45 - 11:05 - Coffee break
-* 11:05 - 11:50 - [Dr. Rick Gilmore](http://psych.la.psu.edu/directory/rog1) The reproducibility “crisis” in psychology and neuroscience  See: https://gilmore-lab.github.io/psu-data-repro-bootcamp-2017-07-10/
+* 11:05 - 11:50 - [Dr. Rick Gilmore](http://psych.la.psu.edu/directory/rog1): [The reproducibility “crisis” in psychology and neuroscience](https://gilmore-lab.github.io/psu-data-repro-bootcamp-2017-07-10/#/)
 * 12:00 - 1:30 - Lunch (provided)
 * 1:30 - 2:15 - [Dr. Vasant Honavar](https://www.ist.psu.edu/directory/faculty/vuh14): Computational reproducibility and data sharing
 * 2:15 - 3:00 - * [Dr. James Rosenberger](http://stat.psu.edu/people/jlr): Issues that are important from a publication perspective and re-producing the analysis from the source data from an experiment
