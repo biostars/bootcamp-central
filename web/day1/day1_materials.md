@@ -4,16 +4,16 @@
 ### Schedule
 
 * 8:30 – 8:45 - Coffee and light breakfast
-* 8:45 - 9:15 - * [Dr. Cooduvalli Shashikant](http://animalscience.psu.edu/directory/css13): Introductions and opening remarks
-* 9:15 – 10:00 - [Dr. Kenneth Weiss](http://anth.la.psu.edu/people/kmw40): How we make scientific inference and its relation to reproducibility from an evolutionary perspective
-* 10:45 - 10:45 - [Dr. Ross Hardison](http://bmb.psu.edu/directory/rch8): It can happen to you. Sources and proximity of lack of reproducibility
+* 8:45 - 9:15 - * [Dr. Cooduvalli Shashikant](http://animalscience.psu.edu/directory/css13): [Introductions and opening remarks](docs/Shashikant-Introduction.pdf)
+* 9:15 – 10:00 - [Dr. Kenneth Weiss](http://anth.la.psu.edu/people/kmw40): [How we make scientific inference and its relation to reproducibility from an evolutionary perspective](docs/Weiss-BGSummerBookCamp2017-Reproducibility.pdf)
+* 10:45 - 10:45 - [Dr. Ross Hardison](http://bmb.psu.edu/directory/rch8): [It can happen to you: Sources and proximity of lack of reproducibility](docs/Hardison-SourcesLackReprod-CommonProbl-rch_2017.pdf)
 * 10:45 - 11:05 - Coffee break
 * 11:05 - 11:50 - [Dr. Rick Gilmore](http://psych.la.psu.edu/directory/rog1): [The reproducibility “crisis” in psychology and neuroscience](https://gilmore-lab.github.io/psu-data-repro-bootcamp-2017-07-10/#/)
 * 12:00 - 1:30 - Lunch (provided)
-* 1:30 - 2:15 - [Dr. Vasant Honavar](https://www.ist.psu.edu/directory/faculty/vuh14): Computational reproducibility and data sharing
-* 2:15 - 3:00 - * [Dr. James Rosenberger](http://stat.psu.edu/people/jlr): Issues that are important from a publication perspective and re-producing the analysis from the source data from an experiment
+* 1:30 - 2:15 - [Dr. Vasant Honavar](https://www.ist.psu.edu/directory/faculty/vuh14): [Computational reproducibility and data sharing](docs/Honavar-Reproducible-research-bootcamp.pdf)
+* 2:15 - 3:00 - * [Dr. James Rosenberger](http://stat.psu.edu/people/jlr): [Issues that are important from a publication perspective and re-producing the analysis from the source data from an experiment](docs/Rosenberger-BootcampLectureJLR-2017-07-10.pdf)
 * 3:00 - 3:20 - Coffee break
-* 3:20 - 4:05	- [Dr. Cheryl Keller](http://bmb.psu.edu/directory/cak142): Metadata madness: Lessons from Encode
+* 3:20 - 4:05	- [Dr. Cheryl Keller](http://bmb.psu.edu/directory/cak142): [Metadata madness: Lessons from Encode](docs/Keller_PSU_metadata_071017_final.pdf)
 * 4:05 – 5:00 – Software review and installation: TA’s and Instructors
 
 ### Videos
