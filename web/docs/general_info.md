@@ -22,7 +22,7 @@ Please contact the organizers for registration or other bootcamp related issues:
 * Yafei Lyu <yul@psu.edu>
 
 ### [Participants]
-[2017 BootCamp Partcipants](/participants.md)
+[2017 BootCamp Partcipants](bootcamp-central-1/web/docs/paticipants.md)
 
 ### Funding and Support
 
