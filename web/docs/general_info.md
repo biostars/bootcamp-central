@@ -18,7 +18,7 @@ Please contact the organizers for registration or other bootcamp related issues:
 
 ### Teaching Assistants
 
-* Di (Bruce) Chen <dxc385@psu.edu>, 
+* Di (Bruce) Chen <dxc385@psu.edu>  
 * Yafei Lyu <yul@psu.edu>
 
 ### Participants
