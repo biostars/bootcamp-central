@@ -1,5 +1,5 @@
-Timothy Russell	tjr30@psu.edu/
-Hillary Figler	hmf151@psu.edu
+*Timothy Russell	tjr30@psu.edu
+*Hillary Figler	hmf151@psu.edu
 Oluwaseye Adekanye	Seyeadekanye@gmail.com
 Pankaj Kuhar	pxk5160@psu.edu
 Bipana Paudel Timilsena	bpp5121@psu.edu
