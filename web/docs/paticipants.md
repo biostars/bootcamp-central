@@ -39,4 +39,5 @@ Imhoi Koo	iuk41@psu.edu
 David Galbraith	dag5031@gmail.com  
 Justine Alexander	Jpa5275@psu.edu  
 Sampurna Sattar	sus56@psu.edu  
-Di (Bruce) Chen	dxc385@psu.edu
+Yafei Lyu yul199@psu.edu(TA)  
+Di (Bruce) Chen	dxc385@psu.edu(TA)
