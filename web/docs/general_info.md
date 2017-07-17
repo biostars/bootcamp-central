@@ -21,8 +21,8 @@ Please contact the organizers for registration or other bootcamp related issues:
 * Di (Bruce) Chen <dxc385@psu.edu>, 
 * Yafei Lyu <yul@psu.edu>
 
-### [Participants]
-[2017 BootCamp Partcipants](bootcamp-central-1/web/docs/paticipants.md)
+### Participants
+[2017 BootCamp Partcipants](~/web/docs/paticipants.md)
 
 ### Funding and Support
 
