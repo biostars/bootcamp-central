@@ -18,9 +18,10 @@ Please contact the organizers for registration or other bootcamp related issues:
 
 ### Teaching Assistants
 
-* Wilfried Guiblet <wmg133@psu.edu>, 
+* Di (Bruce) Chen <dxc385@psu.edu>, 
 * Yafei Lyu <yul@psu.edu>, 
 
+### [Participants](participants.md)
 
 ### Funding and Support
 
