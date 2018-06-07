@@ -1,16 +1,17 @@
 #
 # Makefile to build the bootcamp website.
 #
+YEAR=2018
 
 # The source of the html files.
-HTML_DIR=web
+HTML_DIR=web/${YEAR}
 
 # Temporary directory to store the output in.
 TEMP_DIR=~/temp/bootcamp
 
 # Remote host and directory that contains the site.
 WEB_HOST=www@biostars.io
-WEB_DIR=sites/bootcamp2016/
+WEB_DIR=sites/bootcamp/${YEAR}/
 WEB_PATH=${WEB_HOST}:${WEB_DIR}
 
 # Default action is to serve the directory.
@@ -41,7 +42,7 @@ generate:
 	pyblue -r ${HTML_DIR} -o ${TEMP_DIR}
 
 # Publish to the public site via rsync.
-site: generate
+publish: generate
 	# Synchronize the changed files
 	rsync -avz ${TEMP_DIR}/* ${WEB_PATH}
-	rsync -avz archive ${WEB_PATH}
+
