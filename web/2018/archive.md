@@ -1,6 +1,7 @@
 
 * [Bootcamp 2016][2016]
 * [Bootcamp 2017][2017]
+* [Bootcamp 2018][2018]
 
 [2016]: https://2016.bootcamp.biostars.io/
 [2017]: https://2017.bootcamp.biostars.io/
