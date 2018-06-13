@@ -2,7 +2,7 @@ Materials and data for the [Penn State Data Analysis Bootcamp](https://bootcamp.
 
 The bootcamp is about reproducible research. Let's see if we can reproduce the site that is about reproducible research... Hmmm...
 
-* [How to generate the site][how]
+### How to generate the site
 
 First of all note that you don't actually need to fully generate this site yourself during
 the bootcamp. These instructions are here just to
@@ -23,7 +23,11 @@ Install [pyblue][pyblue] of a specific version. It is best if you use a virtual 
 
     conda create --name bootcamp python=2
 
-Install pyblue:
+activate the new environment:
+
+    source activate bootcamp
+
+Install pyblue of a version that is known to accept the markup we use:
 
     pip install pyblue==2016.6.2
 
