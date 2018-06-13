@@ -27,7 +27,7 @@ activate the new environment:
 
     source activate bootcamp
 
-Install pyblue:
+Install pyblue of a version that is known to accept the markup we use:
 
     pip install pyblue==2016.6.2
 
