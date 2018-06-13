@@ -2,7 +2,7 @@ Materials and data for the [Penn State Data Analysis Bootcamp](https://bootcamp.
 
 The bootcamp is about reproducible research. Let's see if we can reproduce the site that is about reproducible research... Hmmm...
 
-* [How to generate the site][how]
+### How to generate the site
 
 First of all note that you don't actually need to fully generate this site yourself during
 the bootcamp. These instructions are here just to
