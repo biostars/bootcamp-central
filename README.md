@@ -23,6 +23,10 @@ Install [pyblue][pyblue] of a specific version. It is best if you use a virtual 
 
     conda create --name bootcamp python=2
 
+activate the new environment:
+
+    source activate bootcamp
+
 Install pyblue:
 
     pip install pyblue==2016.6.2
