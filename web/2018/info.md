@@ -2,9 +2,8 @@
 
 Course location, hours, requirements
 
-* Boot camp will be held June  10-14; 8:45-5PM in 107 Business Buildings
+* Boot camp will be held June  18-21; 8:45-5PM in 107 Business Buildings
 * Breakfasts and lunches are planned. Participants are on their own for dinners.
-* Boot camp ends on Friday July 14 before lunch.
 
 Please contact the organizers for registration or other bootcamp related issues:
 
@@ -19,7 +18,7 @@ Please contact the organizers for registration or other bootcamp related issues:
 ### Teaching Assistants
 
 * Wilfried Guiblet <wmg133@psu.edu>, 
-* Yafei Lyu <yul@psu.edu>, 
+* Monika Cechova <biomonika@bx.psu.edu>, 
 
 
 ### Funding and Support
