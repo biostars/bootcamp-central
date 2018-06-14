@@ -3,6 +3,8 @@
 
 ### Schedule
 
+**8:45** Breakfast
+
 **9:00-9:30** Introductions Wilfried Guiblet and Monika Cechova: Introduce instructors and participants.
 
 **9:30-10:15** Cooduvalli Shashikant: *Is there a reproducibility crisis?*
