@@ -17,7 +17,7 @@
 
 **12:05-1:15** - LUNCH
 
-**1:15-2:00** - Cheryl Keller: *Metadata madness, lessons from Encode*
+**1:15-2:00** - Cheryl Keller: *It’s a Mad, Mad, Metadata World*
 
 **2:00-2:45** - Molly Hall:  *Quality control is essential to ensuring reproducibility in genotype and non-genetic data*
 
