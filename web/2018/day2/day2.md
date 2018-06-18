@@ -31,7 +31,7 @@ Instructor: **Dr. Shaun Mahony**, Assistant Professor, Biochemistry & Molecular 
 * [Using GitHub for team projects][maingit]  by Prashant Kuntala
 
 [install]: install.html
-[main]: day2/pdf/Mahony_SoftwareCarpentry_20180819.pdf
+[main]: day2/pdf/Mahony_SoftwareCarpentry_20180619.pdf
 [maingit]: day2/pdf/Kuntala_GitWorkshop_20180619.pdf
 
 ### Lesson
