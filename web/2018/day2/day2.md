@@ -8,13 +8,14 @@
 Instructor: **Dr. Shaun Mahony**, Assistant Professor, Biochemistry & Molecular Biology
 
 * 8:45 - 9:00 - Coffee and light breakfast
-* 9:00 - 10:30 - Best Practices in Scientific Research
+* 9:00 - 9:45 - Best Practices in Scientific Research
+* 9:45 - 10:30 - Shell scripting basics
 * 10:30 - 10:50 - Coffee break
-* 10:50 - 12:00 - Shell scripting basics
+* 10:50 - 12:00 - Shell scripting (continued) and interacting with a computing cluster
 * 12:00 - 1:30 - Lunch
-* 1:30 - 3:00 - Markdown & Git
+* 1:30 - 3:00 - Git basics
 * 3:00 - 3:20 - Coffee break
-* 3:20 - 5:00 - Git (continued) and wrap-up
+* 3:20 - 5:00 - Github for team projects
 
 
 
@@ -38,7 +39,7 @@ Instructor: **Dr. Shaun Mahony**, Assistant Professor, Biochemistry & Molecular 
 * [Best Practices in Scientific Research][best]
 * [Best Practices for Scientific Computing, PLoS Biology, Jan. 2014][bestpub]
 
-[best]: docs/best_practices.html
+[best]: https://bootcamp.biostars.io/day2/docs/best_practices.html
 [bestpub]: http://dx.doi.org/10.1371/journal.pbio.1001745
 
 
