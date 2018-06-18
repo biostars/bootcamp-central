@@ -28,9 +28,11 @@ Instructor: **Dr. Shaun Mahony**, Assistant Professor, Biochemistry & Molecular 
 #### Presentation
 
 * [Software carpentry and reproducible data analysis][main]  by Shaun Mahony
+* [Using GitHub for team projects][maingit]  by Prashant Kuntala
 
 [install]: install.html
-[main]: day2/pdf/Mahony_SoftwareCarpentry_20170711.pdf
+[main]: day2/pdf/Mahony_SoftwareCarpentry_20180819.pdf
+[maingit]: day2/pdf/Kuntala_GitWorkshop_20180619.pdf
 
 ### Lesson
 

@@ -1,4 +1,4 @@
-## How to install git
+## Install git
 
 ### Install git on Windows
 
@@ -52,7 +52,7 @@ and for Fedora run `sudo yum install git`.
 
 ---
 
-### Create a GitHub account
+## Create a GitHub account
 
 Git is a version control system that lets you track who made changes
 to what when and has options for easily updating a shared or public version of your
@@ -65,10 +65,6 @@ Basic GitHub accounts are free. We encourage you to create a GitHub account
 if you don't have one already. Please consider what personal information
 you'd like to reveal. For example, you may want to review these instructions
 for keeping your email address private provided at GitHub.
-
-## Git/Github survival guide
-
-The most commonly used command with git.
 
 ### Set up SSH passwords
 
