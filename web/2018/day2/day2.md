@@ -30,7 +30,7 @@ Instructor: **Dr. Shaun Mahony**, Assistant Professor, Biochemistry & Molecular 
 * [Software carpentry and reproducible data analysis][main]  by Shaun Mahony
 
 [install]: install.html
-[main]: day2/docs/Mahony_SoftwareCarpentry_20170711.pdf
+[main]: day2/pdf/Mahony_SoftwareCarpentry_20170711.pdf
 
 ### Lesson
 
@@ -39,7 +39,7 @@ Instructor: **Dr. Shaun Mahony**, Assistant Professor, Biochemistry & Molecular 
 * [Best Practices in Scientific Research][best]
 * [Best Practices for Scientific Computing, PLoS Biology, Jan. 2014][bestpub]
 
-[best]: https://bootcamp.biostars.io/day2/docs/best_practices.html
+[best]: day2/best_practices.html
 [bestpub]: http://dx.doi.org/10.1371/journal.pbio.1001745
 
 
