@@ -1,9 +1,7 @@
-## Day 5: Summaries and Reviews
+## Workshop on emerging methods for sequence analysis
 
-### Schedule
+For those that registered for the workshop, information is available at
+http://www.ccbb.psu.edu/workshop
 
-### Videos
-
-### Reading Materials
 
 
