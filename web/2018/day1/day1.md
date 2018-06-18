@@ -13,7 +13,8 @@
 
 **10:35-11:20** - James Broach: *“10% of the time, it works every time” - Recognizing sloppy science*
 
-**11:20-12:05** - Dan Albohn: *Reproducibility in Social and Behavioral Sciences: Push back, progress, and the future*
+**11:20-12:05** - Keith Baggerly:  *http://videolectures.net/cancerbioinformatics2010_baggerly_irrh/*
+
 
 **12:05-1:15** - LUNCH
 
