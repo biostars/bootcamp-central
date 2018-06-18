@@ -29,8 +29,8 @@ Instructor: **Dr. Shaun Mahony**, Assistant Professor, Biochemistry & Molecular 
 
 * [Software carpentry and reproducible data analysis][main]  by Shaun Mahony
 
-[install]: /install.html
-[main]: https://bootcamp.biostars.io/day2/docs/Mahony_SoftwareCarpentry_20170711.pdf
+[install]: install.html
+[main]: day2/docs/Mahony_SoftwareCarpentry_20170711.pdf
 
 ### Lesson
 
