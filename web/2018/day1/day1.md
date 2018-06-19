@@ -11,7 +11,7 @@
 
 **10:15-10:35** - COFFEE BREAK
 
-**10:35-11:20** - James Broach: *[“10% of the time, it works every time” - Recognizing sloppy science](Broach_Data_Reproducibility 6-2018.pptx)*
+**10:35-11:20** - James Broach: *[“10% of the time, it works every time” - Recognizing sloppy science](/day1/docs/Broach_Data_Reproducibility 6-2018.pdf)*
 
 **11:20-12:05** - Keith Baggerly:  *http://videolectures.net/cancerbioinformatics2010_baggerly_irrh/*
 
