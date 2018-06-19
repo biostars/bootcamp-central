@@ -7,7 +7,7 @@
 
 **9:00-9:30** - Wilfried Guiblet and Monika Cechova: Introductions.
 
-**9:30-10:15** - Cooduvalli Shashikant: *[Is there a reproducibility crisis?](/day1/docs/Reproducibility_Crisis Shashi_2018.pdf)*
+**9:30-10:15** - Cooduvalli Shashikant: *[Is there a reproducibility crisis?](/day1/docs/Reproducibility_Crisis_Shashi_2018.pdf)*
 
 **10:15-10:35** - COFFEE BREAK
 
@@ -15,14 +15,13 @@
 
 **11:20-12:05** - Keith Baggerly:  *http://videolectures.net/cancerbioinformatics2010_baggerly_irrh/*
 
-
 **12:05-1:15** - LUNCH
 
-**1:15-2:00** - Cheryl Keller: *It’s a Mad, Mad, Metadata World*
+**1:15-2:00** - Cheryl Keller: *[It’s a Mad, Mad, Metadata World](Keller_PSU_metadata_061818.compressed.pdf)*
 
 **2:00-2:45** - Molly Hall:  *[Quality control is essential to ensuring reproducibility in genotype and non-genetic data](/day1/docs/Hall_2018.7.18_DataBootCamp_Reproducibility.pdf)*
 
-**2:45-3:30** - Vasant Honavar:  *Computational reproducibility and data sharing*
+**2:45-3:30** - Vasant Honavar:  *[Computational reproducibility and data sharing](/2017/day1/docs/Honavar-Reproducible-research-bootcamp.pdf)*
 
 **3:30-3:50** - BREAK
 
