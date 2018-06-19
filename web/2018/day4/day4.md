@@ -1,4 +1,4 @@
-## Day 4: Essential pieces of reproducibility - Galaxy, Jupyter, Blogs
+## Day 4: Essential pieces of reproducibility - Conda, Jupyter, Galaxy, Blogs
 
 *Monika Cechova*, *Anton Nekrutenko* | biomonika@psu.edu, anton@nekrut.org
 
