@@ -6,15 +6,14 @@
 
 ### Agenda
 
-| When?     |  What?       |
-|:------|:---------|
-| 9:00 - 10:30 | Conda and BioConda |
-| 10:30 - 10:50 | Coffee Break |
-| 10:50 - 12:00 | Intro to Jupyter |
-| 12:00 - 1:30 | Lunch break |
-| 1:30 - 3:00 | RNAseq with Galaxy and Jupyter |
-| 3:30 - 3:50 | Coffee Break |
-| 3:50 - 5:00 | Blogging with GitHub (and possibly Hugo) |
+- 9:00 - 10:30  Conda and BioConda 
+- 10:30 - 10:50  Coffee Break 
+- 10:50 - 12:00  Intro to Jupyter 
+- 12:00 - 1:30 Lunch break 
+- 1:30 - 3:00 RNAseq with Galaxy and Jupyter 
+- 3:30 - 3:50  Coffee Break 
+- 3:50 - 5:00 Blogging with GitHub (and possibly Hugo) 
+
 
 ### Tutorials and Reading
 

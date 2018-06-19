@@ -13,15 +13,15 @@
 
 **10:35-11:20** - James Broach: *[“10% of the time, it works every time” - Recognizing sloppy science](/day1/docs/Broach_Data_Reproducibility_6-2018.pdf)*
 
-**11:20-12:05** - Keith Baggerly:  *http://videolectures.net/cancerbioinformatics2010_baggerly_irrh/*
+**11:20-12:05** - Keith Baggerly:  <http://videolectures.net/cancerbioinformatics2010_baggerly_irrh/>
 
 **12:05-1:15** - LUNCH
 
-**1:15-2:00** - Cheryl Keller: *[It’s a Mad, Mad, Metadata World](Keller_PSU_metadata_061818.compressed.pdf)*
+**1:15-2:00** - Cheryl Keller: *[It’s a Mad, Mad, Metadata World](day1/docs/Keller_PSU_metadata_061818.compressed.pdf)*
 
 **2:00-2:45** - Molly Hall:  *[Quality control is essential to ensuring reproducibility in genotype and non-genetic data](/day1/docs/Hall_2018.7.18_DataBootCamp_Reproducibility.pdf)*
 
-**2:45-3:30** - Vasant Honavar:  *[Computational reproducibility and data sharing](/2017/day1/docs/Honavar-Reproducible-research-bootcamp.pdf)*
+**2:45-3:30** - Vasant Honavar:  *[Computational reproducibility and data sharing](day1/docs/Honavar-Reproducible-research-bootcamp.pdf)*
 
 **3:30-3:50** - BREAK
 
