@@ -7,7 +7,7 @@
 
 **9:00-9:30** - Wilfried Guiblet and Monika Cechova: Introductions.
 
-**9:30-10:15** - Cooduvalli Shashikant: [Is there a reproducibility crisis?](/day1/docs/Reproducibility_Crisis Shashi_2018.pdf)
+**9:30-10:15** - Cooduvalli Shashikant: *[Is there a reproducibility crisis?](/day1/docs/Reproducibility_Crisis Shashi_2018.pdf)*
 
 **10:15-10:35** - COFFEE BREAK
 
