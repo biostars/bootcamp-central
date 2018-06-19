@@ -2,7 +2,7 @@
 
 *Monika Cechova*, *Anton Nekrutenko* | biomonika@psu.edu, anton@nekrut.org
 
-![Python!](https://imgs.xkcd.com/comics/python_environment.png)
+[![Python!](https://imgs.xkcd.com/comics/python_environment.png)](https://xkcd.com/1987/)
 
 ### Agenda
 
