@@ -1,12 +1,17 @@
-## Day 4: Reproducible research with Galaxy
+## Day 4: Essential pieces of reproducibility - Galaxy, Jupyter, Blogs
 
+Anton Nekrutenko | anton@nekrut.org
 
-### Schedule
+### Agenda
 
-Introduction to Galaxy and Variant Calling, Jupyter Notebooks, RNA-Seq with Galaxy
+- Galaxy: Powerful infrastructure for trunk analyses
+- Jupyter: Branching into leaves
+- Blogs: Making your own websites with GitHub and Hugo to make a public statement
 
-Instructor:  Anton Nekrutenko
+### Tutorials and Reading
 
-### Videos
-
-### Reading Materials
+- [Galaxy Training Network](https://galaxyproject.github.io/training-material/)
+- [Galaxy USA](http://usegalaxy.org)
+- [Galaxy EU](http://usegalaxy.eu)
+- [Jupyter](http://jupyter.org)
+- [HUGO](https://gohugo.io/)
