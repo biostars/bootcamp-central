@@ -18,7 +18,7 @@ Please contact the organizers for registration or other bootcamp related issues:
 ### Teaching Assistants
 
 * Wilfried Guiblet <wmg133@psu.edu>, 
-* Monika Checova <biomonika@bx.psu.edu>, 
+* Monika Cechova <biomonika@bx.psu.edu>, 
 
 
 ### Funding and Support
