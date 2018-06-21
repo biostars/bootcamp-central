@@ -6,7 +6,7 @@
 
 ### Agenda
 
-- 9:00 - 10:30  Conda and BioConda 
+- 9:00 - 10:30  [Conda and BioConda](/2018/doc/Day4_conda.pdf) 
 - 10:30 - 10:50  Coffee Break 
 - 10:50 - 12:00  Intro to Jupyter 
 - 12:00 - 1:30 Lunch break 
