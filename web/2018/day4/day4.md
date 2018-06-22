@@ -6,12 +6,12 @@
 
 ### Agenda
 
-- 9:00 - 10:30  [Conda and BioConda](day4/docs/Day4_conda.pdf) 
-- 10:30 - 10:50  Coffee Break 
-- 10:50 - 12:00  Intro to Jupyter 
+- 9:00 - 10:30 [Conda and BioConda](day4/docs/Day4_conda.pdf) 
+- 10:30 - 10:50 Coffee Break 
+- 10:50 - 12:00 Intro to Jupyter 
 - 12:00 - 1:30 Lunch break 
-- 1:30 - 3:00 RNAseq with Galaxy and Jupyter 
-- 3:30 - 3:50  Coffee Break 
+- 1:30 - 3:30 RNAseq with Galaxy and Jupyter 
+- 3:30 - 3:50 Coffee Break 
 - 3:50 - 5:00 Blogging with GitHub (and possibly Hugo) 
 
 
@@ -20,6 +20,7 @@
 - [Conda](https://conda.io/docs/)
 - [BioConda](https://bioconda.github.io/)
 - [Galaxy Training Network](https://galaxyproject.github.io/training-material/)
+- [Cornell RNAseq tutorial](http://chagall.med.cornell.edu/RNASEQcourse/)
 - [Galaxy RNAseq](http://galaxyproject.github.io/training-material/topics/transcriptomics/)
 - [Galaxy USA](http://usegalaxy.org)
 - [Galaxy EU](http://usegalaxy.eu)
