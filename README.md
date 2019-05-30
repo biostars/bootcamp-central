@@ -19,7 +19,7 @@ Clone the repository:
 
     git clone https://github.com/biostars/bootcamp-central
 
-Install [pyblue][pyblue] of a specific version. It is best if you use a virtual enviroment, for example conda.
+Install [pyblue][pyblue] of a specific version. It is best if you use a virtual environment, for example conda.
 
     conda create --name bootcamp python=3
 
