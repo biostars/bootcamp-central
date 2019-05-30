@@ -21,7 +21,7 @@ Clone the repository:
 
 Install [pyblue][pyblue] of a specific version. It is best if you use a virtual enviroment, for example conda.
 
-    conda create --name bootcamp python=2
+    conda create --name bootcamp python=3
 
 activate the new environment:
 
@@ -29,7 +29,7 @@ activate the new environment:
 
 Install pyblue of a version that is known to accept the markup we use:
 
-    pip install pyblue==2016.6.2
+    pip install pyblue
 
 You can now view the site as HTML with:
 
@@ -46,7 +46,7 @@ or
 This will start a web server on your computer and you can use the browser
 to view the contents of the site. This is used while developing the site.
 
-    http://localhost:8080
+    http://localhost:8000
 
 To generate a published version of the site add the `-o` parameter
 with a directory name that is meant to store the output destination

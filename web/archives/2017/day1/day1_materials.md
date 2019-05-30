@@ -30,12 +30,12 @@
 
 ### Reading Materials 
 
-* [Raise standards for preclinical cancer research](docs/D1_Readings/Begley-2012.pdf)
-* [Six red flags for suspect work](docs/D1_Readings/Begley-2013.pdf)
-* [Gang Warfare: What are the criteria for deriving assertions from facts in science?](docs/D1_Readings/CQ77_GangWarfare.pdf)
-* [Believe it or not: how much can we rely on published data on potential drug targets?](docs/D1_Readings/PrinzSchlangeAsadullah_CanWeRelyOnPublishedPotentialDrugTargets_NarRevDrugDisc2011.pdf)
-* [Replication Study: Inhibition of BET recruitment to chromatin as an effective treatment for MLL-fusion leukaemia](docs/D1_Readings/ReplicationStudy_InhibitBETtreatMLLfusionLeukemia_elife_2017.pdf)
-* [Replication Study: The common feature of leukemia-associated IDH1 and IDH2 mutations is a neomorphic enzyme activity converting alpha-ketoglutarate to 2-hydroxyglutarate](docs/D1_Readings/ReplicationStudy_LeukemiaAssocIDHmutations_elife_2017.pdf)
+* [Raise standards for preclinical cancer research](day1/docs/D1_Readings/Begley-2012.pdf)
+* [Six red flags for suspect work](day1/docs/D1_Readings/Begley-2013.pdf)
+* [Gang Warfare: What are the criteria for deriving assertions from facts in science?](day1/docs/D1_Readings/CQ77_GangWarfare.pdf)
+* [Believe it or not: how much can we rely on published data on potential drug targets?](day1/docs/D1_Readings/PrinzSchlangeAsadullah_CanWeRelyOnPublishedPotentialDrugTargets_NarRevDrugDisc2011.pdf)
+* [Replication Study: Inhibition of BET recruitment to chromatin as an effective treatment for MLL-fusion leukaemia](day1/docs/D1_Readings/ReplicationStudy_InhibitBETtreatMLLfusionLeukemia_elife_2017.pdf)
+* [Replication Study: The common feature of leukemia-associated IDH1 and IDH2 mutations is a neomorphic enzyme activity converting alpha-ketoglutarate to 2-hydroxyglutarate](day1/docs/D1_Readings/ReplicationStudy_LeukemiaAssocIDHmutations_elife_2017.pdf)
 
 ## Software installation 
 

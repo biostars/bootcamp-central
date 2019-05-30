@@ -3,8 +3,8 @@ from django import template
 register = template.Library()
 
 @register.inclusion_tag('divider.html')
-def divider(text, icon=None):
-    params = dict(text=text, icon=icon)
+def divider(text, icon=None, anchor=None):
+    params = dict(text=text, icon=icon, anchor=anchor)
     return params
 
 

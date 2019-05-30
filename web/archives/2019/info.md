@@ -9,7 +9,9 @@ Day 2-5 will be in 107 Business Building with the following program:
 
 Day 5 ends at noon, lunch provided.
 
-Please bring your laptop. You may need to [install new software](install.html) instructions.
+Please bring your laptop. You may need to [install new software][install] instructions.
+
+[install]: /install.html
 
 **Teaching Assistants**
 

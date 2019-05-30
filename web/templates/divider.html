@@ -2,5 +2,6 @@
     {% if icon %}
         <i class="{{ icon }} icon"></i>
     {% endif %}
-     <a class="ui teal label" name="{{text|slugify}}" href="#{{text|slugify}}">{{ text }}</a>
+    <a class="ui teal label" name="{{ anchor }}" href="#{{ text|slugify }}">{{ text }}</a>
+    <a class="ui gray label" href="#top"><i class="arrow alternate circle up icon"></i>TOP</a>
 </h4>
