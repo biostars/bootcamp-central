@@ -1,0 +1,29 @@
+{# name = Software Installation #}
+{% extends "base.html" %}
+{% load bootcamp %}
+
+{% block body %}
+
+    {% header text=page.name icon="settings" %}
+
+    {% divider "GENERAL INFORMATION" %}
+
+    {% markdown_file "2019/install/install_help.md" %}
+
+    {% divider "GIT AND GITHUB" %}
+
+    {% markdown_file "2019/install/git_install.md" %}
+
+    {% divider "R AND RSTUDIO" %}
+
+    {% markdown_file "2019/install/r_install.md" %}
+
+    {% divider "SHELL" %}
+
+    {% markdown_file "2019/install/shell_install.md" %}
+
+    {% divider "EDITOR" %}
+
+    {% markdown_file "2019/install/editor_install.md" %}
+
+{% endblock %}

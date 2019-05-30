@@ -1,0 +1,43 @@
+{# name = General Information #}
+{% extends "base.html" %}
+{% load bootcamp %}
+
+{% block body %}
+
+    <h1 class="ui center aligned icon header">
+        <img class="ui tiny middle aligned image" src="/static/img/psu-logo.png">
+        2019 PSU Bootcamp on Reproducible Research
+    </h1>
+
+    {% header text="June 3-7, 2019" icon="" tag='div' %}
+
+    {% divider "INFORMATION" %}
+
+    {% markdown_file "2019/info.md" %}
+
+    {% divider "DAY 1" %}
+
+    {% markdown_file "2019/day1/day1.md" %}
+
+    {% divider "DAY 2" %}
+
+    {% markdown_file "2019/day2/day2.md" %}
+
+    {% divider "DAY 3" %}
+
+    {% markdown_file "2019/day3/day3.md" %}
+
+    {% divider "DAY 4" %}
+
+    {% markdown_file "2019/day4/day4.md" %}
+
+    {% divider "DAY 5" %}
+
+    {% markdown_file "2019/day5/day5.md" %}
+
+    {% divider "ARCHIVES" %}
+
+    {% markdown_file "2019/archive.md" %}
+
+{% endblock %}
+

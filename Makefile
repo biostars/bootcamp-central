@@ -1,10 +1,9 @@
 #
 # Makefile to build the bootcamp website.
 #
-YEAR=2018
 
 # The source of the html files.
-HTML_DIR=web/${YEAR}
+HTML_DIR=web
 
 # Temporary directory to store the output in.
 TEMP_DIR=~/temp/bootcamp
@@ -16,7 +15,7 @@ WEB_PATH=${WEB_HOST}:${WEB_DIR}
 
 # Default action is to serve the directory.
 all:
-	pyblue -r ${HTML_DIR}
+	pyblue -r ${HTML_DIR} -p 8000
 
 pull:
 	# Bring this repository in sync with master.

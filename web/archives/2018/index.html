@@ -1,0 +1,40 @@
+{# name = General Information #}
+{% extends "base.html" %}
+{% load bootcamp %}
+
+{% block body %}
+
+    {% header text="2018 PSU Bootcamp on Reproducible Research" icon="" tag='h1' %}
+
+    {% header text="June 18-21, 2018" icon="" tag='h2'%}
+
+    {% divider "DAY 1" %}
+
+    {% markdown_file "2018/day1/day1.md" %}
+
+    {% divider "DAY 2" %}
+
+    {% markdown_file "2018/day2/day2.md" %}
+
+    {% divider "DAY 3" %}
+
+    {% markdown_file "2018/day3/day3.md" %}
+
+    {% divider "DAY 4" %}
+
+    {% markdown_file "2018/day4/day4.md" %}
+
+    {% divider "DAY 5" %}
+
+    {% markdown_file "2018/day5/day5.md" %}
+
+    {% divider "GENERAL INFORMATION" %}
+
+    {% markdown_file "2018/general_info.md" %}
+
+    {% divider "ARCHIVES" %}
+
+    {% markdown_file "2018/archive.md" %}
+
+{% endblock %}
+
