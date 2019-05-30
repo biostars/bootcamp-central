@@ -10,7 +10,7 @@ TEMP_DIR=~/temp/bootcamp
 
 # Remote host and directory that contains the site.
 WEB_HOST=www@biostars.io
-WEB_DIR=sites/bootcamp/${YEAR}/
+WEB_DIR=sites/bootcamp/
 WEB_PATH=${WEB_HOST}:${WEB_DIR}
 
 # Default action is to serve the directory.
