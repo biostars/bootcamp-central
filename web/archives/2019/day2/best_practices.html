@@ -1,13 +1,14 @@
 {# name = Software Carpentry - How good are the Best Practices? #}
 {% extends "base.html" %}
-{% load bootcamp %}
 
 {% block body %}
 
-    {% header text=page.name icon="calendar" %}
 
-    {% divider "BEST PRACTICES" %}
+    <p>
+    <a href="/"  class="button">&lt; <i class="home icon"></i> Back to home</a>
+</p>
 
-    {% include_markdown "best_practices.md" %}
+
+    {% markdown_file "2019/day2/best_practices.md" %}
 
 {% endblock %}

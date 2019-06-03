@@ -20,7 +20,6 @@ Instructors:
 * 3:20 - 5:00 - Github for team projects
 
 
-
 ### Class Material
 
 #### Install software
@@ -33,8 +32,8 @@ Instructors:
 * [Using GitHub for team projects][maingit]  by Prashant Kumar Kuntala
 
 [install]: install.html
-[main]: day2/pdf/Mahony_SoftwareCarpentry_20190604.pdf
-[maingit]: day2/pdf/Kuntala_GitWorkshop_20190604.pdf
+[main]: /archives/2019/day2/pdf/SoftwareCarpentry_20190604.pdf
+[maingit]: /archives/2019/day2/pdf/PrashantGitWorkshop_20180619.pdf
 
 ### Lesson
 
@@ -43,7 +42,7 @@ Instructors:
 * [Best Practices in Scientific Research][best]
 * [Best Practices for Scientific Computing, PLoS Biology, Jan. 2014][bestpub]
 
-[best]: day2/best_practices.html
+[best]: /archives/2019/day2/best_practices.html
 [bestpub]: http://dx.doi.org/10.1371/journal.pbio.1001745
 
 
