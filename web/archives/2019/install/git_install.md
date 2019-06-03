@@ -21,10 +21,9 @@ If you make a mistake you may rerun the installer and select the appropriate opt
 
 ### Install git on Mac OSX
 
-To fully set up your Mac for bioinformatics
-we recommend the [Biostar Handbook][handbook] website.
+Git is installed by default on the newest MacOSX.
 
-Alternatively to set up just git alone see:
+If that is not the case you may use conda to install git or to set up just git alone see:
 
 1. [Git downloads][gitdownload]
 1. [Video Tutorial][macgit-video]
