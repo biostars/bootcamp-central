@@ -23,3 +23,9 @@ CBIOS Trainee
 
 [mrathbun]: https://bmb.psu.edu/directory/mmr252
 [hkoch]: https://stat.psu.edu/people/hbk5086
+
+**Funding and Support**
+
+The boot camp is organized by the Computation, Bioinformatics and Statistics Predoctoral Training Program at Penn State supported by the NIH T32 program. The boot camp is funded by participating colleges at Penn State.
+
+The boot camp was first conceived and supported in Jun 2016 by the Administrative Supplement to NIGMS Predoctoral Training Grants (PA-15-136)

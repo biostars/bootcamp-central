@@ -15,10 +15,7 @@ To open Terminal, try one or both of the following:
 
 
 ### Windows
-Computers with Windows operating systems do not automatically have a Unix Shell program installed. In this lesson, we encourage you to use an emulator included in Git for Windows, which gives you access to both Bash shell commands and Git. If you are attending a Software Carpentry workshop session, it is likely you have already received instructions on how to install Git for Windows. Once installed, you can open a terminal by running the program Git Bash from the Windows start menu.
-
-Other solutions are available for running Bash commands on Windows. There is now a Bash shell command-line tool available for Windows 10. Additionally, you can run Bash commands on a remote UNIX computer or server from your Windows machine. This can be done through a Secure Shell (SSH) client. One such client available for free for Windows computers is PuTTY. See the reference below for information on installing and using PuTTY, using the Windows 10 command-line tool, or installing and using a UNIX/Linux emulator.
-
+Computers with Windows operating systems do not automatically have a Unix Shell program installed. In this lesson, we encourage you to turn on [Developer Mode in Windows](https://www.windowscentral.com/how-install-bash-shell-command-line-windows-10) such that you can access a command line interface to use bash on Ubuntu on Windows. An alternative is to use the shell emulator included in Git for Windows, which gives you access to both Bash shell commands and Git. If you are attending a Software Carpentry workshop session, it is likely you have already received instructions on how to install Git for Windows. Once installed, you can open a terminal by running the program Git Bash from the Windows start menu.
 
 [How to Install Bash shell command-line tool on Windows 10][win10bashinstall]
 [Install and Use the Linux Bash Shell on Windows 10][win10bashuse]
@@ -26,6 +23,6 @@ Other solutions are available for running Bash commands on Windows. There is now
 [win10bashinstall]: https://www.windowscentral.com/how-install-bash-shell-command-line-windows-10
 [win10bashuse]: https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10
 
-You should also [install PuTTY][putty] for accessing remote servers
+You could also [install PuTTY][putty] for accessing remote servers, but this is not required in the 2019 workshop. 
 
 [putty]: https://www.putty.org/
