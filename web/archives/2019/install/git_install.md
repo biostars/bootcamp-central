@@ -66,6 +66,10 @@ if you don't have one already. Please consider what personal information
 you'd like to reveal. For example, you may want to review these instructions
 for keeping your email address private provided at GitHub.
 
+### Install Github Desktop
+
+Github Desktop is a standalone interface for interacting with Github repos. Install [from here](https://desktop.github.com/).
+
 ### Set up SSH passwords
 
 	ssh-keygen
