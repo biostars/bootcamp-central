@@ -34,7 +34,7 @@ Instructors:
 
 [install]: install.html
 [main]: day2/pdf/Mahony_SoftwareCarpentry_20190604.pdf
-[maingit]: day2/pdf/Kuntala_GitWorkshop_20190604.pdf
+[maingit]: day2/pdf/Kuntala_GitWorkshop_20190604.pdf 
 
 ### Lesson
 
