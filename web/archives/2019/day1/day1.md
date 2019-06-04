@@ -10,8 +10,8 @@ Coordinator: [Cooduvalli Shashikant][cshashi]
 - 9:15-10:00,  [Cooduvalli Shashikant][cshashi]: [Is there a reproducibility Crisis?][shashi2019]
 - 10:00-10:25, [Orfeu Buxton][obuxton]: [Data Reproducibility as a social system of trust][buxton2019]
 - 10:25-10:45,   Break
-- 10:45-11:05:, [Mingfu Shao][mshao]: [Reproducibility in methods publications: an example] [shao2019]
-- 11:05-11:50, [Istvan Albert][ialbert]: *Going Meta. Is there agreement on what "reproducible research" should mean?*
+- 10:45-11:05:, [Mingfu Shao][mshao]: [Reproducibility in methods publications: an example][shao2019]
+- 11:05-11:50, [Istvan Albert][ialbert]: [*Reproducibility Fallacies*][ialbert2019]
 - 11:50- 1:15, Lunch
 - 1:15-2:00, [Charles Cole][ccole]: [Good luck finding that plot again - data reproducibility in field ecology][cole2019]
 - 2:00-2:45, [Michael Hallquist][mhallquist]:  *Psychology How good programming practices support scientific reproducibility.*
@@ -19,6 +19,7 @@ Coordinator: [Cooduvalli Shashikant][cshashi]
 - 3:30-3:50, Break
 - 3:50-4:30, [Vasant Honavar][vhonavar]: *Computational reproducibility and data sharing*. - CANCELED
 - 4:30-5:00PM, Instructions for Tuesday, TAs, [Shaun Mahony][smahoney]
+
 
 [cshashi]: https://www.huck.psu.edu/people/cooduvalli-shashikant
 [ialbert]: https://www.ialbert.me
@@ -30,6 +31,7 @@ Coordinator: [Cooduvalli Shashikant][cshashi]
 [obuxton]: https://hhd.psu.edu/contact/orfeu-buxton
 [smahoney]: https://bmb.psu.edu/directory/sam77
 
+[ialbert2019]: /archives/2019/day1/docs/Albert2019.pdf
 [shashi2019]: /archives/2019/day1/docs/Shashikant2019.pdf
 [buxton2019]: /archives/2019/day1/docs/Orfeu2019.pdf
 [shao2019]: /archives/2019/day1/docs/Shao2019.pdf
