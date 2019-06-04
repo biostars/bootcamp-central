@@ -33,7 +33,7 @@ Instructors:
 
 [install]: install.html
 [main]: /archives/2019/day2/pdf/SoftwareCarpentry_20190604.pdf
-[maingit]: /archives/2019/day2/pdf/PrashantGitWorkshop_20180619.pdf
+[maingit]: /archives/2019/day2/pdf/Kuntala_GitWorkshop_20190604.pdf
 
 ### Lesson
 
