@@ -26,3 +26,6 @@ Computers with Windows operating systems do not automatically have a Unix Shell 
 You could also [install PuTTY][putty] for accessing remote servers, but this is not required in the 2019 workshop. 
 
 [putty]: https://www.putty.org/
+
+### Note for navigating directories in Bash on Mac vs. Windows
+When navigating file directories in Bash you will use the command `cd` however, the input is slightly different between Mac and Windows. For example, to access my desktop from the CLI on Mac, I will type `cd /Users/mollyrathbun/Desktop/`. On Windows, the command is the same, but the directory structure is slightly different: `cd mnt/c/Users/mollyrathbun/Desktop/`.
