@@ -13,8 +13,12 @@ Schedule:
 * 12:05 - 1:15 Lunch
 * 1:15 - 3:00 Reproducible reporting I - R Markdown and Batch effects
 * 3:00 - 3:20 Coffee break
-* 3:20 - 5:00 Reproducible reporting II - workflowr
+* 3:20 - 5:00 Hillary Koch: Reproducible reporting II - workflowr
 
 Full schedule with [links and resources here][qul12]
 
 [qul12]: http://www.personal.psu.edu/users/q/u/qul12/bootcamp/agenda.html
+
+The simple [workflowr demo is here][workflowr]
+
+[workflowr]: /archives/2019/day4/docs/demo.Rmd
