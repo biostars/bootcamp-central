@@ -15,10 +15,13 @@ Schedule:
 * 3:00 - 3:20 Coffee break
 * 3:20 - 5:00 Hillary Koch: Reproducible reporting II - workflowr
 
-Full schedule with [links and resources here][qul12]
+Materials:
+
+* Full schedule with [links and resources here][qul12]
+* The html version of [workflowr demo][workflowr-html].
+* The [RMarkdown source][workflowr-md] of the workflowr demo.
 
 [qul12]: http://www.personal.psu.edu/users/q/u/qul12/bootcamp/agenda.html
 
-The simple [workflowr demo is here][workflowr]
-
-[workflowr]: /archives/2019/day4/docs/demo.Rmd
+[workflowr-html]: /archives/2019/day4/docs/demo.html
+[workflowr-md]: /archives/2019/day4/docs/demo-source.html
