@@ -14,7 +14,7 @@ Coordinator: [Cooduvalli Shashikant][cshashi]
 - 11:05-11:50, [Istvan Albert][ialbert]: [*Reproducibility Fallacies*][ialbert2019]
 - 11:50- 1:15, Lunch
 - 1:15-2:00, [Charles Cole][ccole]: [*Good luck finding that plot again - data reproducibility in field ecology*][cole2019]
-- 2:00-2:45, [Michael Hallquist][mhallquist]:  *Psychology How good programming practices support scientific reproducibility.*
+- 2:00-2:45, [Michael Hallquist][mhallquist]:  [*Psychology How good programming practices support scientific reproducibility.*][mhallquist2019]
 - 2:45-3:30, [Cheryl Keller][ckeller]:  [*Reproducibility begins at the bench*][keller2019]
 - 3:30-3:50, Break
 - 3:50-4:30, [Vasant Honavar][vhonavar]: *Computational reproducibility and data sharing*. - CANCELED
@@ -37,4 +37,4 @@ Coordinator: [Cooduvalli Shashikant][cshashi]
 [shao2019]: /archives/2019/day1/docs/Shao2019.pdf
 [cole2019]: /archives/2019/day1/docs/Cole2019.pdf
 [keller2019]: /archives/2019/day1/docs/Keller2019.pdf
-
+[mhallquist2019]:  /archives/2019/day1/docs/reproducibility_good_programming.html
