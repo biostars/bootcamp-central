@@ -1,0 +1,220 @@
+---
+title: "workflowr demo"
+date: "6/6/2019"
+output:
+  prettydoc::html_pretty:
+    theme: hpstr
+---
+
+# Introduction to R package workflowr
+## Make a notebook of R markdown documents and publish to a website
+
+Now that we know that R Markdown can do for us, let's take a look at what a \texttt{workflowr} project does:
+
+[Example workflowr page](https://stephenslab.github.io/susieR/index.html)
+
+The workflowr package makes this easy for us. To install the package, you need RStudio. From within R, type
+
+```{r install, eval = FALSE}
+setwd("~/Desktop/temp/bootcamp/")
+install.packages("workflowr")
+library(workflowr)
+
+# configure account (this only needs to be done once...ever)
+wflow_git_config(user.name = "hillarykoch",
+                 user.email = "hillary.koch01@gmail.com")
+
+# generate a skeleton for the SILLYACRONYM workflow
+wflow_start("SILLYACRONYM")
+```
+
+After calling ```wflow_start()```, you should see something like this:
+
+```{shell start}
+SILLYACRONYM/
+├── .gitignore
+├── .Rprofile
+├── _workflowr.yml
+├── analysis/
+│   ├── about.Rmd
+│   ├── index.Rmd
+│   ├── license.Rmd
+│   └── _site.yml
+├── code/
+│   ├── README.md
+├── data/
+│   └── README.md
+├── docs/
+├── SILLYACRONYM.Rproj
+├── output/
+│   └── README.md
+└── README.md
+```
+
+which is the current working tree for your workflow website.
+
+### required stuff:
+*   **analysis**: where your collection of Rmd files for analyzing your data go
+*   **docs**: HTML and figure files for your website (don't worry, you don't need to know HTML)
+
+### optional goodies:
+*   **code**: other background code which are part of your project that you might want to share, (e.g. shell scripts, long-running code), but do not make up the core of your workflow page that you want to present
+*   **data**: raw data files
+*   **output**: processed data, or results from a long-running command that you've executed in advance
+
+In the SILLYACRONYM directory, the ```_workflowr.yml``` file by default says ```knit_root_dir: "."```. This is the directory your analysis code is executed from. You may want to change this to "analysis" to execute all code from the analysis directory instead.
+
+To create the website files that go in the **docs** folder, build the workflow with ```wflow_build()```. You will see something like
+
+```{r shell}
+## Current working directory: /Users/hillarykoch/Desktop/temp/bootcamp/SILLYACRONYM
+## Building 3 file(s):
+## Building analysis/about.Rmd
+## Building analysis/index.Rmd
+## Building analysis/license.Rmd
+## Summary from wflow_build
+## 
+## Settings:
+##  make: TRUE
+## 
+## The following were built externally each in their own fresh R
+## session: 
+## 
+## docs/about.html
+## docs/index.html
+## docs/license.html
+## 
+## Log files saved in /private/var/folders/37/hcvgkd2s3v166yk6_kzx_1dr0000gn/T/RtmpdBW8CP/workflowr
+```
+
+so now the HTML files for your workflow skeleton are there! Now we can ```git add``` and ```git commit``` these initial "changes" to our workflow.
+
+```{r first_commit, eval = FALSE}
+wflow_publish(list.files(pattern = "*Rmd", recursive = TRUE),
+              "initial publication")
+```
+
+You can see that ```workflowr``` is calling git commands for you
+```{shell gitcommands}
+Current working directory: /Users/hillarykoch/Desktop/temp/bootcamp/SILLYACRONYM
+Building 3 file(s):
+Building analysis/about.Rmd
+Building analysis/index.Rmd
+Building analysis/license.Rmd
+Summary from wflow_publish
+
+**Step 1: Commit analysis files**
+
+No files to commit
+
+
+**Step 2: Build HTML files**
+
+Summary from wflow_build
+
+Settings:
+ clean_fig_files: TRUE
+
+The following were built externally each in their own fresh R session: 
+
+docs/about.html
+docs/index.html
+docs/license.html
+
+Log files saved in /private/var/folders/37/hcvgkd2s3v166yk6_kzx_1dr0000gn/T/RtmpdBW8CP/workflowr
+
+**Step 3: Commit HTML files**
+
+Summary from wflow_git_commit
+
+The following was run: 
+
+  $ git add docs/about.html docs/index.html docs/license.html docs/figure/about.Rmd docs/figure/index.Rmd docs/figure/license.Rmd docs/site_libs docs/.nojekyll 
+  $ git commit -m "Build site." 
+
+The following file(s) were included in commit 0da0084:
+docs/about.html
+docs/index.html
+docs/license.html
+docs/site_libs/bootstrap-3.3.5/
+docs/site_libs/highlightjs-9.12.0/
+docs/site_libs/jquery-1.11.3/
+docs/site_libs/navigation-1.1/
+```
+
+and it can even give you similar info as ```git status```
+```{r gitstatus, eval = FALSE}
+wflow_status()
+```
+```{shell getstatus2}
+Status of 3 files
+
+Totals:
+ 3 Published
+
+Files are up-to-date
+
+The config file _workflowr.yml has been edited.
+```
+
+Now let's get this package on GitHub so other people will be able to see it.
+```{r hub1, eval = FALSE}
+wflow_use_github("hillarykoch", "SILLYACRONYM")
+```
+```{shell hub1s}
+Summary from wflow_use_github():
+* The website directory is already named docs/
+* Output directory is already set to docs/
+* Set remote "origin" to https://github.com/hillarykoch/SILLYACRONYM.git
+* Added GitHub link to navigation bar
+* Committed the changes to Git
+
+GitHub configuration successful!
+
+To do: Create new repository at github.com
+To do: Run wflow_git_push() to send your project to GitHub
+```
+```{r hub2, eval = FALSE}
+wflow_git_push()
+```
+```{shell}
+Summary from wflow_git_push
+
+Pushing to the branch "master" of the remote repository "origin" 
+
+Using the HTTPS protocol
+The following Git command was run:
+
+  $ git push origin master
+```
+
+Tell GitHub that the docs/ folder contains the makings of a website!
+
+Go to:
+
+Settings -> 
+scroll down for GitHub Pages -> 
+select “master branch docs/ folder” as the Source
+
+The site is hosted at the URL ```hillarykoch.github.io/SILLYACRONYM/```
+
+Let's add some content to the site. You might want to add some of the stuff you generated from earlier today. Various Rmd documents will need to go into the analysis directory.
+
+
+### general workflow
+
+1. Open a new or existing R Markdown file in analysis/ (optionally using wflow_open())
+2. Write up/document your analysis in the R Markdown file
+3. Run ```wflow_build()``` to view the results as they will appear on the website
+4. Go back to step 2 until you are satisfied with the result
+5. Run ```wflow_publish()``` to commit the source files, build the HTML files, and commit the HTML files. **Add a commit message here!** (alternatively, this is more easily done from the command line)
+6. Push the changes to GitHub with wflow_git_push() (or git push in the Terminal)
+
+**one simple exception:** if you need to update the style (e.g., in ```analysis/_site.yml```), then when you run ```wflow_build()``` you will need to specify ```republish = TRUE```.
+
+## Some other resources
+[workflowr info](https://cran.r-project.org/web/packages/workflowr/vignettes/wflow-01-getting-started.html#fn7): clear instructions well beyond this demo 
+
+[R markdown cheatsheet](https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf): learn to control what comes out of your markdown code chunks, how to cache analyses, etc.
+
+
