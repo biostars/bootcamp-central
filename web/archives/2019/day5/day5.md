@@ -6,8 +6,8 @@ Coordinators: Hillary Koch & Molly Rathbun
 
 - 9:00-9:15 Coffee and Snacks
 - 9:30-10:20 Reproducibility Cases
-  - 9:30-9:55 [Vijay Kumar][vkumar]: *Providing reproducible user experience using Docker containers*
-  - 9:55-10:20 [Scott Eckert][seckert]: *Reproducibility issues while using publicly available metagenomic datasets*
+- 9:30-9:55 [Vijay Kumar][vkumar]: *Providing reproducible user experience using Docker containers*
+- 9:55-10:20 [Scott Eckert][seckert]: *Reproducibility issues while using publicly available metagenomic datasets*
 - 10:20-10:35 Coffee Break
 - 10:35-11:20 [Dajiang Liu][dliu]: *Statistical and practical issues for replicating GWAS signals in meta-analysis*
 - 11:20-12:05 Wrap up discussion & feedback from bootcamp students
