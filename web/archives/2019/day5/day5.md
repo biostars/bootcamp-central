@@ -12,6 +12,8 @@ Coordinators: TA's
 - 10:35-11:20 [Dajiang Liu][dliu]: [*Statistical and practical issues for replicating GWAS signals in meta-analysis*](Reproducibility-BootCamp.pdf)
 - 11:20-12:05: Wrap up-TAs
 
+[*Resources and discussion points after wrapping up*](discussion.md)
+
 [vkumar]: https://www.huck.psu.edu/people/vijay-kumar-manickavasagam-pounraja
 [seckert]: https://www.huck.psu.edu/people/scott-eckert
 [dliu]: https://pennstate.pure.elsevier.com/en/persons/dajiang-liu
