@@ -1,6 +1,6 @@
-# Discussion from Boot Camp
+Discussion from Boot Camp
 
-## Day 2
+### Day 2
 
 ### some favorite shell commands
 *   ``cat <filename> | wc -l``
@@ -27,7 +27,8 @@
 ### other resources
 *   dabble in course "Git Essential Training" on [Lynda](https://www.lynda.com/) (you have a subscription to Lynda with your PSU ID)
 
-## Day 3
+### Day 3
+
 *   [Galaxy 101](https://galaxyproject.org/tutorials/g101/)
 *   Make a proposal for computing allocation with [Xsede](https://www.xsede.org/)
 
@@ -37,7 +38,7 @@
 *   [Jupyter and Galaxy: Easing entry barriers into complex data analyses for biomedical researchers](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005425)
 *   Do you like JavaScript? Make attractice online notebooks with [ObservableHQ](https://observablehq.com/)
 
-## Day 4
+### Day 4
 *   [A guide to reproducibile code in ecology and evolution](https://www.britishecologicalsociety.org/wp-content/uploads/2017/12/guide-to-reproducible-code.pdf)
 
 
