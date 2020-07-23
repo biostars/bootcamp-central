@@ -21,15 +21,15 @@ Clone the repository:
 
 Install [pyblue][pyblue] of a specific version. It is best if you use a virtual environment, for example conda.
 
-    conda create --name bootcamp python=3
+    conda create --name bootcamp python=3 -y
 
 activate the new environment:
 
-    source activate bootcamp
+    conda activate bootcamp
 
 Install pyblue of a version that is known to accept the markup we use:
 
-    pip install pyblue
+    pip install pyblue --upgrade
 
 You can now view the site as HTML with:
 
