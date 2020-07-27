@@ -1,0 +1,37 @@
+{# name = General Information #}
+{% extends "2020-base.html" %}
+{% load bootcamp %}
+
+{% block body %}
+
+
+
+    <h1 class="ui center aligned icon header">
+        <img class="ui tiny middle aligned image" src="/static/img/psu-logo.png">
+        2020 PSU Bioinformatics Data Reproducibility Bootcamp
+    </h1>
+
+    {% header text="August 12-14, 2020" icon="" tag='div' %}
+
+    {% divider "INFORMATION" anchor="info"  %}
+
+    {% markdown_file "2020/info.md" %}
+
+    {% divider "DAY 1"  anchor="day1" %}
+
+    {% markdown_file "2020/day1/day1.md"  %}
+
+    {% divider "DAY 2" anchor="day2" %}
+
+    {% markdown_file "2020/day2/day2.md" %}
+
+    {% divider "DAY 3" anchor="day3" %}
+
+    {% markdown_file "2020/day3/day3.md" %}
+
+    {% divider "ARCHIVES" anchor="archives" %}
+
+    {% markdown_file "2020/archive.md"  %}
+
+{% endblock %}
+
