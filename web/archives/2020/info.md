@@ -53,7 +53,7 @@ know:
 * [R Markdown - Code Chunks](https://rmarkdown.rstudio.com/lesson-3.html)
 * [R Markdown - Markdown Basics](https://rmarkdown.rstudio.com/lesson-8.html)
 
-These cheats sheets go into way more depth than you will need for the bootcamp,
+These cheat sheets go into way more depth than you will need for the bootcamp,
 but they are a handy reference.
 
 * [R Markdown Cheat Sheet (PDF)](https://rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)
@@ -83,6 +83,6 @@ but they are a handy reference.
 
 **Funding and Support**
 
-The boot camp is organized by the Computation, Bioinformatics and Statistics Predoctoral Training Program at Penn State supported by the NIH T32 program. The boot camp is funded by participating colleges at Penn State.
+The boot camp is organized by the Computation, Bioinformatics and Statistics Predoctoral Training Program at Penn State supported by the NIH T32 program. The boot camp is funded by the Huck Institutes of the Life Sciences and participating colleges at Penn State.
 
 The boot camp was first conceived and supported in Jun 2016 by the Administrative Supplement to NIGMS Predoctoral Training Grants (PA-15-136)
