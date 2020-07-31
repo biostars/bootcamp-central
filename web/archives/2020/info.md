@@ -9,11 +9,12 @@ Zoom meeting connection details via email.
 
 **Setup**
 
-During the bootcamp, we will use the Interactive Desktop provided by
+During the bootcamp, we will use the [Interactive Desktop][desktop] provided by
 the [ICDS-ACI][]. This means you do not need to install any software on
 your personal computer prior to the bootcamp. To access the resources
 provided by the ICDS-ACI, you need to follow these steps:
 
+[desktop]: https://portal.aci.ics.psu.edu/
 [icds-aci]: https://www.icds.psu.edu/
 
 * For incoming graduate students, activate your PSU student account

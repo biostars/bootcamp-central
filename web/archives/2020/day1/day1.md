@@ -8,10 +8,10 @@ of the times to convert it to your local timezone.
 Welcome, Overview of Day 1
 
 - [09:00](https://arewemeetingyet.com/New%20York/2020-08-12/09:00/Overview%20of%20Day%201)
-Presentation by István Albert
+Presentation by [István Albert][istván]
 
 - [10:00](https://arewemeetingyet.com/New%20York/2020-08-12/10:00/Overview%20of%20Day%201)
-Presentation by Justin Petucci
+Presentation by [Justin Petucci][justin]
 
 - [10:30](https://arewemeetingyet.com/New%20York/2020-08-12/10:30/Overview%20of%20Day%201)
 Break
@@ -34,4 +34,6 @@ Introductions and ice breakers
 - [04:30](https://arewemeetingyet.com/New%20York/2020-08-12/04:30/Overview%20of%20Day%201)
 Presentation by [Kate Stankiewicz][kate]
 
+[istván]: https://science.psu.edu/index.php/bmb/people/iua1
+[justin]: https://www.icds.psu.edu/computing-services/rise/rise-team-members/
 [kate]: https://science.psu.edu/bio/people/khs18

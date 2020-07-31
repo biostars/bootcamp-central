@@ -8,7 +8,7 @@ of the times to convert it to your local timezone.
 Overview of Day 2
 
 - [09:00](https://arewemeetingyet.com/New%20York/2020-08-13/09:00/Overview%20of%20Day%201)
-Presentation by Paul Medvedev
+Presentation by [Paul Medvedev][paul]
 
 - [10:00](https://arewemeetingyet.com/New%20York/2020-08-13/10:00/Overview%20of%20Day%201)
 Presentation by [Arun Srinivasan][arun]
@@ -29,9 +29,12 @@ RNA-seq (cont)
 Break
 
 - [03:30](https://arewemeetingyet.com/New%20York/2020-08-13/03:30/Overview%20of%20Day%201)
-Presentation by Qunhua Li
+Presentation by [Qunhua Li][qunhua]
 
 - [04:30](https://arewemeetingyet.com/New%20York/2020-08-13/04:30/Overview%20of%20Day%201)
-Presentation by Matthew Jensen
+Presentation by [Matthew Jensen][matthew]
 
 [arun]: https://science.psu.edu/index.php/stat/people/uus91
+[matthew]: https://science.psu.edu/bmb/people/mpj5142
+[paul]: https://science.psu.edu/bmb/people/pzm11
+[qunhua]: https://science.psu.edu/stat/people/qul12
