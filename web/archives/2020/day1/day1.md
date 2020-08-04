@@ -11,7 +11,7 @@ Welcome, Overview of Day 1
 Presentation by [István Albert][istván]
 
 - [10:00](https://arewemeetingyet.com/New%20York/2020-08-12/10:00/Justin%20Petucci)
-Presentation by [Justin Petucci][justin]
+Presentation by [Justin Petucci][justin] - An Overview of ICDS Research Computing Services
 
 - [10:30](https://arewemeetingyet.com/New%20York/2020-08-12/10:30/Break)
 Break
