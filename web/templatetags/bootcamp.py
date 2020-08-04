@@ -12,3 +12,9 @@ def divider(text, icon=None, anchor=None):
 def header(text, icon=None, tag='h2'):
     params = dict(text=text, icon=icon, tag=tag)
     return params
+
+
+@register.inclusion_tag('speaker.html')
+def speaker(name, website, title, recording, description=None):
+    params = dict(name=name, website=website, title=title, recording=recording, description=description)
+    return params

@@ -1,0 +1,25 @@
+{# name = Speakers #}
+{% extends "base.html" %}
+{% load bootcamp %}
+
+{% block body %}
+
+    <h3><a href="/"><i class="arrow circle left icon"></i>Return to main page</a></h3>
+
+    {% header text=page.name icon="microphone" %}
+
+    {% divider "Kate Stankiewicz" %}
+
+    {% speaker name="Kate Stankiewicz" website="https://science.psu.edu/bio/people/khs18" title="'Data is available online': the challenges of reanalyzing published data" recording=True %}
+
+    {% divider "Arun Srinivasan" %}
+
+    {% speaker name="Arun Srinivasan" website="https://science.psu.edu/index.php/stat/people/uus91" title="Out of Tune: Tuning Parameters and Reproducible Machine Learning" recording=True description="With the increasing availability of data, machine learning has emerged as a powerful tool to study questions in biology. While much attention has been placed on the influence of misinterpreting correlation and p-values, the choice of tuning parameters when running a model can drastically affect the outcome. This talk will focus on how important reporting the thought process behind the selection tuning parameters used in machine learning models is when striving for reproducibility of data analysis." %}
+
+    {% divider "Matthew Jensen" %}
+
+    {% speaker name="Matthew Jensen" website="https://autism.bx.psu.edu/" title="Constructing and maintaining reproducible bioinformatics pipelines in your research" recording=True description="The talk will cover how to assemble bioinformatic pipelines for genomic data analysis from different softwares, maintain the pipelines for future use by yourself or other lab mates, and prepare your pipelines for posting on GitHub (i.e. code commenting, README pages, example data) upon publication of your work. The talk will be based on my own experiences working with analysis of genomics datasets (i.e. whole-genome sequencing, RNA-Sequencing), and includes an example from my early PhD career where my lack of experience led to some irreproducible RNA-Seq results from using two different pipelines." %}
+
+    <h3><a href="/"><i class="arrow circle left icon"></i>Return to main page</a></h3>
+
+{% endblock %}
