@@ -1,0 +1,13 @@
+
+<h2>{{ title }}</h2>
+<h3><a href="{{ website }}">{{ name }}</a></h3>
+
+{% if recording %}
+  <p>
+    <i class="video icon"></i>
+    <strong>This presentation will be recorded and shared.</strong>
+  <p>
+{% endif %}
+{% if description %}
+  <p>{{ description }}</p>
+{% endif %}
