@@ -11,7 +11,7 @@ Overview of Day 2
 Presentation by [Paul Medvedev][paul]
 
 - [10:00](https://arewemeetingyet.com/New%20York/2020-08-13/10:00/Arun%20Srinivasan)
-Presentation by [Arun Srinivasan][arun]
+Presentation by [Arun Srinivasan][arun] - Out of Tune: Tuning Parameters and Reproducible Machine Learning
 
 - [10:30](https://arewemeetingyet.com/New%20York/2020-08-13/10:30/Break)
 Break
@@ -32,9 +32,10 @@ Break
 Presentation by [Qunhua Li][qunhua]
 
 - [04:30](https://arewemeetingyet.com/New%20York/2020-08-13/04:30/Matthew%20Jensen)
-Presentation by [Matthew Jensen][matthew]
+Presentation by [Matthew Jensen][matthew] - Constructing and maintaining reproducible bioinformatics pipelines in your research
 
 [arun]: https://science.psu.edu/index.php/stat/people/uus91
-[matthew]: https://science.psu.edu/bmb/people/mpj5142
+<!-- [matthew]: https://science.psu.edu/bmb/people/mpj5142 -->
+[matthew]: https://autism.bx.psu.edu/
 [paul]: https://science.psu.edu/bmb/people/pzm11
 [qunhua]: https://science.psu.edu/stat/people/qul12
