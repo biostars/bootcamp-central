@@ -8,7 +8,7 @@ of the times to convert it to your local timezone.
 Overview of Day 2
 
 - [09:00](https://arewemeetingyet.com/New%20York/2020-08-13/09:00/Paul%20Medvedev)
-Presentation by [Paul Medvedev][paul]
+Presentation by [Paul Medvedev][paul] - Understanding the academic research ecosystem (tentative title)
 
 - [10:00](https://arewemeetingyet.com/New%20York/2020-08-13/10:00/Arun%20Srinivasan)
 Presentation by [Arun Srinivasan][arun] - Out of Tune: Tuning Parameters and Reproducible Machine Learning
