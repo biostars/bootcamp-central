@@ -28,5 +28,5 @@ Break
 - [03:30](https://arewemeetingyet.com/New%20York/2020-08-14/03:30/Verify%20with%20workflowr)
 Verify with workflowr
 
-- [05:30](https://arewemeetingyet.com/New%20York/2020-08-14/05:30/Done%20for%20the%20day!)
+- [05:00](https://arewemeetingyet.com/New%20York/2020-08-14/05:00/Done%20for%20the%20day!)
 Done for the day!

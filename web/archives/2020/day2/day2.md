@@ -34,7 +34,7 @@ Presentation by [Qunhua Li][qunhua]
 - [04:30](https://arewemeetingyet.com/New%20York/2020-08-13/04:30/Matthew%20Jensen)
 Presentation by [Matthew Jensen][matthew] - Constructing and maintaining reproducible bioinformatics pipelines in your research
 
-- [05:30](https://arewemeetingyet.com/New%20York/2020-08-13/05:30/Done%20for%20the%20day!)
+- [05:00](https://arewemeetingyet.com/New%20York/2020-08-13/05:00/Done%20for%20the%20day!)
 Done for the day!
 
 [arun]: https://science.psu.edu/index.php/stat/people/uus91

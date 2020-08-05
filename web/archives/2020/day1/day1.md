@@ -34,7 +34,7 @@ Ice breaker
 - [04:30](https://arewemeetingyet.com/New%20York/2020-08-12/04:30/Kate%20Stankiewicz)
 Presentation by [Kate Stankiewicz][kate] - 'Data is available online': the challenges of reanalyzing published data
 
-- [05:30](https://arewemeetingyet.com/New%20York/2020-08-12/05:30/Done%20for%20the%20day!)
+- [05:00](https://arewemeetingyet.com/New%20York/2020-08-12/05:00/Done%20for%20the%20day!)
 Done for the day!
 
 [istván]: https://science.psu.edu/index.php/bmb/people/iua1
