@@ -2,10 +2,15 @@
 <h2>{{ title }}</h2>
 <h3><a href="{{ website }}">{{ name }}</a></h3>
 
-{% if recording %}
+{% if recording and internal %}
+<p>
+  <i class="video icon"></i>
+  <strong>This presentation will be recorded and shared with <u>PSU students only</u>.</strong>
+<p>
+{% elif recording %}
   <p>
     <i class="video icon"></i>
-    <strong>This presentation will be recorded and shared.</strong>
+    <strong>This presentation will be recorded and shared <u>publicly</u>.</strong>
   <p>
 {% endif %}
 {% if description %}

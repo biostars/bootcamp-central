@@ -29,7 +29,7 @@ RNA-seq (cont)
 Break
 
 - [03:30](https://arewemeetingyet.com/New%20York/2020-08-13/03:30/Qunhua%20Li)
-Presentation by [Qunhua Li][qunhua]
+Presentation by [Qunhua Li][qunhua] - Statistical issues on reproducibility in genomic research
 
 - [04:30](https://arewemeetingyet.com/New%20York/2020-08-13/04:30/Matthew%20Jensen)
 Presentation by [Matthew Jensen][matthew] - Constructing and maintaining reproducible bioinformatics pipelines in your research
