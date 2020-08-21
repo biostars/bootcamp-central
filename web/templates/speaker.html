@@ -13,6 +13,9 @@
     <strong>This presentation will be recorded and shared <u>publicly</u>.</strong>
   <p>
 {% endif %}
+{% if slides %}
+<h3></i><a href="{{ slides }}"><i class="file icon"></i>Slides</a></h3>
+{% endif %}
 {% if description %}
   <p>{{ description }}</p>
 {% endif %}
