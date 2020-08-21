@@ -15,10 +15,10 @@ def header(text, icon=None, tag='h2'):
 
 
 @register.inclusion_tag('speaker.html')
-def speaker(name, website, title, recording, internal=None, description=None):
+def speaker(name, website, title, recording, internal=None, slides=None, description=None):
     '''
     recording (True/False) - Will the talk be recorded?
     internal - Restrict recording to be shared **only** with PSU students (True)
     '''
-    params = dict(name=name, website=website, title=title, recording=recording, internal=internal, description=description)
+    params = dict(name=name, website=website, title=title, recording=recording, internal=internal, slides=slides, description=description)
     return params
