@@ -165,3 +165,29 @@ to get used to.
                 width: 75%;
                 border: black solid 1px;"
     />
+
+### Troubleshooting
+
+**Current ICDS-ACI users may have settings that interfere with the Interactive
+Desktop.**
+
+```
+Could not connect to session bus: Failed to connect to socket /tmp/dbus-lrVXbCbmFk: Connection refused
+```
+
+This is caused by either a local installation of Anaconda or a lingering
+temporary directory. If you run into this issue, check the following:
+
+1. Check your `.bashrc` file in your home directory. If there are lines relating
+   to an initialization of Anaconda or loading a Python module, comment them
+   out.
+
+1. Check your `.bash_profile` file in your home directory. If there are lines
+   relating to the initialization of Anaconda or loading a Python module,
+   comment them out.
+
+1. Check if there is a directory called `.lmod.d` or `.lmod`. If there is,
+   either (a) delete the directory using `rm -r lmod.d` (b) move the directory
+   to your scratch workspace or (c) rename that directory to something else.
+
+After checking these, try restarting the interactive session.
