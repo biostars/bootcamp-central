@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>{% block html_title %}Bootcamp{% endblock %}</title>
+    <link rel='shortcut icon' href='/static/favicon.ico' type='image/x-icon'/>
+    <link href="/static/lib/semantic.min.css" rel="stylesheet" crossorigin="anonymous"/>
+    <link href="/static/bootcamp.css" rel="stylesheet" crossorigin="anonymous"/>
+    <link href="/static/lib/prism.css" rel="stylesheet" crossorigin="anonymous"/>
+    <script src="/static/lib/jquery.min.js"></script>
+    <script src="/static/lib/syntax.js"></script>
+    <script src="/static/lib/semantic.min.js"></script>
+    <script src="/static/lib/dropdown.min.js"></script>
+    <script src="/static/bootcamp.js"></script>
+</head>
+<body>
+
+<a name="top"></a>
+
+<div class="ui stackable menu grid">
+    <div class="ui text container ">
+
+
+        <a class="item" href="/">
+            <i class="home icon"></i> Home
+        </a>
+
+        <a class="item" href="#information">
+            <i class="info circle icon"></i> Info
+        </a>
+
+        <a class="item" href="#part-1">
+            <i class="calendar icon"></i> Part 1
+        </a>
+
+        <a class="item" href="#part-2">
+            <i class="calendar icon"></i> Part 2
+        </a>
+
+        <a class="item" href="#part-3">
+            <i class="calendar icon"></i> Part 3
+        </a>
+
+        <a class="item" target="_blank" href="https://portal.aci.ics.psu.edu/">
+          <i class="computer icon"></i> Interactive Desktop
+       </a>
+
+    </div>
+</div>
+
+
+<div class="ui text container">
+    {% block body %}
+        BODY
+    {% endblock %}
+</div>
+
+<div class="ui text container">
+    <p>
+        {% block footer %}
+
+            <h4 class="ui horizontal divider header">
+                <i class="github icon"></i>
+            </h4>
+
+            <div class="ui center aligned container">
+                Penn State &bull;
+                generated from <a href="https://github.com/biostars/bootcamp-central">bootcamp-central</a>
+                via <a href="https://github.com/ialbert/pyblue">pyblue</a>
+
+            </div>
+
+        {% endblock %}
+    </p>
+</div>
+
+</body>
+</html>
