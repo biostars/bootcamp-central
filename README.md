@@ -1,6 +1,6 @@
 ## Bootcamp Central
 
-Materials and data for the [Penn State Data Analysis Bootcamp](https://bootcamp.biostars.io)
+Materials and data for the [Penn State Data Analysis Bootcamp](https://bootcamp.biostars.io) deployed at <https://bootcamp.biostars.io>
 
 The bootcamp is about reproducible research. 
 
