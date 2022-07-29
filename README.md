@@ -1,50 +1,46 @@
+## Bootcamp Central
+
 Materials and data for the [Penn State Data Analysis Bootcamp](https://bootcamp.biostars.io)
 
-The bootcamp is about reproducible research. Let's see if we can reproduce the site that is about reproducible research... Hmmm...
+The bootcamp is about reproducible research. 
+
+Let's see if we can reproduce the site that is about reproducible research... Hmmm...
 
 ### How to generate the site
 
 First of all note that you don't actually need to fully generate this site yourself during
-the bootcamp. These instructions are here just to
-explain the process. But even if you don't generate the
-site itself you may still **contribute** to it
-via the GitHub web interface or after cloning locally.
+the bootcamp. These instructions are here just to explain the process. 
 
-The website
-is generated from the files in the  web directory of the [bootcamp-central](https://github.com/biostars/bootcamp-central) repository
-via the [pyblue][pyblue] python package.
-For it work you would need to have both `Python` and the [pip package manager][pip] installed.
+The website is generated from the files in the  [web](web) directory of the [bootcamp-central](https://github.com/biostars/bootcamp-central) repository via the [pyblue][pyblue] python package.
 
-Clone the repository:
+The `pyblue` program is written in Python. It is best if you use `conda` to create different Python environments, but using `conda` is not a strict requirement.
 
-    git clone https://github.com/biostars/bootcamp-central
+### Installation
 
-Install [pyblue][pyblue] of a specific version. It is best if you use a virtual environment, for example conda.
-
+    # Create a new Python environment.
     conda create --name bootcamp python=3.8 -y
 
-activate the new environment:
-
+    # Activate the environment.
     conda activate bootcamp
 
-Install pyblue of a version that is known to accept the markup we use:
-
+    # Install the pyblue package.
     pip install pyblue --upgrade
 
-You can now view the site as HTML with:
+    # Clone the website content.
+    git clone https://github.com/biostars/bootcamp-central
 
+    # Switch to the repository.
     cd bootcamp-central
-
-the default `Makefile` action is to run the server:
-
+        
+    # The default action is to run the server   
     make
-
-or
+ 
+the `make` command above invokes:
 
     pyblue -r web
-
-This will start a web server on your computer and you can use the browser
-to view the contents of the site. This is used while developing the site.
+    
+The above commands will start a web server on your computer and you can use the browser
+to view the contents of the site:
 
     http://localhost:8000
 
