@@ -21,7 +21,7 @@ Clone the repository:
 
 Install [pyblue][pyblue] of a specific version. It is best if you use a virtual environment, for example conda.
 
-    conda create --name bootcamp python=3 -y
+    conda create --name bootcamp python=3.8 -y
 
 activate the new environment:
 
