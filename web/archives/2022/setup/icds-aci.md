@@ -8,7 +8,7 @@ During the bootcamp, we will use resources provided by the Institute for Computa
 
 * [Request an ICDS-ACI account.](https://accounts.aci.ics.psu.edu/) Use the research description: "2022 Data Reproducibility Bootcamp" and list [PJ](https://science.psu.edu/bio/people/ghp3) (ghp3) as your sponsoring account.
 
-Please do this as soon as possible since it can take a few days for the account request to process.
+Please do this **by the end of Wednesday** since it can take a few days for the account request to process.
 
 If you already have access to the cluster, none of this is required. 
 
