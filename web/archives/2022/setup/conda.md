@@ -1,3 +1,4 @@
+
 ## Conda
 
 You need several packages installed to work on the practices during the bootcamp, to ensure consistent package versions, [conda](https://docs.conda.io/en/latest/) is recommended to be used. Please refer to [conda installer](https://docs.conda.io/en/latest/miniconda.html) for downloading and installing conda.
@@ -25,4 +26,4 @@ $ conda activate bootcamp
 $ snakemake --version
 ```
 
-Any issue on above steps, feel free to contact Jianyu Yang: jmy5455@psu.edu
+**Any issue on above steps, feel free to contact Jianyu Yang: jmy5455@psu.edu**
