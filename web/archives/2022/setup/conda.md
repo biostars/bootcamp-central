@@ -10,7 +10,7 @@ $ conda install -c conda-forge mamba
 
 to install `mamba`, `mamba` provides conda parallel functionality, which significantly speeds up downloading and installing large bundle of packages.
 
-> If the above command finishes successfully, `mamba --veresion` should return you the installed version.
+If the above command finishes successfully, `mamba --veresion` should return you the installed version.
 
 Download the [environment yaml file](bootcamp.yaml), run the following command to create environment based on descriptions in yaml file (replace parameter of `-n` with the name you like if need)
 
