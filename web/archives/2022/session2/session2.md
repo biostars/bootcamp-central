@@ -1,2 +1,2 @@
 
-### Session 2: Jupyter
+### Session 2: Interactive coding on the ACI-ICS cluster

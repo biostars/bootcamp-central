@@ -1,5 +1,5 @@
 
-**Instructor**
+**Instructors**
 
 * [Alan Brown][alan]
 * [Ana Victoria][ana]
@@ -9,7 +9,7 @@
 [ana]: https://www.huck.psu.edu/people/ana-victoria-leon-apodaca
 [jianyu]: https://www.huck.psu.edu/people/jianyu-yang
 
-**Organizers**
+**Organizer**
 
 * [George (PJ) Perry][pj]
 
