@@ -5,9 +5,9 @@
 * [Ana Victoria][ana]
 * [Jianyu Yang][jianyu]
 
-[alan]: https://mahonylab.org/people/
+[alan]: https://www.huck.psu.edu/people/alan-brown
 [ana]: https://www.huck.psu.edu/people/ana-victoria-leon-apodaca
-[jianyu]: https://yztxwd.github.io/
+[jianyu]: https://www.huck.psu.edu/people/jianyu-yang
 
 **Organizers**
 
