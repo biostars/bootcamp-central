@@ -1,6 +1,6 @@
 ## Prequisites
 
-The prerequisites for the bootcamp include some basic familiarity with R, R
+The prerequisites for the bootcamp include some basic familiarity with bash shell script, python, R, R
 Markdown, and RStudio. You can read/watch the resources below to review this
 material.
 

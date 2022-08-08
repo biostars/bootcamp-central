@@ -5,13 +5,9 @@ Please create one prior to the bootcamp.
 
 [GitHub]: https://github.com/
 
-During the workflowr section, you will use password authentication to
+During the worflow section, you will use password authentication to
 communicate with GitHub. This is required to make the instructions the same for
-everyone. For any real workflowr projects you create in the future, you can
-customize workflowr to use your preferred Git/GitHub settings (e.g. [SSH
-keys][workflowr-ssh]).
-
-[workflowr-ssh]: https://jdblischak.github.io/workflowr/articles/wflow-02-customization.html#setup-ssh-keys
+everyone. 
 
 Because of this, please make sure:
 
