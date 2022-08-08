@@ -1,25 +1,18 @@
-## ICDS-ACI Account
+ ## ICDS-ACI Account
 
-During the bootcamp, we will use the [Interactive Desktop][desktop] provided by
-the [ICDS-ACI][]. This means you do not need to install any software on
-your personal computer prior to the bootcamp. To access the resources
-provided by the ICDS-ACI, you need to follow these steps:
-
-[desktop]: https://portal.aci.ics.psu.edu/
-[icds-aci]: https://www.icds.psu.edu/
+During the bootcamp, we will use resources provided by the Institute for Computational and Data Sciences (ICDS). To access the resources provided by the ICDS-ACI, you need to follow these steps:
 
 * For incoming graduate students, activate your PSU student account
 
-* Enable [two-factor authentication][2fa] for your PSU account
+* Enable [two-factor authentication](https://accounts.psu.edu/2fa) for your PSU account
 
-    [2fa]: https://accounts.psu.edu/2fa
+* [Request an ICDS-ACI account.](https://accounts.aci.ics.psu.edu/) Use the research description: "2022 Data Reproducibility Bootcamp" and list [PJ](https://science.psu.edu/bio/people/ghp3) (ghp3) as your sponsoring account.
 
-* [Request an ICDS-ACI account.][icds-aci-account] Use the research description
-  "2020 Data Reproducibility Bootcamp" and list [PJ][pj] as your sponsoring
-  account (ghp3)
+Please do this **by the end of Wednesday** since it can take a few days for the account request to process.
 
-[icds-aci-account]: https://accounts.aci.ics.psu.edu/
-[pj]: https://science.psu.edu/bio/people/ghp3
+If you already have access to the cluster, none of this is required. 
 
-Please do this as soon as possible since it can take a few days for the account
-request to process.
+### Links:
+
+[interactive resources](https://portal.aci.ics.psu.edu/)
+[icds main page](https://www.icds.psu.edu/)

@@ -5,9 +5,9 @@
 - 10:00 AM - Welcome and overview of the day
 - 10:05 AM - Session 1: Introduction to data reproducibility
 - 11:45 AM - Break
-- 12:00 PM - Session 2 part1:
+- 12:00 PM - Session 2: Interactive coding on the ACI-ICS cluster part 1
 - 01:00 PM - Lunch
-- 02:00 PM - Session 2 part2:
+- 02:00 PM - Session 2: Interactive coding on the ACI-ICS cluster part 2
 - 03:00 PM - Session 3: Workflow management by Snakemake part 1
 - 03:50 PM - Break
 - 04:05 PM - Session 3: Workflow management by Snakemake part 2
