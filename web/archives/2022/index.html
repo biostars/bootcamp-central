@@ -1,0 +1,50 @@
+{# name = General Information #}
+{% extends "2022-base.html" %}
+{% load bootcamp %}
+
+{% block body %}
+
+    <h1 class="ui center aligned icon header">
+        <img class="ui tiny middle aligned image" src="/static/img/psu-logo.png">
+        2022 PSU Bioinformatics Data Reproducibility Bootcamp
+    </h1>
+
+    {% header text="August 12, 2022" icon="" tag='div' %}
+
+    {% divider "INFORMATION" anchor="information"  %}
+
+    <p>Welcome to the PSU Bioinformatics Data
+        Reproducibility Bootcamp!</p>
+
+    <p><strong>Important resources:</strong></p>
+    <ul>
+        <li>{% link "2022/conduct.html" %}</li>
+        <li>{% link "2022/logistics.html" %}</li>
+        <li>{% link "2022/setup.html" %}</li>
+        <li>{% link "2022/speakers.html" %}</li>
+    </ul>
+
+    {% markdown_file "2022/info.md" %}
+
+    {% divider "schedule"  anchor="schedule" %}
+
+    {% markdown_file "2022/schedule.md"  %}
+
+    {% divider "session 1"  anchor="session-1" %}
+
+    {% markdown_file "2022/session1/session1.md"  %}
+
+    {% divider "session 2" anchor="session-2" %}
+
+    {% markdown_file "2022/session2/session2.md" %}
+
+    {% divider "session 3" anchor="session-3" %}
+
+    {% markdown_file "2022/session3/session3.md" %}
+
+    {% divider "ARCHIVES" anchor="archives" %}
+
+    {% markdown_file "2022/archive.md"  %}
+
+{% endblock %}
+

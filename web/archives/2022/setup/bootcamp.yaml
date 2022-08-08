@@ -1,0 +1,10 @@
+name: bootcamp
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - snakemake=7.12
+  - cookiecutter=2.1
+  - jupyterlab=3.4
