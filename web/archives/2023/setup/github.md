@@ -11,3 +11,5 @@ Some systems come with git already installed, check it in command line interface
 During the worflow section, you will use password authentication to
 communicate with GitHub. This is required to make the instructions the same for
 everyone. 
+
+**Any issue on above two steps, feel free to contact Maxwell Konnaris: mak6930@psu.edu**
