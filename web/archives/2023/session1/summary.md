@@ -1,7 +1,7 @@
 
-### Session 1: Introduction to data reproducibility
+### Session 1: Introduction to Data Reproducibility
 
-#### speaker: Juliana Simas
+#### Instructor: Juliana Simas
 
 In this session we will discuss the reproducibility crisis in science and we will go over materials that will help us make our research reproducible. 
 
