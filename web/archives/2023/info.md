@@ -1,6 +1,6 @@
 **Location and General Instructions**
 
-The boot camp will be held at the [Biomedical and Chemical Engineering Building](https://goo.gl/maps/eaznXsiy45k9Xeq59), Room 001. *Insert conscise directions*
+The boot camp will be held at the [Chemical and Biomedical Engineering Building](https://goo.gl/maps/eaznXsiy45k9Xeq59), Room 001. *Insert conscise directions*
 
 If you want to join us a little earlier, we'll have breakfast between *Insert breakfast times and description*. Coffee, tea, water, and lunch will also be provided. 
 
