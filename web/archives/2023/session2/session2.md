@@ -1,6 +1,6 @@
 
-### Session 2: Hand-on coding skills on the ACI-ICS cluster
+### Session 2: *Navigating the PSU compute cluster and resources *
 
-#### speaker: Maxwell Konnaris & Venitha Bernard
+#### Instructors: Maxwell Konnaris & Venitha Bernard
 
-This session will introduce some basci Linux commands, how to use the computing cluster at PSU, how to set up a conda environment, how to code on Jupyter notebooks.
+This session will introduce some basic Linux commands, how to use the computing cluster at PSU, how to set up a conda environment and how to code on Jupyter notebooks.
