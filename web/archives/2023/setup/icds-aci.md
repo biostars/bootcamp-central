@@ -1,6 +1,6 @@
- ## ICDS-ACI Account
+ ## ICDS Cluster Resources Account
 
-During the bootcamp, we will use resources provided by the Institute for Computational and Data Sciences (ICDS). To access the resources provided by the ICDS-ACI, you need to follow these steps:
+During the boot camp, we will use resources provided by the Institute for Computational and Data Sciences (ICDS). To access the resources provided by the ICDS Cluster Resources, you need to follow these steps:
 
 * For incoming graduate students, activate your PSU student account
 
@@ -8,9 +8,9 @@ During the bootcamp, we will use resources provided by the Institute for Computa
 
 * [Request an ICDS-ACI account.](https://accounts.aci.ics.psu.edu/) Use the research description: "2023 Data Reproducibility Bootcamp" and list [Dr. David Koslicki](https://www.huck.psu.edu/people/david-koslicki) (dmk333) as your sponsoring account.
 
-Please do this **by the end of Friday (2022/08/07)** since it can take a few days for the account request to process.
+Please do this **by the end of Friday (2023/08/07)** since it can take a few days for the account request to process.
 
-If you already have access to the cluster, none of this is required. 
+If you already have access to the cluster, this is not required. 
 
 ### Useful Links:
 [Roar Collab Description](https://www.icds.psu.edu/computing-services/roar-collab/)
