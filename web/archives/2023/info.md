@@ -13,7 +13,7 @@
 [shaopeng]: https://www.huck.psu.edu/people/shaopeng-liu
 [venitha]: https://www.huck.psu.edu/people/venitha-bernard
 
-**Organizer**
+**Organizers**
 
 * [David Koslicki][dk]
 * [George (PJ) Perry][pj]
@@ -23,6 +23,6 @@
 
 **Funding and Support**
 
-The computational resources are provided by [The Institute for Computational and Data Sciences (ICDS)](https://www.icds.psu.edu/).
+Computational resources are provided by [The Institute for Computational and Data Sciences (ICDS)](https://www.icds.psu.edu/).
 
 The boot camp was first conceived and supported in Jun 2016 by the Administrative Supplement to NIGMS Predoctoral Training Grants (PA-15-136)
