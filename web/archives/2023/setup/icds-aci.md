@@ -6,7 +6,7 @@ During the boot camp, we will use resources provided by the Institute for Comput
 
 * Enable [two-factor authentication](https://accounts.psu.edu/2fa) for your PSU account
 
-* [Request an ICDS-ACI account.](https://accounts.aci.ics.psu.edu/) Use the research description: "2023 Data Reproducibility Bootcamp" and list [Dr. David Koslicki](https://www.huck.psu.edu/people/david-koslicki) (dmk333) as your sponsoring account.
+* [Request an ICDS-ACI account.](https://accounts.aci.ics.psu.edu/) Use the research description: "2023 Data Reproducibility Bootcamp" and list [Dr. David Koslicki](https://www.huck.psu.edu/people/david-koslicki) (dmk333) as your sponsoring account. Under “ICDS Linux Clusters,” check “Roar Collab.”
 
 Please do this **by the end of Friday (2023/08/07)** since it can take a few days for the account request to process.
 
