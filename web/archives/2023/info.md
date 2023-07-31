@@ -22,7 +22,7 @@ We'll have three sessions from *Edit times*, with lunch and short breaks.
 [shaopeng]: https://www.huck.psu.edu/people/shaopeng-liu
 [venitha]: https://www.huck.psu.edu/people/venitha-bernard
 
-**Organizer**
+**Organizers**
 
 * [David Koslicki][dk]
 * [George (PJ) Perry][pj]
