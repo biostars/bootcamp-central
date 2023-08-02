@@ -1,16 +1,8 @@
-## Bioinformatics Data Overview
+## Bioinformatics Resources
 
-### 1. Data resources and tools  
+ In part, we will acquaint you with widely-used bionformatics public data and computational tools essential for genomic analysis. It's not necessary (and you don't need to) use all of them, but you may consider this as a foundation to create your personalized tool map for future research endeavors. Additionally, some of these resources will be employed in the upcoming pipeline examples, providing practical insights into their application.
 
-In Module 3, we will acquaint you with widely-used public data resources and computational tools essential for genomic analysis. It's not necessary (and you don't need to) use all of them, but you may consider this as a foundation to create your personalized tool map for future research endeavors. Additionally, some of these resources will be employed in the upcoming pipeline examples, providing practical insights into their application. Here are the outlines:
-
-1. [Public data resources](#3.1.1)
-2. [Bioinformatic tools](#3.1.2)
-3. [Mini example of frequently used tools](#3.1.3)
-
-</br>
-
-#### Public data resources <a name="3.1.1"></a>
+### 1. Common Bioinformatics Public Data Resources
 
 In our research journey here, working with genomic datasets will be a frequent and essential aspect. Genomic datasets serve as foundational elements for numerous analyses and investigations. For example:
 
@@ -20,13 +12,12 @@ In our research journey here, working with genomic datasets will be a frequent a
   4. Reproducibility and standardization: well-curated benchmark datasets for specific computational tasks (e.g. [CAMI](https://www.microbiome-cosi.org/cami/cami/cami2), [Multiome](https://proceedings.mlr.press/v176/lance22a.html))
   5. Meta-analysis: data mining from accumulated genomic datasets
 
-</br>
 
 Here we list some widely used data sources:
 
-| Database                                                     | Contents                                              | When you might need it                            | Similar resources                                            |
-| ------------------------------------------------------------ | ----------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------------------ |
-| **Reference data**                                           |                                                       |                                                   |                                                              |
+| Database | Contents | When you might need it | Similar resources |
+| :---        |    :----:   | :----:  |       ---: |
+| **Reference data** | | | |
 | [Ensemble](http://useast.ensembl.org/index.html)             | Model organisms: assembly and annotation              | Analysis of human or mouse sequencing data        | [RefSeq](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40/) |
 | [InterPro](https://www.ebi.ac.uk/interpro/)                  | Protein families                                      | Annotate amino acid sequences of unknown function |                                                              |
 | [KEGG](https://www.kegg.jp/)                                 | Hierarchical gene functions                           | Functional analysis                               |                                                              |
@@ -42,13 +33,11 @@ Here we list some widely used data sources:
 | **For data mining**                                          |                                                       |                                                   |                                                              |
 | [Kaggle](https://www.kaggle.com/competitions/open-problems-multimodal) | Cleaned data for data science community               |                                                   |                                                              |
 
-</br>
 
-#### Bioinformatic tools  <a name="3.1.2"></a>
+### 2. Bioinformatic tools  <a name="3.1.2"></a>
 
 The majority of tools are compatible with Linux, Python, or R. However, it is not uncommon to find yourself in situations where you may need to switch between these platforms. Therefore, it is essential to remain adaptable and flexible in your approach. The initial lesson I learned in Bioinformatics, which resolves over 95% of my challenges, is simple: when in doubt, **Google it** (now you can ChatGPT it). 
 
-</br>
 
 | Task                  | Software                                                     | Comments                                                     |
 | --------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -64,9 +53,8 @@ The majority of tools are compatible with Linux, Python, or R. However, it is no
 | Enrichment analysis   | [GO enrichment analysis](http://geneontology.org/docs/go-enrichment-analysis/), [DAVID](https://david.ncifcrf.gov/) |                                                              |
 | Metagenomics          | Sourmash, Kraken, QIIME                                      |                                                              |
 
-</br>
 
-#### Example of some useful tools <a name="3.1.3"></a>
+#### Example of some useful tools
 
 Help resources:
 
