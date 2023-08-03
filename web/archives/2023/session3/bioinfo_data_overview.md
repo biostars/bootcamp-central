@@ -16,7 +16,7 @@ In our research journey here, working with genomic datasets will be a frequent a
 Here we list some widely used data sources:
 
 | Database | Contents | When you might need it | Similar resources |
-| :---        |    :----:   | :----:  |       ---: |
+| ---  |   ----  | ----  |  --- |
 | **Reference data** | | | |
 | [Ensemble](http://useast.ensembl.org/index.html)             | Model organisms: assembly and annotation              | Analysis of human or mouse sequencing data        | [RefSeq](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40/) |
 | [InterPro](https://www.ebi.ac.uk/interpro/)                  | Protein families                                      | Annotate amino acid sequences of unknown function |                                                              |

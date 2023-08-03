@@ -51,3 +51,11 @@ pre code {
 li {
     margin-bottom: 0.5ex;
 }
+
+table, th, td {
+    border: 1px solid rgb(75, 68, 68);
+}
+
+td {
+    padding: 5px;
+ }
