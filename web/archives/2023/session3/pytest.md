@@ -12,7 +12,7 @@ Since Pytest is a third-party framework, you will need to first install this pac
 ```bash
 pip install pytest
 ```
-Please click [this link](https://colab.research.google.com/drive/1WiLVRj5c3aiYKRrmB4k1mc9wNp-4-44M?usp=sharing) to jump into a jupyter notebook for an interactive illustrations.
+Please click [this link](https://colab.research.google.com/drive/1WiLVRj5c3aiYKRrmB4k1mc9wNp-4-44M?usp=sharing) to access a jupyter notebook with illustrations.
 
 ### Reference
 [Pytest Official Tutorial ](https://pytest.org/en/7.4.x/contents.htmlGenomic)
