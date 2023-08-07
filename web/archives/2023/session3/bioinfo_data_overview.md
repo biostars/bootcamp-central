@@ -33,6 +33,7 @@ Here we list some widely used data sources:
 | **For data mining**                                          |                                                       |                                                   |                                                              |
 | [Kaggle](https://www.kaggle.com/competitions/open-problems-multimodal) | Cleaned data for data science community               |                                                   |                                                              |
 
+</br>
 
 ### 2. Bioinformatic tools  <a name="3.1.2"></a>
 
@@ -53,19 +54,125 @@ The majority of tools are compatible with Linux, Python, or R. However, it is no
 | Enrichment analysis   | [GO enrichment analysis](http://geneontology.org/docs/go-enrichment-analysis/), [DAVID](https://david.ncifcrf.gov/) |                                                              |
 | Metagenomics          | Sourmash, Kraken, QIIME                                      |                                                              |
 
+</br>
 
-#### Example of some useful tools
+### 3. Examples of some useful tools
 
-Help resources:
+#### Help resources:
 
 1. Package: Conda, R Bioconductor, Github
 2. Forum: Biostars
 3. Coding: Stack Overflow, ChatGPT, etc.
 
 
+</br>
 
-Examples in daily work:
+#### [GNU parallel](https://www.biostars.org/p/63816/): process data in parallel
+1. Why do you need it: efficiency
+   1. when you have tons of fastq files to process
+   2. when you have tons of repetitive tasks
+2. How-to:
+   1. install by conda
+   2. usage: help documents or check the examples in the link
+</br>
 
-1. [GNU parallel](https://www.biostars.org/p/63816/): process data in parallel
-2. Awk + seed: file manipulation
-3. Bedtools: check overlap between 2 ATAC-seq peak files
+```
+conda activate bootcamp
+# conda install -y -c conda-forge parallel
+
+mkdir -p test_parallel
+cd test_parallel
+
+
+
+######## example1: when you have tons of scripts
+for i in {1..100}; do
+ echo -e "sleep 1\necho done script ${i}" > temp_script_${i}.sh
+done
+
+# a usual way if I want to run all of them
+for script in $(ls *.sh); do
+ echo "Processing ${script} now"
+ bash ${script}
+done
+
+# you can press Ctrl+C to terminate the process
+# it can be crazy when a script is long, such as seq alignment
+
+# a parallel way 
+ls *.sh | parallel -j 10 bash {}
+
+# clean folder
+rm *.sh
+
+
+
+######## example2: when you need to process tons of files
+for i in {1..100}; do
+ echo "This is file ${i}" > temp_file_${i}.txt
+done
+
+# let's define some function
+process_some_file ()
+{
+ input_file=$1
+ some_other_parameter=$2
+ 
+ # whatever functions you like
+ sleep 1
+ echo "We have a second parameter ${some_other_parameter}"
+ cat ${input_file}
+}
+
+export -f process_some_file
+
+# now let's run it in parallel
+ls temp*txt | parallel -j 10 process_some_file {} 100
+
+# clean dir
+rm temp*txt
+
+
+
+######## example3: when you want to use same file but loop through tons of parameters
+loop_parameters ()
+{
+ input_file=$1
+ para1=$2
+ para2=$3
+ para3=$4
+ 
+ # whatever functions you like
+ sleep 1
+ echo "Running command for ${input_file} with para1 ${para1}, para2 ${para2}, para3 ${para3}"
+}
+
+export -f loop_parameters
+
+touch assume_im_test_file.fastq
+# ::: is used to separate the command from the argument list.
+# check here: parallel -h
+parallel -j 10 loop_parameters assume_im_test_file.fastq {1} {2} {3} ::: {1..10} ::: M F ::: {1..22} 
+
+# sometimes your parameters are complex
+echo -e "a1\nb1\nc1\nd1" > para1_list.txt
+echo -e "a2\nb2\nc2\nd2\ne2" > para2_list.txt
+echo -e "a3\nb3\nc3\nd3\ne3\nf3" > para3_list.txt
+
+# solution1: 
+parallel -j 10 loop_parameters assume_im_test_file.fastq {1} {2} {3} ::: $(cat para1_list.txt) ::: $(cat para2_list.txt) ::: $(cat para3_list.txt)
+
+# solution 2: merge everything together first
+while IFS= read -r line1; do
+    while IFS= read -r line2; do
+        while IFS= read -r line3; do
+            echo "$line1 $line2 $line3" >> merged_parameters.txt
+        done < para1_list.txt
+    done < para2_list.txt
+done < para3_list.txt
+
+cat merged_parameters.txt | parallel --colsep " " -j 10 loop_parameters assume_im_test_file.fastq {1} {2} {3}
+
+# clean folder
+rm *txt assume_im_test_file.fastq
+```
