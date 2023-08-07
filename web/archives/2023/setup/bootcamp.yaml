@@ -8,3 +8,14 @@ dependencies:
   - snakemake=7.12
   - cookiecutter=2.1
   - jupyterlab=3.4
+  - fastqc=0.12.1
+  - bwa=0.7.17
+  - samtools=1.6
+  - bedtools=2.31.0
+  - picard=2.18.29
+  - r-base=4.2.3
+  - pip:
+      - cutadapt==4.4
+      - macs2==2.2.9.1
+      - deeptools==3.5.2
+
