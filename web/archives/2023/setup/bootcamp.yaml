@@ -4,16 +4,16 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.8
-  - snakemake=7.12
-  - cookiecutter=2.1
-  - jupyterlab=3.4
+  - python=3.11.4
+  - snakemake=7.32.1
+  - cookiecutter=2.3.0
+  - jupyterlab=4.0.4
   - fastqc=0.12.1
   - bwa=0.7.17
-  - samtools=1.6
+  - samtools=1.17
   - bedtools=2.31.0
-  - picard=2.18.29
-  - r-base=4.2.3
+  - picard=3.0.0
+  - r-base=4.3.1
   - pip:
       - cutadapt==4.4
       - macs2==2.2.9.1
