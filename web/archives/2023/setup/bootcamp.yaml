@@ -14,6 +14,7 @@ dependencies:
   - bedtools=2.31.0
   - picard=2.18.29
   - r-base=4.2.3
+  - parallel
   - pip:
       - cutadapt==4.4
       - macs2==2.2.9.1
