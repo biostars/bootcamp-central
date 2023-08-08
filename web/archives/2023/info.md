@@ -1,12 +1,12 @@
 **Location and General Instructions**
 
-The boot camp will be held at the [Chemical and Biomedical Engineering Building](https://goo.gl/maps/eaznXsiy45k9Xeq59), Room 001. *Insert conscise directions*
+The boot camp will be held at the [Chemical and Biomedical Engineering Building](https://goo.gl/maps/eaznXsiy45k9Xeq59), **Room 001**. 
 
-If you want to join us a little earlier, we'll have breakfast between *Insert breakfast times and description*. Coffee, tea, water, and lunch will also be provided. 
+If you want to join us a little earlier, we'll have breakfast between 9:00-9:30 AM on the **third floor** of the [Huck Institutes for the Life Sciences](https://goo.gl/maps/t3f71jEn1iftystm7), at the **Life Sciences Bridge**. Lunch will also be provided at the same venue. 
 
-We'll have three sessions from *Edit times*, with lunch and short breaks. 
+Please don't forget to register on the sign-up sheet when you arrive.
 
-*Please don't forget to register on the sign-up sheet when you arrive.* 
+If you have any trouble navigating through campus, please e-mail Venitha at vab5299@psu.edu.
 
 **Instructors**
 
