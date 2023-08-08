@@ -152,9 +152,16 @@ Hello World!
 
 # Github - storing and sharing scripts with Git
 
-1. Installing the GitHub CLI
-
+1. Make sure you have the GitHub CLI installed
+```bash
+gh --version
+```
 2. Logging in to your GitHub account via the CLI
+ 
+Type the following command and follow the interactive prompts.
+```bash
+gh auth login
+```
 
 3. Creating a repository
 Navigate to the directory where you want to create a new repository and follow the interactive prompts.
@@ -208,5 +215,17 @@ Don't forget to push the changes!
 git push
 ```
 Now you will be able to see an updated version of `hello_world.sh` online.
+
+# Interacting with the Cluster from your local computer
+
+1. Downloading/copying a file from the cluster via CLI
+```bash
+scp username@submit.hpc.psu.edu:path/to/hello_world.sh .
+```
+2. Uploading/copying a file to the cluster via CLI
+```bash
+scp path/to/hello_world.sh username@submit.hpc.psu.edu:path/to/desired/directory
+```
+Remember, you can do either of these via the portal as well!
 
 # Where to go for help
