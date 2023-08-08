@@ -1,8 +1,7 @@
 ## Snakemake
-<br/>
 `Snakemake` is a powerful, python-based workflow management tool that aims to improve **reproducibility and scalability** of creating workflows across different systems. It allows users to define customized rules for deriving output from input files, making it easier to build a workflow.
 <br/><br/>
-In this part of module 3, we will first introduce the basic syntax in Snakemake, and then utilize a ATAC-seq pipeline as an example to show how to create it using Snakemake. 
+In this part of module 3, we will first introduce the basic syntax in Snakemake, and then utilize a ATAC-seq pipeline as an example to show how to create it using Snakemake. The interactive code of the ATAC-seq analysis can be found [here](https://github.com/biostars/bootcamp-central/blob/master/web/archives/2023/session3/data/session3.2_interactive_code.md).
 
 ### Prerequisite
 Basic knowledge about Python and Bash is required.
