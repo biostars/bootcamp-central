@@ -24,7 +24,7 @@ rule <a rule name>:
 ```
 A Snakemake rule has to start with a keyword `rule` followed by a given name (e.g., "download_data"). The `input` and `output` directives are followed by lists of files (separated by `,`) that are expected to be used or created by the rule. However, both of them are optional directives that we will talk later when we need them. The `params` is also an optional directive where you can put some required parameters used in the command lines. A last and required directive is `shell` or `run` , followed by a Python string or a few simple python lines to execute the commands. 
 
-We will use [an ATAC-seq pipeline](https://colab.research.google.com/drive/1K_QcazNpwtM8TdkdiLrI8UlsHhQ4Ri0L?usp=sharing) as an example to further demonstrate how to use these directives.
+We will use [an ATAC-seq pipeline](https://raw.githubusercontent.com/biostars/bootcamp-central/master/web/archives/2023/session3/data/workflow.smk) as an example to further demonstrate how to use these directives.
 
 To run a workflow described in a snakefile, we can execute:
 ```bash
