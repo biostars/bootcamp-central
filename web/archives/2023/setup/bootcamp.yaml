@@ -19,4 +19,5 @@ dependencies:
       - cutadapt==4.4
       - macs2==2.2.9.1
       - deeptools==3.5.2
-
+  - mamba:
+      - gh==2.32.1
