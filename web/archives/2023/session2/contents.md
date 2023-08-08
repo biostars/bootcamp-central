@@ -12,6 +12,7 @@ ssh <your user account>@submit.hpc.psu.edu ## you need to enter psu password. If
 ## Basic Linux Commands
 ### Tips and Tricks
 ## Useful Linux commands for Everyday Bioinformatics
+`find . -type f -exec du -hs {} \; | sort -rh | head -n 5`
 
 # Package management and software installation
 ## Creating a conda environment
@@ -50,13 +51,10 @@ conda activate bootcamp
 snakemake --version
 ```
 6. Let's create a quick script
-
 ```bash
 vim hello_world.sh
 ```
-
 Press the insert button or Esc+i to start editing.  Enter/Copy the following code in your script:
-
 ```bash
 #!/bin/bash
 echo "Hello World!"
@@ -66,12 +64,10 @@ To save your script, press Esc followed by
 :wq
 ```
 To run your script, type:
-
 ```bash
 bash hello_world.sh
 ```
 You should be able to see the following message printed on the command-line:
-
 ```bash
 Hello World!
 ```
