@@ -176,3 +176,70 @@ cat merged_parameters.txt | parallel --colsep " " -j 10 loop_parameters assume_i
 # clean folder
 rm *txt assume_im_test_file.fastq
 ```
+
+</br>
+
+#### Get fluent with Shell script
+As bioinformaticians, we consistently handle complex datasets. Ensuring these datasets are cleaned according to our requirements is a challenging task that requires careful attention.
+
+```
+######## Example 4: partition fasta file of KEGG KOs
+echo ">aaa:Acav_0001|dnaA; chromosomal replication initiator protein|K02313
+MTEEPSRSPDFDT
+>aaa:Acav_0002|dnaN; DNA polymerase III subunit beta [EC:2.7.7.7]|K02338
+MIVLKATQDKVL
+>aaa:Acav_0003|gyrB; DNA gyrase subunit B [EC:5.6.2.2]|K02470
+MTAENTLPEPTLP
+>aaa:Acav_0005|hsdM; type I restriction enzyme M protein [EC:2.1.1.72]|K03427
+MLDAQQQYAIRSAL
+>aaa:Acav_0007|hsdM; type I restriction enzyme M protein [EC:2.1.1.72]|K03427
+MSLTLDTLESWLWE
+>aaa:Acav_0008|hsdS; type I restriction enzyme, S subunit [EC:3.1.21.3]|K02470
+MKSMGTAEQVTPKA
+>aaa:Acav_0014|TROVE2, SSA2; 60 kDa SS-A/Ro ribonucleoprotein|K02338
+MVNTQLFQTLKAR
+>aac:Aaci_2089|hemE, UROD; uroporphyrinogen decarboxylase [EC:4.1.1.37]|K02313
+MRNGDFAVNNRFLR"  > pseudo_ko_seq.faa
+
+# if we need a collection of all KOs
+grep '>' pseudo_ko_seq.faa | rev | cut -d'|' -f1 | rev | sort -u 
+
+# grep '>': get all lines start with ">"
+# rev: reverse line back to front
+# cut -d'|' -f1: pick the 1st field
+# rev: reverse back to normal order
+# sort -u: deduplicate
+
+# if we want group sequences by every single KO
+grep '>' pseudo_ko_seq.faa | rev | cut -d'|' -f1 | rev | sort -u  > pseudo_ko_list.txt
+
+for ko in $(cat pseudo_ko_list.txt); do
+ echo ${ko}
+ grep -A 1 --no-group-separator -Fw ${ko} pseudo_ko_seq.faa
+ echo " "
+done
+
+# Question: can we do parallel?
+cat pseudo_ko_list.txt | parallel -j 4 'ko={}; grep -A 1 --no-group-separator -Fw ${ko} pseudo_ko_seq.faa > pseudo_out_${ko}.txt'
+
+# clean dir
+rm pseudo_*
+```
+
+</br>
+
+Gradually get fimilar with them, and then enjoy playing with them.
+| Tools      | Function                              |
+| ---------- | ------------------------------------- |
+| awk, sed   | text manipulation and extraction      |
+| grep       | search in file                        |
+| cut        | select section/field                  |
+| sort       | sort                                  |
+| find       | search in dir                         |
+| uniq       | dedup                                 |
+| echo       | print                                 |
+| xargs      | command after stdout                  |
+| head, tail | show begin/end of file                |
+| tr         | translate character (often delimiter) |
+| wget, curl | download                              |
+| pwd, cd    | dir operation                         |
