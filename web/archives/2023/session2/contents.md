@@ -19,6 +19,30 @@ Assuming you have already set up 2FA on Duo, you will be prompted to accept the 
 # Navigating Linux systems
 ## Why use UNIX/Linux?
 ## Basic Linux Commands
+1. Creating a file
+
+Let's create a quick script
+```bash
+vim hello_world.sh
+```
+Press the insert button or Esc+i to start editing.  Enter/Copy the following code in your script:
+```bash
+#!/bin/bash
+echo "Hello World!"
+```
+To save your script, press Esc followed by 
+```bash
+:wq
+```
+To run your script, type:
+```bash
+bash hello_world.sh
+```
+You should be able to see the following message printed on the command line:
+```bash
+Hello World!
+```
+
 ### Tips and Tricks
 ## Useful Linux commands for Everyday Bioinformatics
 `find . -type f -exec du -hs {} \; | sort -rh | head -n 5`
@@ -60,30 +84,10 @@ mamba env create -f bootcamp.yaml -n bootcamp
 conda activate bootcamp
 snakemake --version
 ```
-6. Let's create a quick script
-```bash
-vim hello_world.sh
-```
-Press the insert button or Esc+i to start editing.  Enter/Copy the following code in your script:
-```bash
-#!/bin/bash
-echo "Hello World!"
-```
-To save your script, press Esc followed by 
-```bash
-:wq
-```
-To run your script, type:
-```bash
-bash hello_world.sh
-```
-You should be able to see the following message printed on the command line:
-```bash
-Hello World!
-```
+
 # Requesting resources and submitting a job
 
-Let's submit a job to run our script using cluster resources. For more information, refer to https://slurm.schedmd.com/documentation.html.
+Let's submit a job to run our `hello_world.sh` script using cluster resources. For more information, refer to https://slurm.schedmd.com/documentation.html.
 
 1. Create a new script that includes details on requesting resources from Roar Collab.
 
@@ -128,19 +132,81 @@ You should be able to see the status of your job. For example:
 ```
 
 When your job is completed, the status changes:
-```   JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+```
+   JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
            4957989      open bootcamp  vab5299 CF       0:00      1 (Priority)
 ```
 4. Two files `run.err` and `run.out` will be created in the directory where you run your job. `run.out` contains the output of your script while `run.err` contains a log of any errors that may have occurred.
+
+Let's look at the output for our script.
+
 ```bash
  cat run.out
 ```
-prints
+This should print
+
 ```bash
 Hello World!
 ``` 
 5. When the job is completed successfully, you will receive an e-mail. 
 
 # Github - storing and sharing scripts with Git
+
+1. Installing the GitHub CLI
+
+2. Logging in to your GitHub account via the CLI
+
+3. Creating a repository
+Navigate to the directory where you want to create a new repository and follow the interactive prompts.
+
+4. Uploading a file
+Let's upload our `hello_world.sh` script to the new GitHub repository.
+
+First, copy the script to the local repository
+```bash
+cp /path/to/hello_world.sh /path/to/local/repository
+```
+
+After navigating to your local repository, stage the file for commit
+``` bash
+cd /path/to/local/repository
+git add hello_world.sh
+```
+Time to commit the changes! You can add a short comment on the changes made.
+
+```bash
+git commit -m "Added hello_world.sh"
+```
+Finally, we push the changes to the remote repository on GitHub
+``` bash
+git push
+```
+You will be able to see `hello_world.sh` on your GitHub repository online.
+
+5. Editing and updating a file
+
+Every time you edit the file locally, you need to commit the changes and push the file to the remote repository.
+
+Let's edit `hello_world.sh`
+
+```bash
+vim hello_world.sh
+```
+Now we need to stage the changes to commit.
+
+```bash
+git add hello_world.sh
+```
+To commit the changes, type:
+
+```bash
+git commit -m "Updated hello_world.sh"
+```
+Don't forget to push the changes!
+
+```bash
+git push
+```
+Now you will be able to see an updated version of `hello_world.sh` online.
 
 # Where to go for help
