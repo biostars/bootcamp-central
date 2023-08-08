@@ -1,6 +1,6 @@
 ## ATAC-seq analysis workflow
 
-For Chunyu to generate snakemake report
+This example is based on the example from Galaxy training (ref 1 below) with some modifications.  
 
 
 
@@ -26,12 +26,6 @@ cd interactive_session3.2
 work_dir=$PWD   
 # activate conda and load other tools
 conda activate bootcamp  
-module load fastqc
-module load bwa
-module load samtools
-module load bedtools
-module load picard
-module load r
 ```
 
 
