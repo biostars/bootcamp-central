@@ -50,14 +50,31 @@ conda activate bootcamp
 snakemake --version
 ```
 6. Let's create a quick script
+
 ```bash
-vim hello_world.sh```
+vim hello_world.sh
+```
 
 Press the insert button or Esc+i to start editing.  Enter/Copy the following code in your script:
+
 ```bash
 #!/bin/bash
-echo "Hello World!"```
+echo "Hello World!"
+```
+To save your script, press Esc followed by 
+```bash
+:wq
+```
+To run your script, type:
 
+```bash
+bash hello_world.sh
+```
+You should be able to see the following message printed on the command-line:
+
+```bash
+Hello World!
+```
 # Requesting resources and submitting a job
 
 # Github - storing and sharing scripts with Git
