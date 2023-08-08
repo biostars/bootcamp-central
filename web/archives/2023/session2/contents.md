@@ -1,14 +1,18 @@
-# Introduction to UNIX/Linux
+# Cluster and Computational Resources
+## Accessing the Cluster via Portal
+## Accessing the Cluster via Terminal 
+
+# Navigating Linux systems
 ## Why use UNIX/Linux?
-### What is the command line interface (CLI)?
 ## Basic Linux Commands
 ### Tips and Tricks
-## Installing Bioinformatics software 
 ## Useful Linux commands for Everyday Bioinformatics
 
-# Connecting to Roar Collab
-# Installing Bioinformatics software on Roar Collab
-# Creating a conda environment
-# Submitting a job and allocating resources
+# Package management and software installation
+## Creating a conda environment
+
+# Requesting resources and submitting a job
+
+# Github - storing and sharing scripts with Git
 
 # Where to go for help
