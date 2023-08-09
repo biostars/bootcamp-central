@@ -33,9 +33,8 @@ A CLI is a text-based user interface used to interact with a computer or softwar
 - More precise control and automation capabilities make it easier to string together a pipeline for analysis (more in Session 3!)
 
 Reference:
-- Justifying Learning Linux For Bioinformatics.Retrieved August 9, 2023, from https://www.biostars.org/p/11085/
-- Why should Biologists learn Unix for Bioinformatics? Retrieved August 9, 2023, from https://bioinformatics.ccr.cancer.gov/btep/why-should-biologists-learn-unix-for-bioinformatics/
-
+1. Justifying Learning Linux For Bioinformatics.Retrieved August 9, 2023, from https://www.biostars.org/p/11085/
+2. Why should Biologists learn Unix for Bioinformatics? Retrieved August 9, 2023, from https://bioinformatics.ccr.cancer.gov/btep/why-should-biologists-learn-unix-for-bioinformatics/
 
 ## How to access the CLI
 - On Mac: Dock/Finder
@@ -158,6 +157,7 @@ Here, `rm` is the command to delete or remove a file while the `-r` flag modifie
 4. Manipulating Files
 
 File types and file extensions in Linux:
+
   In Linux, file extensions are not as critical as they are in some other operating systems, like Windows. While file extensions can provide useful information about the type of a file, Linux primarily determines a file's type based on its content and metadata rather than solely relying on the extension. However, it is good practice to give your files an extension just so the user (either you or someone else) has an idea of the contents. Using common file extensions can also help ensure compatibility when you move your files between operating systems.
 
 Some common tools to read files are `cat` and `less`:
@@ -200,7 +200,7 @@ sed -e 's/!/?/' -e 's/echo//' -e 's/\s//' hello_world.sh
 awk '{ gsub("!", "?"); sub("echo ", ""); print }' hello_world.sh
 ```
 - Checking available storage
-`bash
+```bash
 find . -type f -exec du -hs {} \; | sort -rh | head -n 5`
 ```
 # Package management and software installation
