@@ -2,7 +2,7 @@
 \
 `Snakemake` is a powerful, python-based workflow management tool that aims to improve **reproducibility and scalability** of creating workflows across different systems. It allows users to define customized rules for deriving output from input files, making it easier to build a workflow.
 <br/><br/>
-In this part of module 3, we will first introduce the basic syntax in Snakemake, and then utilize a ATAC-seq pipeline as an example to show how to create it using Snakemake. The interactive code of the ATAC-seq analysis can be found [here](https://github.com/biostars/bootcamp-central/blob/master/web/archives/2023/session3/data/session3.2_interactive_code.md).
+In this part of module 3, we will first introduce the basic syntax in Snakemake, and then utilize a ATAC-seq pipeline as an example to show how to create it using Snakemake. The interactive code of the ATAC-seq analysis can be found <a href="https://github.com/biostars/bootcamp-central/blob/master/web/archives/2023/session3/data/session3.2_interactive_code.md" target="_blank">here</a>.
 
 ### Prerequisite
 Basic knowledge about Python and Bash is required.
@@ -25,7 +25,7 @@ rule <a rule name>:
 ```
 A Snakemake rule has to start with a keyword `rule` followed by a given name (e.g., "download_data"). The `input` and `output` directives are followed by lists of files (separated by `,`) that are expected to be used or created by the rule. However, both of them are optional directives that we will talk later when we need them. The `params` is also an optional directive where you can put some required parameters used in the command lines. A last and required directive is `shell` or `run` , followed by a Python string or a few simple python lines to execute the commands. 
 
-We will use [an ATAC-seq pipeline](https://raw.githubusercontent.com/biostars/bootcamp-central/master/web/archives/2023/session3/data/workflow.smk) as an example to further demonstrate how to use these directives.
+We will use <a href="https://raw.githubusercontent.com/biostars/bootcamp-central/master/web/archives/2023/session3/data/workflow.smk" target="_blank">an ATAC-seq pipeline</a> as an example to further demonstrate how to use these directives.
 
 To run a workflow described in a snakefile, we can execute:
 ```bash
@@ -40,4 +40,5 @@ snakemake -n -s <path to snakemake file>
 Using `-n` (or `--dry-run`) flag, Snakemake will only show the execution plan instead of actually performing the steps.
 
 ### Reference
-[Snakemake Official Tutorial ](https://snakemake.readthedocs.io/en/stable/tutorial/tutorial.html)
+<a href="https://snakemake.readthedocs.io/en/stable/tutorial/tutorial.html" target="_blank">Snakemake Official Tutorial</a>
+

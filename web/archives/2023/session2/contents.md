@@ -207,9 +207,9 @@ find . -type f -exec du -hs {} \; | sort -rh | head -n 5`
 
 ## Creating a conda environment
 
-[Conda](https://docs.conda.io/en/latest/) is a commonly used open-source package management and environment management system that allows you to install, run, and update packages while managing their dependencies on Windows, macOS, and Linux operating system. 
+<a href="https://docs.conda.io/en/latest/" target="_blank">Conda</a> is a commonly used open-source package management and environment management system that allows you to install, run, and update packages while managing their dependencies on Windows, macOS, and Linux operating system. 
 
-Once you login, run the following commands to download [conda installer](https://docs.conda.io/en/latest/miniconda.html).
+Once you login, run the following commands to download <a href="https://docs.conda.io/en/latest/miniconda.html" target="_blank">conda installer</a>.
 ```bash
 cd /storage/work/<your user account>
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -386,6 +386,6 @@ Remember, you can do either of these via the portal as well!
 
 # Where to go for help
 
-1. [Biostars](https://www.biostars.org/)
-2. [ICDS Support](https://www.icds.psu.edu/computing-services/support/)
+1. <a href="https://www.biostars.org/" target="_blank">Biostars</a>
+2. <a href="https://www.icds.psu.edu/computing-services/support/" target="_blank">ICDS Support</a>
 3. The Genomix Slack Channel!

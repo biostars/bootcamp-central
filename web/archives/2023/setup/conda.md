@@ -1,7 +1,7 @@
 
 ## Conda
 
-You will need to download and install several “packages” to work interactively during the bootcamp. [Conda](https://docs.conda.io/en/latest/) is a commonly used open-source package management and environment management system that allows you to install, run, and update packages while managing their dependencies on Windows, macOS, and Linux operating system. 
+You will need to download and install several “packages” to work interactively during the bootcamp. <a href="https://docs.conda.io/en/latest/" target="_blank">Conda</a> is a commonly used open-source package management and environment management system that allows you to install, run, and update packages while managing their dependencies on Windows, macOS, and Linux operating system. 
 
 You can follow the steps below to step up your environment on the ACI server.
 
@@ -10,7 +10,7 @@ You can follow the steps below to step up your environment on the ACI server.
 ssh <your user account>@submit.hpc.psu.edu ## you need to enter psu password. If you want to login without password, please refer to http://www.linuxproblem.org/art_9.html.
 ```
 
-2. Once you login, run the following commands to download [conda installer](https://docs.conda.io/en/latest/miniconda.html).
+2. Once you login, run the following commands to download <a href="https://docs.conda.io/en/latest/miniconda.html" target="_blank">conda installer</a>.
 ```bash
 cd /storage/work/<your user account>
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -41,3 +41,5 @@ mamba env create -f bootcamp.yaml -n bootcamp
 conda activate bootcamp
 snakemake --version
 ```
+
+
