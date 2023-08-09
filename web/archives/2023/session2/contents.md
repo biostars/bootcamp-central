@@ -33,6 +33,9 @@ A CLI is a text-based user interface used to interact with a computer or softwar
 - More precise control and automation capabilities make it easier to string together a pipeline for analysis (more in Session 3!)
 
 Reference:
+- Justifying Learning Linux For Bioinformatics.Retrieved August 9, 2023, from https://www.biostars.org/p/11085/
+- Why should Biologists learn Unix for Bioinformatics? Retrieved August 9, 2023, from https://bioinformatics.ccr.cancer.gov/btep/why-should-biologists-learn-unix-for-bioinformatics/
+
 
 ## How to access the CLI
 - On Mac: Dock/Finder
@@ -66,7 +69,9 @@ Some important symbols and notations used while constructing a path:
    - ~ (tilde): Represents the home directory of the current user.
 
 ## Regarding Commands
-A command, like `pwd`, is a specific instruction or action that you can give to the operating system through the CLI. Most commands in Linux have parameters or options that can be used to modify the behaviour of the command, called flags. 
+A command, like `pwd`, is a specific instruction or action that you can give to the operating system through the CLI. Most commands in Linux have parameters or options that can be used to modify the behaviour of the command, called flags. For example, the `ls` command can be used to display the contents of a directory. You can use the flags `-l', `-a` and other flags to change what contents are read and how.
+
+Usually, shorter, single-letter flags use a single hyphen (`-a`) whilst longer commands use two (`--all`) but this may not apply to every tool/software you may come across. Always read the manual!
 
 
 ## Basic Linux Commands
@@ -124,16 +129,80 @@ Hello World!
 ```
 3. Moving, copying and renaming files
 
-Let's move our script to the directory we just created by using the `mv` command:
+Let's create a copy of our script and move it to the directory we just created:
 
+```bash
+cp hello_world.sh hello_world_copy.sh 
+mv hello_world_copy.sh test1
+```
+To move into another directory, we can use `cd`. Let's rename the copy we just moved:
 
+```bash
+pwd
+cd test1
+pwd
+mv hello_world_copy.sh hello_world_new_name.sh
+ls
+```
+As you can see, you can use `mv` to both move and rename a file.
 
-4. Reading files
+Now let's navigate back to the parent folder and delete test1 along with its contents.
+
+```bash
+cd .. #Remember, .. represents the parent directory
+rm -r test1 
+ls
+```
+Here, `rm` is the command to delete or remove a file while the `-r` flag modifies rm to remove files recursively, that is delete the contents of the directory first followed by the directory itself. Once again, be careful when you use this command as there is no way to recover your data once deleted.
+
+4. Manipulating Files
+
+File types and file extensions in Linux:
+  In Linux, file extensions are not as critical as they are in some other operating systems, like Windows. While file extensions can provide useful information about the type of a file, Linux primarily determines a file's type based on its content and metadata rather than solely relying on the extension. However, it is good practice to give your files an extension just so the user (either you or someone else) has an idea of the contents. Using common file extensions can also help ensure compatibility when you move your files between operating systems.
+
+Some common tools to read files are `cat` and `less`:
+
+```bash
+cat hello_world.sh
+```
+`cat` outputs the entire contents of the file onto the terminal all at once; it's useful if you have a very small file and you want to quickly view the contents. For larger files, `less` is more useful:
+
+```bash
+less hello_world.sh
+```
+`less` displays one page at a time on a separate screen. You can also scroll through the file using the up and down arrow keys.
 
 ### Tips and Tricks
-## Useful Linux commands for Everyday Bioinformatics
-`find . -type f -exec du -hs {} \; | sort -rh | head -n 5`
 
+Save yourself from hours of endless frustration by 
+- Using auto-complete: Up and down arrow keys, Tab
+- Following the same naming conventions for files and directories
+- Copying and pasting paths
+- Using text editors for coding
+- Consulting the manual 
+  Eg. `man less`, `man cat`, `man man`
+- Making yourself familiar with special characters/hidden characters like whitespaces
+
+## Useful Linux commands for Everyday Bioinformatics
+- Command piping using `|` and I/O operators
+```bash
+ls -1 | wc -l
+ls -1 | wc -l >result.txt
+```
+- Links: Symlinks and hardlinks
+``` bash
+ln -s /path/to/target /path/to/link #To create a symlink
+ln /path/to/target /path/to/link #To create a hardlink
+```
+- Manipulating text using `sed` and `awk`
+```bash
+sed -e 's/!/?/' -e 's/echo//' -e 's/\s//' hello_world.sh
+awk '{ gsub("!", "?"); sub("echo ", ""); print }' hello_world.sh
+```
+- Checking available storage
+`bash
+find . -type f -exec du -hs {} \; | sort -rh | head -n 5`
+```
 # Package management and software installation
 
 ## Creating a conda environment
