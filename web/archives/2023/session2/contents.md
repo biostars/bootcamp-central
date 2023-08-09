@@ -1,6 +1,12 @@
 # Cluster Resources
+
 ## What is a Cluster?
+A group of loosely connected/linked computers that can work together as a single highly available system
 ### Advantages of using the Cluster 
+1. Storage / Manageability: 
+You are able to store a large amount of data across many different machines which can be accessed via any computer with access (much like a cloud).
+2. Availability/Computing Resources: 
+ A single computer is limited in the amount of processing power it has. Multiple computers expand this computational limit. This translates to greater capability to download, store, and process data
 
 ## Accessing the Cluster via Portal
 
@@ -17,9 +23,55 @@ ssh <your user account>@submit.hpc.psu.edu ## you need to enter psu password.
 Assuming you have already set up 2FA on Duo, you will be prompted to accept the login request on your Duo mobile app.
 
 # Navigating Linux systems
-## Why use UNIX/Linux?
+## What is a Command Line Interface (CLI)?
+A CLI is a text-based user interface used to interact with a computer or software by entering commands as text input instead of using graphical elements like windows, buttons, and icons. 
+
+## Why use UNIX/Linux for Bioinformatics?
+- Many Bioinformatics tools are written for UNIX/Linux and cannot be easily adapted to Windows
+- GUI tools like Notepad and Excel have a size limit
+- The compute cluster runs on a Linux-based OS
+- More precise control and automation capabilities make it easier to string together a pipeline for analysis (more in Session 3!)
+
+Reference:
+
+## How to access the CLI
+- On Mac: Dock/Finder
+- On Windows: WSL/Ubuntu from Microsoft Store (easiest option)
+- On Linux: Ctrl + Alt + T or right-click the Desktop/Directory
+
+
 ## Basic Linux Commands
-1. Creating a file
+1. Creating/Deleting a directory and viewing its contents
+   
+To create a directory we can use the `mkdir` command followed by the name of the directory
+```bash
+mkdir test1
+```
+You can check if the directory has been created by using the `ls` command
+
+```bash
+ls
+```
+should output the directory `test1` along with other directories that are present.
+
+```bash
+quals  stat55  test1
+```
+To delete an empty directory, like the one we just created, we can use `rmdir`.
+Word of advice: Be very careful while deleting files/directories on the CLI! You will not be able to recover your data after deleting them.
+
+```bash
+mkdir test2
+ls
+#Output
+#quals  stat55  test1  test2
+rmdir test2
+ls
+#Output
+#quals  stat55  test1
+```
+
+3. Creating a file
 
 Let's create a quick script
 ```bash
@@ -42,6 +94,7 @@ You should be able to see the following message printed on the command line:
 ```bash
 Hello World!
 ```
+2. Reading a file
 
 ### Tips and Tricks
 ## Useful Linux commands for Everyday Bioinformatics
