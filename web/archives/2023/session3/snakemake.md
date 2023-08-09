@@ -1,4 +1,5 @@
 ## Snakemake
+\
 `Snakemake` is a powerful, python-based workflow management tool that aims to improve **reproducibility and scalability** of creating workflows across different systems. It allows users to define customized rules for deriving output from input files, making it easier to build a workflow.
 <br/><br/>
 In this part of module 3, we will first introduce the basic syntax in Snakemake, and then utilize a ATAC-seq pipeline as an example to show how to create it using Snakemake. The interactive code of the ATAC-seq analysis can be found [here](https://github.com/biostars/bootcamp-central/blob/master/web/archives/2023/session3/data/session3.2_interactive_code.md).
@@ -34,9 +35,9 @@ The `-c` (or `--cores`) flag is required and used to specify the number of cores
 
 It is always a good habit to use `dry run` to examine whether there are any syntax errors or something missing in the snakefile via:
 ```bash
-snakemake -np -s <path to snakemake file> 
+snakemake -n -s <path to snakemake file> 
 ``` 
-Using `-n` (or `--dry-run`) flag, Snakemake will only show the execution plan instead of actually performing the steps. The `-p` flag instructs Snakemake to also print the resulting shell command for illustration. 
+Using `-n` (or `--dry-run`) flag, Snakemake will only show the execution plan instead of actually performing the steps.
 
 ### Reference
 [Snakemake Official Tutorial ](https://snakemake.readthedocs.io/en/stable/tutorial/tutorial.html)
