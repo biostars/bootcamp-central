@@ -39,15 +39,36 @@ Reference:
 - On Windows: WSL/Ubuntu from Microsoft Store (easiest option)
 - On Linux: Ctrl + Alt + T or right-click the Desktop/Directory
 
+## Regarding Paths 
+In Linux, a path is the address of a file or directory in the file system. These are essential for navigating and working with files and directories on a Linux system.
+
+There are two types of paths:
+- Absolute paths:  Provides the complete and unambiguous location of a file or directory starting from the root directory. It includes all the necessary directory names to reach the desired location. An absolute path always begins with a forward slash ("/") which represents the root directory.
+Example: `/home/user/documents/file.txt` is an absolute path to a file named `file.txt` located in the `documents` directory of the `user` directory, which is within the `home` directory.
+- Relative paths: Specifies the location of a file or directory relative to the current working directory. It does not start from the root directory but describes the path from the current location. Relative paths are useful when you are already in a specific directory and want to reference other files or directories within or adjacent to it.
+Example: If you are currently in the `/home/user` directory, then `documents/file.txt` is a relative path to the same file mentioned above.
+
+How to find your way in Linux:
+- If you want to know where you are currently in the file system, use the command `pwd` (present working directory):
+```bash
+pwd
+```
+gives
+```bash
+/home/venitha
+```
+on my computer. 
+
+## Regarding Commands
 
 ## Basic Linux Commands
 1. Creating/Deleting a directory and viewing its contents
    
-To create a directory we can use the `mkdir` command followed by the name of the directory
+To create a directory we can use the `mkdir` command followed by the name of the directory:
 ```bash
 mkdir test1
 ```
-You can check if the directory has been created by using the `ls` command
+You can check if the directory has been created by using the `ls` command:
 
 ```bash
 ls
@@ -58,6 +79,7 @@ should output the directory `test1` along with other directories that are presen
 quals  stat55  test1
 ```
 To delete an empty directory, like the one we just created, we can use `rmdir`.
+
 Word of advice: Be very careful while deleting files/directories on the CLI! You will not be able to recover your data after deleting them.
 
 ```bash
@@ -71,7 +93,7 @@ ls
 #quals  stat55  test1
 ```
 
-3. Creating a file
+2. Creating a file
 
 Let's create a quick script
 ```bash
@@ -94,7 +116,11 @@ You should be able to see the following message printed on the command line:
 ```bash
 Hello World!
 ```
-2. Reading a file
+3. Moving, copying and renaming files
+
+Let's move our script to the directory we just created by using the mv command:
+
+4. Reading files
 
 ### Tips and Tricks
 ## Useful Linux commands for Everyday Bioinformatics
