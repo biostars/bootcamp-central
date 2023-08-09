@@ -59,7 +59,15 @@ gives
 ```
 on my computer. 
 
+Some important symbols and notations used while constructing a path:
+
+   - . (dot): Represents the current directory.
+   - .. (dot-dot): Represents the parent directory.
+   - ~ (tilde): Represents the home directory of the current user.
+
 ## Regarding Commands
+A command, like `pwd`, is a specific instruction or action that you can give to the operating system through the CLI. Most commands in Linux have parameters or options that can be used to modify the behaviour of the command, called flags. 
+
 
 ## Basic Linux Commands
 1. Creating/Deleting a directory and viewing its contents
@@ -118,7 +126,9 @@ Hello World!
 ```
 3. Moving, copying and renaming files
 
-Let's move our script to the directory we just created by using the mv command:
+Let's move our script to the directory we just created by using the `mv` command:
+
+
 
 4. Reading files
 
