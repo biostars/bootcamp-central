@@ -112,10 +112,8 @@ Press the insert button or Esc+i to start editing.  Enter/Copy the following cod
 #!/bin/bash
 echo "Hello World!"
 ```
-To save your script, press Esc followed by 
-```bash
-:wq
-```
+To save your script, press Esc followed by `:wq`.
+
 To run your script, type:
 ```bash
 bash hello_world.sh
