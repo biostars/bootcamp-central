@@ -1,5 +1,5 @@
 ## Bioinformatics Resources
-
+\
  In part, we will acquaint you with widely-used bionformatics public data and computational tools essential for genomic analysis. It's not necessary (and you don't need to) use all of them, but you may consider this as a foundation to create your personalized tool map for future research endeavors. Additionally, some of these resources will be employed in the upcoming pipeline examples, providing practical insights into their application.
 
 ### 1. Common Bioinformatics Public Data Resources
