@@ -385,3 +385,6 @@ scp path/to/hello_world.sh username@submit.hpc.psu.edu:path/to/desired/directory
 Remember, you can do either of these via the portal as well!
 
 # Where to go for help
+1. Biostars [https://www.biostars.org/]
+2. ICDS Support [https://www.icds.psu.edu/computing-services/support/]
+3. The Genomix Slack Channel!
